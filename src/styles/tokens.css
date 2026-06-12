@@ -1,19 +1,20 @@
 :root {
-  --color-bg-deep: #070a09;
-  --color-bg-elevated: #0e1210;
-  --color-bg-glass: rgba(255, 255, 255, 0.05);
-  --color-bg-glass-strong: rgba(255, 255, 255, 0.08);
-  --color-border-glass: rgba(255, 255, 255, 0.08);
-  --color-border-subtle: rgba(255, 255, 255, 0.05);
-  --color-accent: #34d399;
-  --color-accent-dim: rgba(52, 211, 153, 0.15);
-  --color-accent-soft: rgba(52, 211, 153, 0.6);
-  --color-warm-glow: rgba(255, 200, 120, 0.08);
-  --color-text-primary: rgba(255, 255, 255, 0.95);
-  --color-text-secondary: rgba(255, 255, 255, 0.55);
-  --color-text-muted: rgba(255, 255, 255, 0.35);
-  --color-up: #34d399;
-  --color-down: #f87171;
+  /* Palette — blacks, dark greens, greys, white only */
+  --color-black: #030504;
+  --color-green-deep: #0a1210;
+  --color-green-dark: #0f1a16;
+  --color-green-glass: rgba(12, 22, 18, 0.52);
+  --color-green-light: rgba(48, 110, 82, 0.55);
+  --color-green-glow: rgba(56, 130, 96, 0.22);
+
+  --color-white: rgba(255, 255, 255, 0.96);
+  --color-grey-soft: rgba(255, 255, 255, 0.62);
+  --color-grey-muted: rgba(255, 255, 255, 0.38);
+  --color-grey-faint: rgba(255, 255, 255, 0.12);
+
+  --color-text-primary: var(--color-white);
+  --color-text-secondary: var(--color-grey-soft);
+  --color-text-muted: var(--color-grey-muted);
 
   --font-ui: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
   --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
@@ -24,14 +25,14 @@
   --space-lg: 1.5rem;
   --space-xl: 2rem;
   --space-2xl: 3rem;
-  --space-3xl: 4rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
 
-  --radius-sm: 10px;
-  --radius-md: 16px;
-  --radius-lg: 20px;
-
-  --blur-glass: 24px;
-  --blur-bg: 48px;
+  --blur-bg: 64px;
+  --blur-glass: 48px;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Single light source — upper right */
+  --light-x: 100%;
+  --light-y: 0%;
 }
