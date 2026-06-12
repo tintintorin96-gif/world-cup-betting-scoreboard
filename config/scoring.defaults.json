@@ -1,0 +1,17 @@
+{
+  "maxPoints": 657,
+  "rules": {
+    "group_exact_score": 5,
+    "group_correct_outcome": 2,
+    "group_wrong_outcome": 0,
+    "group_winner": 5,
+    "knockout_r32": 2,
+    "knockout_r16": 5,
+    "knockout_qf": 10,
+    "knockout_sf": 15,
+    "knockout_third_reach": 15,
+    "knockout_third_winner": 15,
+    "finalist": 20,
+    "champion": 25
+  }
+}

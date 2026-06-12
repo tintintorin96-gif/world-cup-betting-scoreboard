@@ -1,0 +1,729 @@
+{
+  "version": 1,
+  "fetchedAt": "2026-06-12T13:56:55.411Z",
+  "matches": [
+    {
+      "matchId": "A-1",
+      "status": "finished",
+      "homeTeamId": "MEX",
+      "awayTeamId": "RSA",
+      "homeScore": 2,
+      "awayScore": 1,
+      "winnerId": "MEX",
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "A-2",
+      "status": "scheduled",
+      "homeTeamId": "MEX",
+      "awayTeamId": "KOR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "A-3",
+      "status": "scheduled",
+      "homeTeamId": "MEX",
+      "awayTeamId": "DEN",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "A-4",
+      "status": "scheduled",
+      "homeTeamId": "RSA",
+      "awayTeamId": "KOR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "A-5",
+      "status": "scheduled",
+      "homeTeamId": "RSA",
+      "awayTeamId": "DEN",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "A-6",
+      "status": "scheduled",
+      "homeTeamId": "KOR",
+      "awayTeamId": "DEN",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "B-1",
+      "status": "scheduled",
+      "homeTeamId": "CAN",
+      "awayTeamId": "SUI",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "B-2",
+      "status": "scheduled",
+      "homeTeamId": "CAN",
+      "awayTeamId": "QAT",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "B-3",
+      "status": "scheduled",
+      "homeTeamId": "CAN",
+      "awayTeamId": "BRA",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "B-4",
+      "status": "scheduled",
+      "homeTeamId": "SUI",
+      "awayTeamId": "QAT",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "B-5",
+      "status": "scheduled",
+      "homeTeamId": "SUI",
+      "awayTeamId": "BRA",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "B-6",
+      "status": "scheduled",
+      "homeTeamId": "QAT",
+      "awayTeamId": "BRA",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "C-1",
+      "status": "scheduled",
+      "homeTeamId": "USA",
+      "awayTeamId": "PAR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "C-2",
+      "status": "scheduled",
+      "homeTeamId": "USA",
+      "awayTeamId": "AUS",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "C-3",
+      "status": "scheduled",
+      "homeTeamId": "USA",
+      "awayTeamId": "MAR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "C-4",
+      "status": "scheduled",
+      "homeTeamId": "PAR",
+      "awayTeamId": "AUS",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "C-5",
+      "status": "scheduled",
+      "homeTeamId": "PAR",
+      "awayTeamId": "MAR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "C-6",
+      "status": "scheduled",
+      "homeTeamId": "AUS",
+      "awayTeamId": "MAR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "D-1",
+      "status": "scheduled",
+      "homeTeamId": "GER",
+      "awayTeamId": "CUW",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "D-2",
+      "status": "scheduled",
+      "homeTeamId": "GER",
+      "awayTeamId": "CIV",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "D-3",
+      "status": "scheduled",
+      "homeTeamId": "GER",
+      "awayTeamId": "ECU",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "D-4",
+      "status": "scheduled",
+      "homeTeamId": "CUW",
+      "awayTeamId": "CIV",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "D-5",
+      "status": "scheduled",
+      "homeTeamId": "CUW",
+      "awayTeamId": "ECU",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "D-6",
+      "status": "scheduled",
+      "homeTeamId": "CIV",
+      "awayTeamId": "ECU",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "E-1",
+      "status": "scheduled",
+      "homeTeamId": "NED",
+      "awayTeamId": "JPN",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "E-2",
+      "status": "scheduled",
+      "homeTeamId": "NED",
+      "awayTeamId": "TUN",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "E-3",
+      "status": "scheduled",
+      "homeTeamId": "NED",
+      "awayTeamId": "UKR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "E-4",
+      "status": "scheduled",
+      "homeTeamId": "JPN",
+      "awayTeamId": "TUN",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "E-5",
+      "status": "scheduled",
+      "homeTeamId": "JPN",
+      "awayTeamId": "UKR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "E-6",
+      "status": "scheduled",
+      "homeTeamId": "TUN",
+      "awayTeamId": "UKR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "F-1",
+      "status": "scheduled",
+      "homeTeamId": "BEL",
+      "awayTeamId": "IRN",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "F-2",
+      "status": "scheduled",
+      "homeTeamId": "BEL",
+      "awayTeamId": "NZL",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "F-3",
+      "status": "scheduled",
+      "homeTeamId": "BEL",
+      "awayTeamId": "EGY",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "F-4",
+      "status": "scheduled",
+      "homeTeamId": "IRN",
+      "awayTeamId": "NZL",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "F-5",
+      "status": "scheduled",
+      "homeTeamId": "IRN",
+      "awayTeamId": "EGY",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "F-6",
+      "status": "scheduled",
+      "homeTeamId": "NZL",
+      "awayTeamId": "EGY",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "G-1",
+      "status": "scheduled",
+      "homeTeamId": "ESP",
+      "awayTeamId": "CPV",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "G-2",
+      "status": "finished",
+      "homeTeamId": "ESP",
+      "awayTeamId": "KSA",
+      "homeScore": 1,
+      "awayScore": 1,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "G-3",
+      "status": "scheduled",
+      "homeTeamId": "ESP",
+      "awayTeamId": "URU",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "G-4",
+      "status": "scheduled",
+      "homeTeamId": "CPV",
+      "awayTeamId": "KSA",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "G-5",
+      "status": "scheduled",
+      "homeTeamId": "CPV",
+      "awayTeamId": "URU",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "G-6",
+      "status": "scheduled",
+      "homeTeamId": "KSA",
+      "awayTeamId": "URU",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "H-1",
+      "status": "scheduled",
+      "homeTeamId": "FRA",
+      "awayTeamId": "SEN",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "H-2",
+      "status": "scheduled",
+      "homeTeamId": "FRA",
+      "awayTeamId": "NOR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "H-3",
+      "status": "scheduled",
+      "homeTeamId": "FRA",
+      "awayTeamId": "COL",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "H-4",
+      "status": "scheduled",
+      "homeTeamId": "SEN",
+      "awayTeamId": "NOR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "H-5",
+      "status": "scheduled",
+      "homeTeamId": "SEN",
+      "awayTeamId": "COL",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "H-6",
+      "status": "scheduled",
+      "homeTeamId": "NOR",
+      "awayTeamId": "COL",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "I-1",
+      "status": "scheduled",
+      "homeTeamId": "ARG",
+      "awayTeamId": "ALG",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "I-2",
+      "status": "scheduled",
+      "homeTeamId": "ARG",
+      "awayTeamId": "AUT",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "I-3",
+      "status": "scheduled",
+      "homeTeamId": "ARG",
+      "awayTeamId": "JOR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "I-4",
+      "status": "scheduled",
+      "homeTeamId": "ALG",
+      "awayTeamId": "AUT",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "I-5",
+      "status": "scheduled",
+      "homeTeamId": "ALG",
+      "awayTeamId": "JOR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "I-6",
+      "status": "scheduled",
+      "homeTeamId": "AUT",
+      "awayTeamId": "JOR",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "J-1",
+      "status": "scheduled",
+      "homeTeamId": "POR",
+      "awayTeamId": "UZB",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "J-2",
+      "status": "scheduled",
+      "homeTeamId": "POR",
+      "awayTeamId": "GHA",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "J-3",
+      "status": "scheduled",
+      "homeTeamId": "POR",
+      "awayTeamId": "ENG",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "J-4",
+      "status": "scheduled",
+      "homeTeamId": "UZB",
+      "awayTeamId": "GHA",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "J-5",
+      "status": "scheduled",
+      "homeTeamId": "UZB",
+      "awayTeamId": "ENG",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "J-6",
+      "status": "scheduled",
+      "homeTeamId": "GHA",
+      "awayTeamId": "ENG",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "K-1",
+      "status": "scheduled",
+      "homeTeamId": "CRO",
+      "awayTeamId": "PAN",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "K-2",
+      "status": "scheduled",
+      "homeTeamId": "CRO",
+      "awayTeamId": "SCO",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "K-3",
+      "status": "scheduled",
+      "homeTeamId": "CRO",
+      "awayTeamId": "HAI",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "K-4",
+      "status": "scheduled",
+      "homeTeamId": "PAN",
+      "awayTeamId": "SCO",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "K-5",
+      "status": "scheduled",
+      "homeTeamId": "PAN",
+      "awayTeamId": "HAI",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "K-6",
+      "status": "scheduled",
+      "homeTeamId": "SCO",
+      "awayTeamId": "HAI",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "L-1",
+      "status": "scheduled",
+      "homeTeamId": "ITA",
+      "awayTeamId": "CRC",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "L-2",
+      "status": "scheduled",
+      "homeTeamId": "ITA",
+      "awayTeamId": "POL",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "L-3",
+      "status": "scheduled",
+      "homeTeamId": "ITA",
+      "awayTeamId": "PER",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "L-4",
+      "status": "scheduled",
+      "homeTeamId": "CRC",
+      "awayTeamId": "POL",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "L-5",
+      "status": "scheduled",
+      "homeTeamId": "CRC",
+      "awayTeamId": "PER",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    },
+    {
+      "matchId": "L-6",
+      "status": "scheduled",
+      "homeTeamId": "POL",
+      "awayTeamId": "PER",
+      "homeScore": null,
+      "awayScore": null,
+      "updatedAt": "2026-06-12T13:56:55.411Z",
+      "source": "manual"
+    }
+  ],
+  "groupStandings": [],
+  "knockout": []
+}

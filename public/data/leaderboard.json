@@ -1,0 +1,42 @@
+[
+  {
+    "participantId": "tintin-and-pappa",
+    "displayName": "Tintin&Pappa",
+    "totalPoints": 5,
+    "delta": 0,
+    "progressPct": 0.8,
+    "groupStagePoints": 5,
+    "knockoutPoints": 0,
+    "rank": 1
+  },
+  {
+    "participantId": "wilmer",
+    "displayName": "Wilmer",
+    "totalPoints": 5,
+    "delta": 0,
+    "progressPct": 0.8,
+    "groupStagePoints": 5,
+    "knockoutPoints": 0,
+    "rank": 2
+  },
+  {
+    "participantId": "mamma",
+    "displayName": "Mamma",
+    "totalPoints": 2,
+    "delta": 0,
+    "progressPct": 0.3,
+    "groupStagePoints": 2,
+    "knockoutPoints": 0,
+    "rank": 3
+  },
+  {
+    "participantId": "milton",
+    "displayName": "Milton",
+    "totalPoints": 2,
+    "delta": 0,
+    "progressPct": 0.3,
+    "groupStagePoints": 2,
+    "knockoutPoints": 0,
+    "rank": 4
+  }
+]

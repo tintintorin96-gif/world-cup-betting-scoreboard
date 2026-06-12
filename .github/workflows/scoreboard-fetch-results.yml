@@ -1,0 +1,41 @@
+name: Scoreboard Fetch Results
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/fetch-*.ts'
+      - 'scripts/merge-results.ts'
+      - 'src/adapters/**'
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch from APIs
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: npx tsx scripts/fetch-api-football.ts
+        continue-on-error: true
+
+      - run: npm run scoreboard:data
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'scoreboard: update results and data'
+          file_pattern: 'public/data/**'

@@ -1,0 +1,464 @@
+[
+  {
+    "participant": {
+      "id": "mamma",
+      "displayName": "Mamma",
+      "filePath": "/Users/tintin.torin/Library/CloudStorage/OneDrive-Valtech/Documents/Cursor/World Cup/vault/participants/Mamma.md"
+    },
+    "prediction": {
+      "participantId": "mamma",
+      "groupMatches": [
+        {
+          "matchId": "A-1",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "A-2",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "G-3",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "H-1",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "D-3",
+          "homeScore": 2,
+          "awayScore": 0
+        }
+      ],
+      "groupStandings": [
+        {
+          "group": "A",
+          "positions": [
+            "MEX",
+            "KOR",
+            "DEN",
+            "RSA"
+          ]
+        },
+        {
+          "group": "H",
+          "positions": [
+            "FRA",
+            "COL",
+            "NOR",
+            "SEN"
+          ]
+        }
+      ],
+      "groupWinners": [
+        {
+          "group": "A",
+          "winnerId": "MEX"
+        },
+        {
+          "group": "H",
+          "winnerId": "FRA"
+        }
+      ],
+      "knockout": [
+        {
+          "round": "r32",
+          "advancingTeamIds": [
+            "FRA",
+            "GER",
+            "ARG"
+          ]
+        },
+        {
+          "round": "r16",
+          "advancingTeamIds": [
+            "FRA"
+          ]
+        },
+        {
+          "round": "qf",
+          "advancingTeamIds": [
+            "FRA"
+          ]
+        },
+        {
+          "round": "sf",
+          "advancingTeamIds": [
+            "FRA"
+          ]
+        },
+        {
+          "round": "third",
+          "advancingTeamIds": [
+            "GER",
+            "GER"
+          ]
+        },
+        {
+          "round": "final",
+          "advancingTeamIds": [
+            "FRA",
+            "ARG"
+          ]
+        }
+      ],
+      "finalists": [
+        "FRA",
+        "ARG"
+      ]
+    }
+  },
+  {
+    "participant": {
+      "id": "milton",
+      "displayName": "Milton",
+      "filePath": "/Users/tintin.torin/Library/CloudStorage/OneDrive-Valtech/Documents/Cursor/World Cup/vault/participants/Milton.md"
+    },
+    "prediction": {
+      "participantId": "milton",
+      "groupMatches": [
+        {
+          "matchId": "A-1",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "B-6",
+          "homeScore": 0,
+          "awayScore": 4
+        },
+        {
+          "matchId": "C-3",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "G-3",
+          "homeScore": 2,
+          "awayScore": 2
+        }
+      ],
+      "groupStandings": [
+        {
+          "group": "A",
+          "positions": [
+            "MEX",
+            "RSA",
+            "DEN",
+            "KOR"
+          ]
+        },
+        {
+          "group": "C",
+          "positions": [
+            "MAR",
+            "USA",
+            "AUS",
+            "PAR"
+          ]
+        }
+      ],
+      "groupWinners": [
+        {
+          "group": "A",
+          "winnerId": "MEX"
+        },
+        {
+          "group": "C",
+          "winnerId": "MAR"
+        }
+      ],
+      "knockout": [
+        {
+          "round": "r32",
+          "advancingTeamIds": [
+            "MAR",
+            "BRA"
+          ]
+        },
+        {
+          "round": "r16",
+          "advancingTeamIds": [
+            "MAR"
+          ]
+        },
+        {
+          "round": "qf",
+          "advancingTeamIds": [
+            "MAR"
+          ]
+        },
+        {
+          "round": "sf",
+          "advancingTeamIds": [
+            "MAR"
+          ]
+        },
+        {
+          "round": "third",
+          "advancingTeamIds": [
+            "BRA",
+            "BRA"
+          ]
+        },
+        {
+          "round": "final",
+          "advancingTeamIds": [
+            "MAR",
+            "BRA"
+          ]
+        }
+      ],
+      "finalists": [
+        "MAR",
+        "BRA"
+      ]
+    }
+  },
+  {
+    "participant": {
+      "id": "tintin-and-pappa",
+      "displayName": "Tintin&Pappa",
+      "filePath": "/Users/tintin.torin/Library/CloudStorage/OneDrive-Valtech/Documents/Cursor/World Cup/vault/participants/Tintin&Pappa.md"
+    },
+    "prediction": {
+      "participantId": "tintin-and-pappa",
+      "groupMatches": [
+        {
+          "matchId": "A-1",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "B-6",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "G-3",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "J-6",
+          "homeScore": 0,
+          "awayScore": 2
+        }
+      ],
+      "groupStandings": [
+        {
+          "group": "A",
+          "positions": [
+            "MEX",
+            "DEN",
+            "KOR",
+            "RSA"
+          ]
+        },
+        {
+          "group": "J",
+          "positions": [
+            "ENG",
+            "POR",
+            "GHA",
+            "UZB"
+          ]
+        }
+      ],
+      "groupWinners": [
+        {
+          "group": "A",
+          "winnerId": "MEX"
+        },
+        {
+          "group": "J",
+          "winnerId": "ENG"
+        }
+      ],
+      "knockout": [
+        {
+          "round": "r32",
+          "advancingTeamIds": [
+            "ENG",
+            "ESP",
+            "BRA"
+          ]
+        },
+        {
+          "round": "r16",
+          "advancingTeamIds": [
+            "ENG",
+            "ESP"
+          ]
+        },
+        {
+          "round": "qf",
+          "advancingTeamIds": [
+            "ENG"
+          ]
+        },
+        {
+          "round": "sf",
+          "advancingTeamIds": [
+            "ENG"
+          ]
+        },
+        {
+          "round": "third",
+          "advancingTeamIds": [
+            "ESP",
+            "ESP"
+          ]
+        },
+        {
+          "round": "final",
+          "advancingTeamIds": [
+            "ENG",
+            "ESP"
+          ]
+        }
+      ],
+      "finalists": [
+        "ENG",
+        "ESP"
+      ]
+    }
+  },
+  {
+    "participant": {
+      "id": "wilmer",
+      "displayName": "Wilmer",
+      "filePath": "/Users/tintin.torin/Library/CloudStorage/OneDrive-Valtech/Documents/Cursor/World Cup/vault/participants/Wilmer.md"
+    },
+    "prediction": {
+      "participantId": "wilmer",
+      "groupMatches": [
+        {
+          "matchId": "A-1",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "A-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "A-3",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-1",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-2",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "H-1",
+          "homeScore": 2,
+          "awayScore": 1
+        }
+      ],
+      "groupStandings": [
+        {
+          "group": "A",
+          "positions": [
+            "MEX",
+            "DEN",
+            "KOR",
+            "RSA"
+          ]
+        },
+        {
+          "group": "B",
+          "positions": [
+            "BRA",
+            "SUI",
+            "CAN",
+            "QAT"
+          ]
+        },
+        {
+          "group": "G",
+          "positions": [
+            "ESP",
+            "URU",
+            "CPV",
+            "KSA"
+          ]
+        }
+      ],
+      "groupWinners": [
+        {
+          "group": "A",
+          "winnerId": "MEX"
+        },
+        {
+          "group": "B",
+          "winnerId": "BRA"
+        },
+        {
+          "group": "G",
+          "winnerId": "ESP"
+        }
+      ],
+      "knockout": [
+        {
+          "round": "r32",
+          "advancingTeamIds": [
+            "BRA",
+            "ESP",
+            "FRA",
+            "ARG"
+          ]
+        },
+        {
+          "round": "r16",
+          "advancingTeamIds": [
+            "BRA",
+            "ESP"
+          ]
+        },
+        {
+          "round": "qf",
+          "advancingTeamIds": [
+            "BRA"
+          ]
+        },
+        {
+          "round": "sf",
+          "advancingTeamIds": [
+            "BRA"
+          ]
+        },
+        {
+          "round": "third",
+          "advancingTeamIds": [
+            "ESP",
+            "ESP"
+          ]
+        },
+        {
+          "round": "final",
+          "advancingTeamIds": [
+            "BRA",
+            "FRA"
+          ]
+        }
+      ],
+      "finalists": [
+        "BRA",
+        "FRA"
+      ]
+    }
+  }
+]

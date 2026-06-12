@@ -1,0 +1,6 @@
+/* Page-level overrides — competition is single-page only */
+
+.competition-page {
+  display: flex;
+  flex-direction: column;
+}

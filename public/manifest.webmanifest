@@ -1,0 +1,16 @@
+{
+  "name": "World Cup 2026",
+  "short_name": "WC 2026",
+  "description": "Private World Cup 2026 prediction competition",
+  "start_url": "/world-cup-betting-scoreboard/",
+  "display": "standalone",
+  "background_color": "#070a09",
+  "theme_color": "#34d399",
+  "icons": [
+    {
+      "src": "/world-cup-betting-scoreboard/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

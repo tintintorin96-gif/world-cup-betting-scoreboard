@@ -1,0 +1,15 @@
+{
+  "id": "wc-2026",
+  "name": "FIFA World Cup 2026",
+  "maxPoints": 657,
+  "groups": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
+  "groupMatches": [],
+  "knockoutRounds": [
+    { "round": "r32", "label": "Round of 32", "slots": 16 },
+    { "round": "r16", "label": "Round of 16", "slots": 8 },
+    { "round": "qf", "label": "Quarter-finals", "slots": 4 },
+    { "round": "sf", "label": "Semi-finals", "slots": 2 },
+    { "round": "third", "label": "Third-place match", "slots": 2 },
+    { "round": "final", "label": "Final", "slots": 2 }
+  ]
+}

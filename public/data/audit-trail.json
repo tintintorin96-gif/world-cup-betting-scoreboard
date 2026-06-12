@@ -1,0 +1,82 @@
+[
+  {
+    "timestamp": "2026-06-12T13:56:55.411Z",
+    "resultsVersion": 1,
+    "participantId": "mamma",
+    "event": {
+      "id": "mamma:correct_outcome:A-1:1",
+      "participantId": "mamma",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
+      "prediction": "🇲🇽 Mexico win",
+      "actualResult": "2-1",
+      "matchId": "A-1",
+      "timestamp": "2026-06-12T13:56:55.411Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-12T13:56:55.411Z",
+    "resultsVersion": 1,
+    "participantId": "milton",
+    "event": {
+      "id": "milton:correct_outcome:A-1:1",
+      "participantId": "milton",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
+      "prediction": "🇲🇽 Mexico win",
+      "actualResult": "2-1",
+      "matchId": "A-1",
+      "timestamp": "2026-06-12T13:56:55.411Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-12T13:56:55.411Z",
+    "resultsVersion": 1,
+    "participantId": "tintin-and-pappa",
+    "event": {
+      "id": "tintin-and-pappa:exact_score:A-1:1",
+      "participantId": "tintin-and-pappa",
+      "type": "group_exact_score",
+      "category": "exact_score",
+      "points": 5,
+      "label": "Exact score",
+      "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
+      "prediction": "2-1",
+      "actualResult": "2-1",
+      "matchId": "A-1",
+      "timestamp": "2026-06-12T13:56:55.411Z"
+    },
+    "pointsDelta": 5,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-12T13:56:55.411Z",
+    "resultsVersion": 1,
+    "participantId": "wilmer",
+    "event": {
+      "id": "wilmer:exact_score:A-1:1",
+      "participantId": "wilmer",
+      "type": "group_exact_score",
+      "category": "exact_score",
+      "points": 5,
+      "label": "Exact score",
+      "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
+      "prediction": "2-1",
+      "actualResult": "2-1",
+      "matchId": "A-1",
+      "timestamp": "2026-06-12T13:56:55.411Z"
+    },
+    "pointsDelta": 5,
+    "reason": "initial"
+  }
+]
