@@ -1,41 +1,41 @@
 [
   {
+    "participantId": "wilmer",
+    "displayName": "Wilmer",
+    "totalPoints": 9,
+    "delta": 0,
+    "progressPct": 1.4,
+    "groupStagePoints": 9,
+    "knockoutPoints": 0,
+    "rank": 1
+  },
+  {
+    "participantId": "tintin-and-pappa",
+    "displayName": "Tintin&Pappa",
+    "totalPoints": 7,
+    "delta": 0,
+    "progressPct": 1.1,
+    "groupStagePoints": 7,
+    "knockoutPoints": 0,
+    "rank": 2
+  },
+  {
+    "participantId": "mamma",
+    "displayName": "Mamma",
+    "totalPoints": 4,
+    "delta": 0,
+    "progressPct": 0.6,
+    "groupStagePoints": 4,
+    "knockoutPoints": 0,
+    "rank": 3
+  },
+  {
     "participantId": "milton",
     "displayName": "Milton",
     "totalPoints": 4,
     "delta": 0,
     "progressPct": 0.6,
     "groupStagePoints": 4,
-    "knockoutPoints": 0,
-    "rank": 1
-  },
-  {
-    "participantId": "mamma",
-    "displayName": "Mamma",
-    "totalPoints": 2,
-    "delta": 0,
-    "progressPct": 0.3,
-    "groupStagePoints": 2,
-    "knockoutPoints": 0,
-    "rank": 2
-  },
-  {
-    "participantId": "tintin-and-pappa",
-    "displayName": "Tintin&Pappa",
-    "totalPoints": 2,
-    "delta": 0,
-    "progressPct": 0.3,
-    "groupStagePoints": 2,
-    "knockoutPoints": 0,
-    "rank": 3
-  },
-  {
-    "participantId": "wilmer",
-    "displayName": "Wilmer",
-    "totalPoints": 2,
-    "delta": 0,
-    "progressPct": 0.3,
-    "groupStagePoints": 2,
     "knockoutPoints": 0,
     "rank": 4
   }

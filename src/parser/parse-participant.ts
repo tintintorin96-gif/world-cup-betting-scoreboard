@@ -5,7 +5,12 @@ import type { TeamRegistry } from '../types/team';
 import { resolveTeamId, tryResolveTeamId } from '../normalize/resolve-team';
 import { ParseError } from './errors';
 import { assertRequiredHeadings, splitByH2 } from './parse-sections';
-import { parseMarkdownTable, parseOrderedList } from './parse-tables';
+import {
+  getTableColumnIndex,
+  normalizeTableHeader,
+  parseMarkdownTable,
+  parseOrderedList,
+} from './parse-tables';
 
 const KNOCKOUT_HEADINGS: Record<string, KnockoutRound> = {
   'round of 32': 'r32',
@@ -13,15 +18,79 @@ const KNOCKOUT_HEADINGS: Record<string, KnockoutRound> = {
   'quarter-finals': 'qf',
   'quarter finals': 'qf',
   'quarterfinals': 'qf',
+  'quarter-final': 'qf',
   'semi-finals': 'sf',
   'semi finals': 'sf',
   'semifinals': 'sf',
+  'semi-final': 'sf',
   'third-place match': 'third',
   'third place match': 'third',
   'third place': 'third',
   final: 'final',
   champion: 'final',
 };
+
+function isHeaderRow(cells: string[]): boolean {
+  const joined = cells.map(normalizeTableHeader).join('|');
+  return joined.includes('match_id') || joined.includes('pick_home_goals') || /^group\|/.test(joined);
+}
+
+function isV3GroupTable(rows: { cells: string[] }[]): boolean {
+  const header = rows[0]?.cells ?? [];
+  return getTableColumnIndex(header, 'pick_home_goals', 'pick_away_goals') >= 0;
+}
+
+function isV3StandingsTable(rows: { cells: string[] }[]): boolean {
+  const header = rows[0]?.cells ?? [];
+  return (
+    getTableColumnIndex(header, 'position') >= 0 &&
+    getTableColumnIndex(header, 'team') >= 0 &&
+    getTableColumnIndex(header, 'predicted_winner') < 0
+  );
+}
+
+function isV3WinnersTable(rows: { cells: string[] }[]): boolean {
+  const header = rows[0]?.cells ?? [];
+  return getTableColumnIndex(header, 'predicted_winner') >= 0;
+}
+
+function isV3KnockoutTable(rows: { cells: string[] }[]): boolean {
+  const header = rows[0]?.cells ?? [];
+  return (
+    getTableColumnIndex(header, 'pick_winner') >= 0 &&
+    getTableColumnIndex(header, 'team_1') >= 0
+  );
+}
+
+function parseKnockoutRoundLabel(label: string): KnockoutRound | null {
+  const normalized = label.toLowerCase().trim();
+  return KNOCKOUT_HEADINGS[normalized] ?? null;
+}
+
+function pushGroupMatchPrediction(
+  predictions: Prediction['groupMatches'],
+  homeRaw: string,
+  awayRaw: string,
+  pickHome: number,
+  pickAway: number,
+  filePath: string,
+  tournament: TournamentConfig,
+  registry: TeamRegistry,
+) {
+  const matchId = findMatchId(homeRaw, awayRaw, tournament, registry);
+  if (!matchId) {
+    console.warn(`[warn] Skipping unmapped match in ${filePath}: ${homeRaw} vs ${awayRaw}`);
+    return;
+  }
+  const matchRef = tournament.groupMatches.find((m) => m.matchId === matchId)!;
+  const homeId = resolveTeamId(homeRaw, registry);
+  const isHomeFirst = matchRef.homeTeamId === homeId;
+  predictions.push({
+    matchId,
+    homeScore: isHomeFirst ? pickHome : pickAway,
+    awayScore: isHomeFirst ? pickAway : pickHome,
+  });
+}
 
 const PredictionSchema = z.object({
   participantId: z.string(),
@@ -93,6 +162,36 @@ function parseGroupStage(
   const predictions: Prediction['groupMatches'] = [];
   const rows = parseMarkdownTable(content);
 
+  if (rows.length > 0 && isV3GroupTable(rows)) {
+    const header = rows[0].cells;
+    const homeIdx = getTableColumnIndex(header, 'home_team');
+    const awayIdx = getTableColumnIndex(header, 'away_team');
+    const homeGoalsIdx = getTableColumnIndex(header, 'pick_home_goals');
+    const awayGoalsIdx = getTableColumnIndex(header, 'pick_away_goals');
+
+    for (const row of rows.slice(1)) {
+      if (isHeaderRow(row.cells)) continue;
+      const homeRaw = row.cells[homeIdx] ?? '';
+      const awayRaw = row.cells[awayIdx] ?? '';
+      const pickHome = parseInt(row.cells[homeGoalsIdx] ?? '', 10);
+      const pickAway = parseInt(row.cells[awayGoalsIdx] ?? '', 10);
+      if (!homeRaw || !awayRaw || Number.isNaN(pickHome) || Number.isNaN(pickAway)) {
+        throw new ParseError(`Invalid group match row: ${row.cells.join(' | ')}`, filePath, line);
+      }
+      pushGroupMatchPrediction(
+        predictions,
+        homeRaw,
+        awayRaw,
+        pickHome,
+        pickAway,
+        filePath,
+        tournament,
+        registry,
+      );
+    }
+    return predictions;
+  }
+
   if (rows.length > 0) {
     for (const row of rows) {
       const matchCol = row.cells[0] ?? '';
@@ -103,19 +202,16 @@ function parseGroupStage(
       if (!teams || !score) {
         throw new ParseError(`Invalid group match row: ${row.cells.join(' | ')}`, filePath, line);
       }
-      const matchId = findMatchId(teams.home, teams.away, tournament, registry);
-      if (!matchId) {
-        console.warn(`[warn] Skipping unmapped match in ${filePath}: ${teams.home} vs ${teams.away}`);
-        continue;
-      }
-      const matchRef = tournament.groupMatches.find((m) => m.matchId === matchId)!;
-      const homeId = resolveTeamId(teams.home, registry);
-      const isHomeFirst = matchRef.homeTeamId === homeId;
-      predictions.push({
-        matchId,
-        homeScore: isHomeFirst ? score.home : score.away,
-        awayScore: isHomeFirst ? score.away : score.home,
-      });
+      pushGroupMatchPrediction(
+        predictions,
+        teams.home,
+        teams.away,
+        score.home,
+        score.away,
+        filePath,
+        tournament,
+        registry,
+      );
     }
     return predictions;
   }
@@ -146,6 +242,44 @@ function parseGroupStage(
 
 function parseStandings(content: string, filePath: string, registry: TeamRegistry) {
   const standings: Prediction['groupStandings'] = [];
+  const rows = parseMarkdownTable(content);
+
+  if (rows.length > 0 && isV3StandingsTable(rows)) {
+    const header = rows[0].cells;
+    const groupIdx = getTableColumnIndex(header, 'group');
+    const positionIdx = getTableColumnIndex(header, 'position');
+    const teamIdx = getTableColumnIndex(header, 'team');
+    const byGroup = new Map<string, Array<{ position: number; teamId: string }>>();
+
+    for (const row of rows.slice(1)) {
+      if (isHeaderRow(row.cells)) continue;
+      const group = (row.cells[groupIdx] ?? '').trim();
+      const position = parseInt(row.cells[positionIdx] ?? '', 10);
+      const team = row.cells[teamIdx] ?? '';
+      if (!group || Number.isNaN(position) || !team) continue;
+      const teamId = tryResolveTeamId(team, registry);
+      if (!teamId) {
+        console.warn(`[warn] Skipping unknown team in ${filePath} Group ${group}: ${team}`);
+        continue;
+      }
+      const entries = byGroup.get(group) ?? [];
+      entries.push({ position, teamId });
+      byGroup.set(group, entries);
+    }
+
+    for (const [group, entries] of byGroup) {
+      if (entries.length < 4) {
+        throw new ParseError(`Group ${group} standings need 4 teams`, filePath);
+      }
+      standings.push({
+        group,
+        positions: entries.sort((a, b) => a.position - b.position).map((entry) => entry.teamId),
+      });
+    }
+
+    return standings.sort((a, b) => a.group.localeCompare(b.group));
+  }
+
   const blocks = content.split(/(?=^###\s+Group\s+)/im);
 
   for (const block of blocks) {
@@ -184,6 +318,23 @@ function parseWinners(content: string, registry: TeamRegistry) {
   const winners: Prediction['groupWinners'] = [];
   const rows = parseMarkdownTable(content);
 
+  if (rows.length && isV3WinnersTable(rows)) {
+    const header = rows[0].cells;
+    const groupIdx = getTableColumnIndex(header, 'group');
+    const winnerIdx = getTableColumnIndex(header, 'predicted_winner', 'winner');
+
+    for (const row of rows.slice(1)) {
+      if (isHeaderRow(row.cells)) continue;
+      const group = (row.cells[groupIdx] ?? '').replace(/group\s*/i, '').trim();
+      const team = row.cells[winnerIdx] ?? '';
+      if (!group || !team) continue;
+      const winnerId = tryResolveTeamId(team, registry);
+      if (winnerId) winners.push({ group, winnerId });
+      else console.warn(`[warn] Skipping unknown group winner in Group ${group}: ${team}`);
+    }
+    return winners;
+  }
+
   if (rows.length) {
     for (const row of rows) {
       const group = (row.cells[0] ?? '').replace(/group\s*/i, '').trim();
@@ -208,8 +359,65 @@ function parseWinners(content: string, registry: TeamRegistry) {
 
 function parseKnockout(content: string, filePath: string, registry: TeamRegistry) {
   const knockout: Prediction['knockout'] = [];
-  const blocks = content.split(/(?=^###\s+)/im);
   let championId: string | undefined;
+  const rows = parseMarkdownTable(content);
+
+  if (rows.length > 0 && isV3KnockoutTable(rows)) {
+    const header = rows[0].cells;
+    const roundIdx = getTableColumnIndex(header, 'round');
+    const team1Idx = getTableColumnIndex(header, 'team_1');
+    const team2Idx = getTableColumnIndex(header, 'team_2');
+    const winnerIdx = getTableColumnIndex(header, 'pick_winner');
+    const byRound = new Map<KnockoutRound, string[]>();
+
+    for (const row of rows.slice(1)) {
+      if (isHeaderRow(row.cells)) continue;
+      const roundLabel = row.cells[roundIdx] ?? '';
+      const round = parseKnockoutRoundLabel(roundLabel);
+      if (!round) continue;
+
+      const team1Raw = row.cells[team1Idx] ?? '';
+      const team2Raw = row.cells[team2Idx] ?? '';
+      const pickWinnerRaw = row.cells[winnerIdx] ?? '';
+      const team1Id = tryResolveTeamId(team1Raw, registry);
+      const team2Id = tryResolveTeamId(team2Raw, registry);
+      const pickWinnerId = tryResolveTeamId(pickWinnerRaw, registry);
+      if (!pickWinnerId) {
+        console.warn(`[warn] Skipping knockout row with unknown winner in ${filePath}: ${pickWinnerRaw}`);
+        continue;
+      }
+
+      const ids = byRound.get(round) ?? [];
+
+      if (round === 'final') {
+        const otherFinalist =
+          pickWinnerId === team1Id ? team2Id : pickWinnerId === team2Id ? team1Id : team1Id;
+        if (otherFinalist) {
+          ids.push(pickWinnerId, otherFinalist);
+          championId = pickWinnerId;
+        }
+      } else if (round === 'third') {
+        if (team1Id) ids.push(team1Id);
+        if (team2Id && team2Id !== team1Id) ids.push(team2Id);
+        ids.push(pickWinnerId);
+      } else {
+        ids.push(pickWinnerId);
+      }
+
+      byRound.set(round, ids);
+    }
+
+    for (const [round, advancingTeamIds] of byRound) {
+      if (advancingTeamIds.length) {
+        knockout.push({ round, advancingTeamIds });
+      }
+    }
+
+    const finalists = knockout.find((k) => k.round === 'final')?.advancingTeamIds;
+    return { knockout, championId, finalists };
+  }
+
+  const blocks = content.split(/(?=^###\s+)/im);
 
   for (const block of blocks) {
     const header = block.match(/^###\s+(.+?)\s*$/im);

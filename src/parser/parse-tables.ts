@@ -2,6 +2,10 @@ export interface TableRow {
   cells: string[];
 }
 
+export function normalizeTableHeader(value: string): string {
+  return value.trim().toLowerCase().replace(/\s+/g, '_');
+}
+
 export function parseMarkdownTable(content: string): TableRow[] {
   const lines = content.split('\n').filter((l) => l.trim().startsWith('|'));
   if (lines.length < 2) return [];
@@ -17,6 +21,15 @@ export function parseMarkdownTable(content: string): TableRow[] {
     if (cells.length) rows.push({ cells });
   }
   return rows;
+}
+
+export function getTableColumnIndex(headers: string[], ...names: string[]): number {
+  const normalized = headers.map(normalizeTableHeader);
+  for (const name of names) {
+    const idx = normalized.indexOf(normalizeTableHeader(name));
+    if (idx >= 0) return idx;
+  }
+  return -1;
 }
 
 export function parseOrderedList(content: string): string[] {

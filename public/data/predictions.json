@@ -3,7 +3,7 @@
     "participant": {
       "id": "mamma",
       "displayName": "Mamma",
-      "filePath": "/home/runner/work/world-cup-betting-scoreboard/world-cup-betting-scoreboard/vault/participants/Mamma.md"
+      "filePath": "/Users/tintin.torin/Library/CloudStorage/OneDrive-Valtech/Documents/Cursor/World Cup/vault/participants/Mamma.md"
     },
     "prediction": {
       "participantId": "mamma",
@@ -14,117 +14,94 @@
           "awayScore": 0
         },
         {
+          "matchId": "A-1",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "A-3",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
           "matchId": "A-4",
           "homeScore": 1,
           "awayScore": 2
         },
         {
-          "matchId": "H-5",
+          "matchId": "A-2",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "A-5",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "B-1",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "B-6",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "B-3",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "B-4",
           "homeScore": 1,
           "awayScore": 1
         },
         {
-          "matchId": "I-3",
-          "homeScore": 3,
+          "matchId": "B-5",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "B-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "C-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "C-5",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "C-6",
+          "homeScore": 1,
           "awayScore": 0
         },
         {
-          "matchId": "E-6",
+          "matchId": "C-1",
+          "homeScore": 4,
+          "awayScore": 0
+        },
+        {
+          "matchId": "C-3",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "C-4",
           "homeScore": 0,
           "awayScore": 2
-        }
-      ],
-      "groupStandings": [
-        {
-          "group": "A",
-          "positions": [
-            "MEX",
-            "KOR",
-            "CZE",
-            "RSA"
-          ]
         },
         {
-          "group": "I",
-          "positions": [
-            "FRA",
-            "COL",
-            "NOR",
-            "SEN"
-          ]
-        }
-      ],
-      "groupWinners": [
-        {
-          "group": "A",
-          "winnerId": "MEX"
-        },
-        {
-          "group": "I",
-          "winnerId": "FRA"
-        }
-      ],
-      "knockout": [
-        {
-          "round": "r32",
-          "advancingTeamIds": [
-            "FRA",
-            "GER",
-            "ARG"
-          ]
-        },
-        {
-          "round": "r16",
-          "advancingTeamIds": [
-            "FRA"
-          ]
-        },
-        {
-          "round": "qf",
-          "advancingTeamIds": [
-            "FRA"
-          ]
-        },
-        {
-          "round": "sf",
-          "advancingTeamIds": [
-            "FRA"
-          ]
-        },
-        {
-          "round": "third",
-          "advancingTeamIds": [
-            "GER",
-            "GER"
-          ]
-        },
-        {
-          "round": "final",
-          "advancingTeamIds": [
-            "FRA",
-            "ARG"
-          ]
-        }
-      ],
-      "finalists": [
-        "FRA",
-        "ARG"
-      ]
-    }
-  },
-  {
-    "participant": {
-      "id": "milton",
-      "displayName": "Milton",
-      "filePath": "/home/runner/work/world-cup-betting-scoreboard/world-cup-betting-scoreboard/vault/participants/Milton.md"
-    },
-    "prediction": {
-      "participantId": "milton",
-      "groupMatches": [
-        {
-          "matchId": "A-6",
-          "homeScore": 3,
-          "awayScore": 0
+          "matchId": "D-2",
+          "homeScore": 1,
+          "awayScore": 1
         },
         {
           "matchId": "D-5",
@@ -132,9 +109,264 @@
           "awayScore": 2
         },
         {
-          "matchId": "H-5",
+          "matchId": "D-3",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "D-4",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "D-6",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "D-1",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "E-5",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "E-2",
           "homeScore": 2,
           "awayScore": 2
+        },
+        {
+          "matchId": "E-3",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "E-4",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "E-1",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "E-6",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "F-1",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "F-6",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "F-4",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "F-3",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "F-2",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "F-5",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-1",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-6",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-2",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-5",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "G-4",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "G-3",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "H-1",
+          "homeScore": 0,
+          "awayScore": 4
+        },
+        {
+          "matchId": "H-6",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "H-4",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "H-3",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "H-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "H-5",
+          "homeScore": 3,
+          "awayScore": 2
+        },
+        {
+          "matchId": "I-3",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "I-4",
+          "homeScore": 1,
+          "awayScore": 3
+        },
+        {
+          "matchId": "I-1",
+          "homeScore": 3,
+          "awayScore": 1
+        },
+        {
+          "matchId": "I-6",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "I-2",
+          "homeScore": 0,
+          "awayScore": 0
+        },
+        {
+          "matchId": "I-5",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "J-1",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "J-6",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "J-4",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "J-3",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "J-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "J-5",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "K-2",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "K-5",
+          "homeScore": 3,
+          "awayScore": 2
+        },
+        {
+          "matchId": "K-6",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "K-1",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "K-4",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "K-3",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "L-1",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "L-6",
+          "homeScore": 1,
+          "awayScore": 3
+        },
+        {
+          "matchId": "L-4",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "L-3",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "L-5",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "L-2",
+          "homeScore": 2,
+          "awayScore": 1
         }
       ],
       "groupStandings": [
@@ -142,18 +374,108 @@
           "group": "A",
           "positions": [
             "MEX",
-            "RSA",
+            "KOR",
             "CZE",
-            "KOR"
+            "RSA"
+          ]
+        },
+        {
+          "group": "B",
+          "positions": [
+            "SUI",
+            "CAN",
+            "QAT",
+            "BIH"
+          ]
+        },
+        {
+          "group": "C",
+          "positions": [
+            "BRA",
+            "MAR",
+            "SCO",
+            "HAI"
           ]
         },
         {
           "group": "D",
           "positions": [
             "USA",
-            "PAR",
             "AUS",
-            "TUR"
+            "TUR",
+            "PAR"
+          ]
+        },
+        {
+          "group": "E",
+          "positions": [
+            "GER",
+            "CIV",
+            "ECU",
+            "CUW"
+          ]
+        },
+        {
+          "group": "F",
+          "positions": [
+            "NED",
+            "JPN",
+            "SWE",
+            "TUN"
+          ]
+        },
+        {
+          "group": "G",
+          "positions": [
+            "BEL",
+            "IRN",
+            "EGY",
+            "NZL"
+          ]
+        },
+        {
+          "group": "H",
+          "positions": [
+            "ESP",
+            "URU",
+            "KSA",
+            "CPV"
+          ]
+        },
+        {
+          "group": "I",
+          "positions": [
+            "FRA",
+            "NOR",
+            "SEN",
+            "IRQ"
+          ]
+        },
+        {
+          "group": "J",
+          "positions": [
+            "ARG",
+            "AUT",
+            "ALG",
+            "JOR"
+          ]
+        },
+        {
+          "group": "K",
+          "positions": [
+            "COL",
+            "POR",
+            "UZB",
+            "COD"
+          ]
+        },
+        {
+          "group": "L",
+          "positions": [
+            "ENG",
+            "CRO",
+            "PAN",
+            "GHA"
           ]
         }
       ],
@@ -161,111 +483,49 @@
         {
           "group": "A",
           "winnerId": "MEX"
+        },
+        {
+          "group": "B",
+          "winnerId": "SUI"
+        },
+        {
+          "group": "C",
+          "winnerId": "BRA"
         },
         {
           "group": "D",
           "winnerId": "USA"
-        }
-      ],
-      "knockout": [
-        {
-          "round": "r32",
-          "advancingTeamIds": [
-            "MAR",
-            "BRA"
-          ]
         },
         {
-          "round": "r16",
-          "advancingTeamIds": [
-            "MAR"
-          ]
+          "group": "E",
+          "winnerId": "GER"
         },
         {
-          "round": "qf",
-          "advancingTeamIds": [
-            "MAR"
-          ]
+          "group": "F",
+          "winnerId": "NED"
         },
         {
-          "round": "sf",
-          "advancingTeamIds": [
-            "MAR"
-          ]
+          "group": "G",
+          "winnerId": "BEL"
         },
         {
-          "round": "third",
-          "advancingTeamIds": [
-            "BRA",
-            "BRA"
-          ]
+          "group": "H",
+          "winnerId": "ESP"
         },
         {
-          "round": "final",
-          "advancingTeamIds": [
-            "MAR",
-            "BRA"
-          ]
-        }
-      ],
-      "finalists": [
-        "MAR",
-        "BRA"
-      ]
-    }
-  },
-  {
-    "participant": {
-      "id": "tintin-and-pappa",
-      "displayName": "Tintin&Pappa",
-      "filePath": "/home/runner/work/world-cup-betting-scoreboard/world-cup-betting-scoreboard/vault/participants/Tintin&Pappa.md"
-    },
-    "prediction": {
-      "participantId": "tintin-and-pappa",
-      "groupMatches": [
-        {
-          "matchId": "A-6",
-          "homeScore": 2,
-          "awayScore": 1
-        },
-        {
-          "matchId": "H-5",
-          "homeScore": 2,
-          "awayScore": 1
-        },
-        {
-          "matchId": "L-4",
-          "homeScore": 2,
-          "awayScore": 0
-        }
-      ],
-      "groupStandings": [
-        {
-          "group": "A",
-          "positions": [
-            "MEX",
-            "CZE",
-            "KOR",
-            "RSA"
-          ]
+          "group": "I",
+          "winnerId": "FRA"
         },
         {
           "group": "J",
-          "positions": [
-            "ENG",
-            "POR",
-            "GHA",
-            "UZB"
-          ]
-        }
-      ],
-      "groupWinners": [
-        {
-          "group": "A",
-          "winnerId": "MEX"
+          "winnerId": "ARG"
         },
         {
-          "group": "J",
+          "group": "K",
+          "winnerId": "COL"
+        },
+        {
+          "group": "L",
           "winnerId": "ENG"
         }
       ],
@@ -273,69 +533,882 @@
         {
           "round": "r32",
           "advancingTeamIds": [
+            "GER",
+            "MAR",
+            "MEX",
+            "SUI",
+            "FRA",
+            "NOR",
+            "NED",
+            "USA",
             "ENG",
+            "SWE",
+            "KOR",
             "ESP",
-            "BRA"
+            "CRO",
+            "ARG",
+            "TUR",
+            "COL"
           ]
         },
         {
           "round": "r16",
           "advancingTeamIds": [
+            "GER",
+            "MEX",
+            "FRA",
+            "USA",
             "ENG",
-            "ESP"
+            "ESP",
+            "ARG",
+            "COL"
           ]
         },
         {
           "round": "qf",
           "advancingTeamIds": [
-            "ENG"
+            "GER",
+            "FRA",
+            "ESP",
+            "ARG"
           ]
         },
         {
           "round": "sf",
           "advancingTeamIds": [
-            "ENG"
-          ]
-        },
-        {
-          "round": "third",
-          "advancingTeamIds": [
-            "ESP",
+            "FRA",
             "ESP"
           ]
         },
         {
           "round": "final",
           "advancingTeamIds": [
-            "ENG",
+            "FRA",
             "ESP"
           ]
         }
       ],
+      "championId": "FRA",
       "finalists": [
-        "ENG",
+        "FRA",
         "ESP"
       ]
     }
   },
   {
     "participant": {
-      "id": "wilmer",
-      "displayName": "Wilmer",
-      "filePath": "/home/runner/work/world-cup-betting-scoreboard/world-cup-betting-scoreboard/vault/participants/Wilmer.md"
+      "id": "milton",
+      "displayName": "Milton",
+      "filePath": "/Users/tintin.torin/Library/CloudStorage/OneDrive-Valtech/Documents/Cursor/World Cup/vault/participants/Milton.md"
     },
     "prediction": {
-      "participantId": "wilmer",
+      "participantId": "milton",
       "groupMatches": [
         {
           "matchId": "A-6",
-          "homeScore": 2,
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "A-1",
+          "homeScore": 1,
           "awayScore": 1
+        },
+        {
+          "matchId": "A-3",
+          "homeScore": 1,
+          "awayScore": 0
         },
         {
           "matchId": "A-4",
           "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "A-2",
+          "homeScore": 0,
           "awayScore": 1
+        },
+        {
+          "matchId": "A-5",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "B-1",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "B-6",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "B-3",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "B-4",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "B-5",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "B-2",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "C-2",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "C-5",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "C-6",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "C-1",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "C-3",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "C-4",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "D-2",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "D-5",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "D-3",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "D-4",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "D-6",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "D-1",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "E-5",
+          "homeScore": 0,
+          "awayScore": 4
+        },
+        {
+          "matchId": "E-2",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "E-3",
+          "homeScore": 1,
+          "awayScore": 3
+        },
+        {
+          "matchId": "E-4",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "E-1",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "E-6",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "F-1",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "F-6",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "F-4",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "F-3",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "F-2",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "F-5",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-1",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-6",
+          "homeScore": 0,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-2",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-5",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "G-4",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "G-3",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "H-1",
+          "homeScore": 0,
+          "awayScore": 5
+        },
+        {
+          "matchId": "H-6",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "H-4",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "H-3",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "H-2",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "H-5",
+          "homeScore": 3,
+          "awayScore": 1
+        },
+        {
+          "matchId": "I-3",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "I-4",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "I-1",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "I-6",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "I-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "I-5",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "J-1",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "J-6",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "J-4",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "J-3",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "J-2",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "J-5",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "K-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "K-5",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "K-6",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "K-1",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "K-4",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "K-3",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "L-1",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "L-6",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "L-4",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "L-3",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "L-5",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "L-2",
+          "homeScore": 1,
+          "awayScore": 0
+        }
+      ],
+      "groupStandings": [
+        {
+          "group": "A",
+          "positions": [
+            "MEX",
+            "KOR",
+            "CZE",
+            "RSA"
+          ]
+        },
+        {
+          "group": "B",
+          "positions": [
+            "SUI",
+            "CAN",
+            "BIH",
+            "QAT"
+          ]
+        },
+        {
+          "group": "C",
+          "positions": [
+            "MAR",
+            "SCO",
+            "BRA",
+            "HAI"
+          ]
+        },
+        {
+          "group": "D",
+          "positions": [
+            "TUR",
+            "USA",
+            "PAR",
+            "AUS"
+          ]
+        },
+        {
+          "group": "E",
+          "positions": [
+            "GER",
+            "ECU",
+            "CIV",
+            "CUW"
+          ]
+        },
+        {
+          "group": "F",
+          "positions": [
+            "NED",
+            "SWE",
+            "JPN",
+            "TUN"
+          ]
+        },
+        {
+          "group": "G",
+          "positions": [
+            "BEL",
+            "IRN",
+            "NZL",
+            "EGY"
+          ]
+        },
+        {
+          "group": "H",
+          "positions": [
+            "ESP",
+            "URU",
+            "KSA",
+            "CPV"
+          ]
+        },
+        {
+          "group": "I",
+          "positions": [
+            "FRA",
+            "NOR",
+            "SEN",
+            "IRQ"
+          ]
+        },
+        {
+          "group": "J",
+          "positions": [
+            "ARG",
+            "AUT",
+            "ALG",
+            "JOR"
+          ]
+        },
+        {
+          "group": "K",
+          "positions": [
+            "COL",
+            "POR",
+            "COD",
+            "UZB"
+          ]
+        },
+        {
+          "group": "L",
+          "positions": [
+            "ENG",
+            "CRO",
+            "PAN",
+            "GHA"
+          ]
+        }
+      ],
+      "groupWinners": [
+        {
+          "group": "A",
+          "winnerId": "MEX"
+        },
+        {
+          "group": "B",
+          "winnerId": "SUI"
+        },
+        {
+          "group": "C",
+          "winnerId": "MAR"
+        },
+        {
+          "group": "D",
+          "winnerId": "TUR"
+        },
+        {
+          "group": "E",
+          "winnerId": "GER"
+        },
+        {
+          "group": "F",
+          "winnerId": "NED"
+        },
+        {
+          "group": "G",
+          "winnerId": "BEL"
+        },
+        {
+          "group": "H",
+          "winnerId": "ESP"
+        },
+        {
+          "group": "I",
+          "winnerId": "FRA"
+        },
+        {
+          "group": "J",
+          "winnerId": "ARG"
+        },
+        {
+          "group": "K",
+          "winnerId": "COL"
+        },
+        {
+          "group": "L",
+          "winnerId": "ENG"
+        }
+      ],
+      "knockout": [
+        {
+          "round": "r32",
+          "advancingTeamIds": [
+            "GER",
+            "SCO",
+            "MEX",
+            "SUI",
+            "NOR",
+            "FRA",
+            "MAR",
+            "TUR",
+            "ENG",
+            "BEL",
+            "CAN",
+            "ESP",
+            "CRO",
+            "ARG",
+            "IRN",
+            "COL"
+          ]
+        },
+        {
+          "round": "r16",
+          "advancingTeamIds": [
+            "GER",
+            "SUI",
+            "NOR",
+            "MAR",
+            "ENG",
+            "ESP",
+            "ARG",
+            "COL"
+          ]
+        },
+        {
+          "round": "qf",
+          "advancingTeamIds": [
+            "GER",
+            "NOR",
+            "ESP",
+            "ARG"
+          ]
+        },
+        {
+          "round": "sf",
+          "advancingTeamIds": [
+            "GER",
+            "ESP"
+          ]
+        },
+        {
+          "round": "final",
+          "advancingTeamIds": [
+            "ESP",
+            "GER"
+          ]
+        }
+      ],
+      "championId": "ESP",
+      "finalists": [
+        "ESP",
+        "GER"
+      ]
+    }
+  },
+  {
+    "participant": {
+      "id": "tintin-and-pappa",
+      "displayName": "Tintin&Pappa",
+      "filePath": "/Users/tintin.torin/Library/CloudStorage/OneDrive-Valtech/Documents/Cursor/World Cup/vault/participants/Tintin&Pappa.md"
+    },
+    "prediction": {
+      "participantId": "tintin-and-pappa",
+      "groupMatches": [
+        {
+          "matchId": "A-6",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "A-1",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "A-3",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "A-4",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "A-2",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "A-5",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "B-1",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "B-6",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "B-3",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "B-4",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "B-5",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "B-2",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "C-2",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "C-5",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "C-6",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "C-1",
+          "homeScore": 4,
+          "awayScore": 0
+        },
+        {
+          "matchId": "C-3",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "C-4",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "D-2",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "D-5",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "D-3",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "D-4",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "D-6",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "D-1",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "E-5",
+          "homeScore": 0,
+          "awayScore": 4
+        },
+        {
+          "matchId": "E-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "E-3",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "E-4",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "E-1",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "E-6",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "F-1",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "F-6",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "F-4",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "F-3",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "F-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "F-5",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-1",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "G-6",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-2",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-5",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-4",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "G-3",
+          "homeScore": 3,
+          "awayScore": 0
         },
         {
           "matchId": "H-1",
@@ -343,12 +1416,147 @@
           "awayScore": 3
         },
         {
+          "matchId": "H-6",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
           "matchId": "H-4",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "H-3",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "H-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "H-5",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "I-3",
           "homeScore": 2,
           "awayScore": 0
         },
         {
-          "matchId": "I-3",
+          "matchId": "I-4",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "I-1",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "I-6",
+          "homeScore": 2,
+          "awayScore": 2
+        },
+        {
+          "matchId": "I-2",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "I-5",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "J-1",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "J-6",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "J-4",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "J-3",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "J-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "J-5",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "K-2",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "K-5",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "K-6",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "K-1",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "K-4",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "K-3",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "L-1",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "L-6",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "L-4",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "L-3",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "L-5",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "L-2",
           "homeScore": 2,
           "awayScore": 1
         }
@@ -358,18 +1566,63 @@
           "group": "A",
           "positions": [
             "MEX",
-            "CZE",
             "KOR",
+            "CZE",
             "RSA"
+          ]
+        },
+        {
+          "group": "B",
+          "positions": [
+            "SUI",
+            "CAN",
+            "BIH",
+            "QAT"
           ]
         },
         {
           "group": "C",
           "positions": [
             "BRA",
-            "SUI",
-            "CAN",
-            "QAT"
+            "MAR",
+            "SCO",
+            "HAI"
+          ]
+        },
+        {
+          "group": "D",
+          "positions": [
+            "USA",
+            "TUR",
+            "PAR",
+            "AUS"
+          ]
+        },
+        {
+          "group": "E",
+          "positions": [
+            "GER",
+            "ECU",
+            "CIV",
+            "CUW"
+          ]
+        },
+        {
+          "group": "F",
+          "positions": [
+            "NED",
+            "SWE",
+            "JPN",
+            "TUN"
+          ]
+        },
+        {
+          "group": "G",
+          "positions": [
+            "BEL",
+            "EGY",
+            "IRN",
+            "NZL"
           ]
         },
         {
@@ -380,6 +1633,42 @@
             "CPV",
             "KSA"
           ]
+        },
+        {
+          "group": "I",
+          "positions": [
+            "FRA",
+            "NOR",
+            "SEN",
+            "IRQ"
+          ]
+        },
+        {
+          "group": "J",
+          "positions": [
+            "ARG",
+            "AUT",
+            "ALG",
+            "JOR"
+          ]
+        },
+        {
+          "group": "K",
+          "positions": [
+            "POR",
+            "COL",
+            "COD",
+            "UZB"
+          ]
+        },
+        {
+          "group": "L",
+          "positions": [
+            "ENG",
+            "CRO",
+            "GHA",
+            "PAN"
+          ]
         }
       ],
       "groupWinners": [
@@ -388,61 +1677,709 @@
           "winnerId": "MEX"
         },
         {
+          "group": "B",
+          "winnerId": "SUI"
+        },
+        {
           "group": "C",
           "winnerId": "BRA"
         },
         {
+          "group": "D",
+          "winnerId": "USA"
+        },
+        {
+          "group": "E",
+          "winnerId": "GER"
+        },
+        {
+          "group": "F",
+          "winnerId": "NED"
+        },
+        {
+          "group": "G",
+          "winnerId": "BEL"
+        },
+        {
           "group": "H",
           "winnerId": "ESP"
+        },
+        {
+          "group": "I",
+          "winnerId": "FRA"
+        },
+        {
+          "group": "J",
+          "winnerId": "ARG"
+        },
+        {
+          "group": "K",
+          "winnerId": "POR"
+        },
+        {
+          "group": "L",
+          "winnerId": "ENG"
         }
       ],
       "knockout": [
         {
           "round": "r32",
           "advancingTeamIds": [
-            "BRA",
-            "ESP",
+            "GER",
             "FRA",
-            "ARG"
+            "CAN",
+            "NED",
+            "COL",
+            "BEL",
+            "USA",
+            "ESP",
+            "BRA",
+            "NOR",
+            "MEX",
+            "ENG",
+            "ARG",
+            "URU",
+            "SUI",
+            "POR"
           ]
         },
         {
           "round": "r16",
           "advancingTeamIds": [
+            "FRA",
+            "NED",
+            "BEL",
+            "ESP",
             "BRA",
-            "ESP"
+            "ENG",
+            "ARG",
+            "POR"
           ]
         },
         {
           "round": "qf",
           "advancingTeamIds": [
-            "BRA"
+            "FRA",
+            "ESP",
+            "ENG",
+            "ARG"
           ]
         },
         {
           "round": "sf",
           "advancingTeamIds": [
-            "BRA"
+            "FRA",
+            "ENG"
           ]
         },
         {
-          "round": "third",
+          "round": "final",
           "advancingTeamIds": [
+            "FRA",
+            "ENG"
+          ]
+        }
+      ],
+      "championId": "FRA",
+      "finalists": [
+        "FRA",
+        "ENG"
+      ]
+    }
+  },
+  {
+    "participant": {
+      "id": "wilmer",
+      "displayName": "Wilmer",
+      "filePath": "/Users/tintin.torin/Library/CloudStorage/OneDrive-Valtech/Documents/Cursor/World Cup/vault/participants/Wilmer.md"
+    },
+    "prediction": {
+      "participantId": "wilmer",
+      "groupMatches": [
+        {
+          "matchId": "A-6",
+          "homeScore": 3,
+          "awayScore": 1
+        },
+        {
+          "matchId": "A-1",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "A-3",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "A-4",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "A-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "A-5",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "B-1",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "B-6",
+          "homeScore": 1,
+          "awayScore": 3
+        },
+        {
+          "matchId": "B-3",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "B-4",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "B-5",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "B-2",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "C-2",
+          "homeScore": 2,
+          "awayScore": 3
+        },
+        {
+          "matchId": "C-5",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "C-6",
+          "homeScore": 3,
+          "awayScore": 3
+        },
+        {
+          "matchId": "C-1",
+          "homeScore": 4,
+          "awayScore": 0
+        },
+        {
+          "matchId": "C-3",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "C-4",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "D-2",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "D-5",
+          "homeScore": 1,
+          "awayScore": 3
+        },
+        {
+          "matchId": "D-3",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "D-4",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "D-6",
+          "homeScore": 3,
+          "awayScore": 2
+        },
+        {
+          "matchId": "D-1",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "E-5",
+          "homeScore": 0,
+          "awayScore": 4
+        },
+        {
+          "matchId": "E-2",
+          "homeScore": 2,
+          "awayScore": 2
+        },
+        {
+          "matchId": "E-3",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "E-4",
+          "homeScore": 1,
+          "awayScore": 3
+        },
+        {
+          "matchId": "E-1",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "E-6",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "F-1",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "F-6",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "F-4",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "F-3",
+          "homeScore": 1,
+          "awayScore": 0
+        },
+        {
+          "matchId": "F-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "F-5",
+          "homeScore": 3,
+          "awayScore": 1
+        },
+        {
+          "matchId": "G-1",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "G-6",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "G-2",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-5",
+          "homeScore": 3,
+          "awayScore": 1
+        },
+        {
+          "matchId": "G-4",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "G-3",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "H-1",
+          "homeScore": 0,
+          "awayScore": 4
+        },
+        {
+          "matchId": "H-6",
+          "homeScore": 1,
+          "awayScore": 3
+        },
+        {
+          "matchId": "H-4",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "H-3",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "H-2",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "H-5",
+          "homeScore": 4,
+          "awayScore": 3
+        },
+        {
+          "matchId": "I-3",
+          "homeScore": 3,
+          "awayScore": 2
+        },
+        {
+          "matchId": "I-4",
+          "homeScore": 0,
+          "awayScore": 4
+        },
+        {
+          "matchId": "I-1",
+          "homeScore": 3,
+          "awayScore": 1
+        },
+        {
+          "matchId": "I-6",
+          "homeScore": 3,
+          "awayScore": 1
+        },
+        {
+          "matchId": "I-2",
+          "homeScore": 2,
+          "awayScore": 3
+        },
+        {
+          "matchId": "I-5",
+          "homeScore": 1,
+          "awayScore": 2
+        },
+        {
+          "matchId": "J-1",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "J-6",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "J-4",
+          "homeScore": 2,
+          "awayScore": 3
+        },
+        {
+          "matchId": "J-3",
+          "homeScore": 2,
+          "awayScore": 1
+        },
+        {
+          "matchId": "J-2",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "J-5",
+          "homeScore": 4,
+          "awayScore": 0
+        },
+        {
+          "matchId": "K-2",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "K-5",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "K-6",
+          "homeScore": 4,
+          "awayScore": 1
+        },
+        {
+          "matchId": "K-1",
+          "homeScore": 0,
+          "awayScore": 2
+        },
+        {
+          "matchId": "K-4",
+          "homeScore": 1,
+          "awayScore": 3
+        },
+        {
+          "matchId": "K-3",
+          "homeScore": 1,
+          "awayScore": 1
+        },
+        {
+          "matchId": "L-1",
+          "homeScore": 0,
+          "awayScore": 1
+        },
+        {
+          "matchId": "L-6",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "L-4",
+          "homeScore": 3,
+          "awayScore": 0
+        },
+        {
+          "matchId": "L-3",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "L-5",
+          "homeScore": 4,
+          "awayScore": 1
+        },
+        {
+          "matchId": "L-2",
+          "homeScore": 2,
+          "awayScore": 1
+        }
+      ],
+      "groupStandings": [
+        {
+          "group": "A",
+          "positions": [
+            "MEX",
+            "CZE",
+            "KOR",
+            "RSA"
+          ]
+        },
+        {
+          "group": "B",
+          "positions": [
+            "SUI",
+            "BIH",
+            "CAN",
+            "QAT"
+          ]
+        },
+        {
+          "group": "C",
+          "positions": [
+            "MAR",
+            "SCO",
+            "BRA",
+            "HAI"
+          ]
+        },
+        {
+          "group": "D",
+          "positions": [
+            "TUR",
+            "USA",
+            "AUS",
+            "PAR"
+          ]
+        },
+        {
+          "group": "E",
+          "positions": [
+            "GER",
+            "ECU",
+            "CIV",
+            "CUW"
+          ]
+        },
+        {
+          "group": "F",
+          "positions": [
+            "SWE",
+            "NED",
+            "JPN",
+            "TUN"
+          ]
+        },
+        {
+          "group": "G",
+          "positions": [
+            "EGY",
+            "BEL",
+            "NZL",
+            "IRN"
+          ]
+        },
+        {
+          "group": "H",
+          "positions": [
             "ESP",
+            "URU",
+            "KSA",
+            "CPV"
+          ]
+        },
+        {
+          "group": "I",
+          "positions": [
+            "NOR",
+            "FRA",
+            "SEN",
+            "IRQ"
+          ]
+        },
+        {
+          "group": "J",
+          "positions": [
+            "AUT",
+            "ARG",
+            "ALG",
+            "JOR"
+          ]
+        },
+        {
+          "group": "K",
+          "positions": [
+            "POR",
+            "COL",
+            "UZB",
+            "COD"
+          ]
+        },
+        {
+          "group": "L",
+          "positions": [
+            "ENG",
+            "CRO",
+            "GHA",
+            "PAN"
+          ]
+        }
+      ],
+      "groupWinners": [
+        {
+          "group": "A",
+          "winnerId": "MEX"
+        },
+        {
+          "group": "B",
+          "winnerId": "SUI"
+        },
+        {
+          "group": "C",
+          "winnerId": "MAR"
+        },
+        {
+          "group": "D",
+          "winnerId": "TUR"
+        },
+        {
+          "group": "E",
+          "winnerId": "GER"
+        },
+        {
+          "group": "F",
+          "winnerId": "SWE"
+        },
+        {
+          "group": "G",
+          "winnerId": "EGY"
+        },
+        {
+          "group": "H",
+          "winnerId": "ESP"
+        },
+        {
+          "group": "I",
+          "winnerId": "NOR"
+        },
+        {
+          "group": "J",
+          "winnerId": "AUT"
+        },
+        {
+          "group": "K",
+          "winnerId": "POR"
+        },
+        {
+          "group": "L",
+          "winnerId": "ENG"
+        }
+      ],
+      "knockout": [
+        {
+          "round": "r32",
+          "advancingTeamIds": [
+            "GER",
+            "SWE",
+            "MEX",
+            "JPN",
+            "FRA",
+            "NOR",
+            "NED",
+            "TUR",
+            "ENG",
+            "SEN",
+            "CZE",
+            "ESP",
+            "CRO",
+            "URU",
+            "USA",
+            "POR"
+          ]
+        },
+        {
+          "round": "r16",
+          "advancingTeamIds": [
+            "GER",
+            "MEX",
+            "NOR",
+            "NED",
+            "ENG",
+            "ESP",
+            "CRO",
+            "POR"
+          ]
+        },
+        {
+          "round": "qf",
+          "advancingTeamIds": [
+            "GER",
+            "NOR",
+            "ESP",
+            "POR"
+          ]
+        },
+        {
+          "round": "sf",
+          "advancingTeamIds": [
+            "GER",
             "ESP"
           ]
         },
         {
           "round": "final",
           "advancingTeamIds": [
-            "BRA",
-            "FRA"
+            "ESP",
+            "GER"
           ]
         }
       ],
+      "championId": "ESP",
       "finalists": [
-        "BRA",
-        "FRA"
+        "ESP",
+        "GER"
       ]
     }
   }
