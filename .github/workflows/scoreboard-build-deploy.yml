@@ -14,6 +14,10 @@ on:
       - 'vite.config.ts'
       - 'index.html'
   workflow_dispatch:
+  workflow_run:
+    workflows: ['Scoreboard Fetch Results']
+    types: [completed]
+    branches: [main]
 
 permissions:
   contents: read
@@ -26,9 +30,13 @@ concurrency:
 
 jobs:
   build:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Fetch commits via GITHUB_TOKEN don't trigger push workflows; use latest main.
+          ref: ${{ github.event_name == 'workflow_run' && 'main' || github.ref }}
 
       - uses: actions/setup-node@v4
         with:
