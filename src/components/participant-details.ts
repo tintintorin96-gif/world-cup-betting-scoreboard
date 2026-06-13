@@ -8,32 +8,59 @@ interface DetailSection {
 
 const DETAIL_SECTIONS: DetailSection[] = [
   {
-    title: 'Group Stage',
-    filter: (e) => ['exact_score', 'correct_outcome', 'wrong_outcome'].includes(e.category),
+    title: 'Group Matches',
+    filter: (e) =>
+      Boolean(e.matchId) &&
+      ['exact_score', 'correct_outcome', 'wrong_outcome', 'pending'].includes(e.category),
   },
   {
     title: 'Group Winners',
-    filter: (e) => e.category === 'group_winner',
+    filter: (e) =>
+      e.category === 'group_winner' ||
+      (e.category === 'pending' && e.description.endsWith(' winner')),
   },
   {
     title: 'Knockout',
     filter: (e) =>
       ['round_of_32', 'round_of_16', 'quarter_final', 'semi_final', 'third_place_reach', 'third_place_winner'].includes(
         e.category,
-      ),
+      ) ||
+      (e.category === 'pending' && Boolean(e.round) && e.round !== 'final'),
   },
   {
-    title: 'Finalists',
-    filter: (e) => e.category === 'finalist',
-  },
-  {
-    title: 'Champion',
-    filter: (e) => e.category === 'champion',
+    title: 'Finalists & Champion',
+    filter: (e) =>
+      e.category === 'finalist' ||
+      e.category === 'champion' ||
+      (e.category === 'pending' && e.round === 'final'),
   },
 ];
 
-function awardedEvents(events: ScoringEvent[], filter: (e: ScoringEvent) => boolean): ScoringEvent[] {
-  return events.filter((e) => e.category !== 'pending' && e.points > 0 && filter(e));
+function formatPoints(event: ScoringEvent): string {
+  if (event.category === 'pending') return 'Pending';
+  if (event.points > 0) return `+${event.points}`;
+  return '0';
+}
+
+function detailEventRow(event: ScoringEvent): HTMLElement {
+  const pointsClass =
+    event.category === 'pending'
+      ? 'detail-event-points is-pending'
+      : event.points > 0
+        ? 'detail-event-points is-positive'
+        : 'detail-event-points';
+
+  return h('div', { className: `detail-event detail-event--${event.category}` },
+    h('p', { className: 'detail-event-match' }, event.description),
+    h('p', { className: 'detail-event-picks' },
+      h('span', {}, `Pick: ${event.prediction}`),
+      h('span', {}, `Result: ${event.actualResult}`),
+    ),
+    h('p', { className: 'detail-event-meta' },
+      event.label,
+      h('span', { className: pointsClass }, formatPoints(event)),
+    ),
+  );
 }
 
 function detailSection(title: string, events: ScoringEvent[]): HTMLElement | null {
@@ -42,15 +69,7 @@ function detailSection(title: string, events: ScoringEvent[]): HTMLElement | nul
   return h('section', { className: 'detail-section' },
     h('h4', { className: 'detail-section-title' }, title),
     h('div', { className: 'detail-events' },
-      ...events.map((event) =>
-        h('div', { className: 'detail-event' },
-          h('p', { className: 'detail-event-match' }, event.description),
-          h('p', { className: 'detail-event-meta' },
-            event.label,
-            h('span', { className: 'detail-event-points' }, `+${event.points}`),
-          ),
-        ),
-      ),
+      ...events.map((event) => detailEventRow(event)),
     ),
   );
 }
@@ -65,7 +84,8 @@ export function participantDetails(breakdown: ScoringBreakdown | undefined): HTM
 
   let hasContent = false;
   for (const section of DETAIL_SECTIONS) {
-    const block = detailSection(section.title, awardedEvents(breakdown.events, section.filter));
+    const events = breakdown.events.filter(section.filter);
+    const block = detailSection(section.title, events);
     if (block) {
       panel.append(block);
       hasContent = true;
@@ -73,7 +93,7 @@ export function participantDetails(breakdown: ScoringBreakdown | undefined): HTM
   }
 
   if (!hasContent) {
-    panel.append(h('p', { className: 'details-empty' }, 'No points scored yet.'));
+    panel.append(h('p', { className: 'details-empty' }, 'No picks recorded yet.'));
   }
 
   return panel;

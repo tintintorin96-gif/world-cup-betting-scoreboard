@@ -44,6 +44,24 @@ export function calculateKnockoutScore(
       }
 
       for (const teamId of pred.advancingTeamIds) {
+        if (thirdMatches.length === 0) {
+          events.push(
+            createScoringEvent({
+              participantId,
+              type: 'pending',
+              points: 0,
+              label: 'Awaiting third-place match',
+              description: getTeamLabel(teamId),
+              prediction: 'Reaches third-place match',
+              actualResult: 'Knockout stage in progress',
+              teamId,
+              round: 'third',
+              timestamp,
+            }),
+          );
+          continue;
+        }
+
         const reached = participants.has(teamId);
         events.push(
           createScoringEvent({

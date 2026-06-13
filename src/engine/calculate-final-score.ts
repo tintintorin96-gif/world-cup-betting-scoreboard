@@ -7,6 +7,7 @@ import { getTeamDisplay } from '../normalize/team-registry';
 import { calculateGroupWinnerScore } from './calculate-group-winner-score';
 import { calculateKnockoutScore } from './calculate-knockout-score';
 import { calculateMatchScore } from './calculate-match-score';
+import { computeGroupStanding, isGroupStageComplete } from './compute-group-standings';
 import { resetEventCounter } from './create-scoring-event';
 import { deriveBreakdownFromEvents } from './derive-breakdown';
 
@@ -43,17 +44,22 @@ export function calculateFinalScore(
   }
 
   for (const gw of prediction.groupWinners) {
-    const standing = results.groupStandings.find((s) => s.group === gw.group);
-    const event = calculateGroupWinnerScore(
-      participantId,
-      gw,
-      standing,
-      config,
-      getLabel(gw.winnerId),
-      getLabel,
-      timestamp,
+    const groupComplete = isGroupStageComplete(gw.group, tournament, results);
+    const standing = groupComplete
+      ? computeGroupStanding(gw.group, tournament, results, registry)
+      : null;
+    events.push(
+      calculateGroupWinnerScore(
+        participantId,
+        gw,
+        standing,
+        groupComplete,
+        config,
+        getLabel(gw.winnerId),
+        getLabel,
+        timestamp,
+      ),
     );
-    if (event) events.push(event);
   }
 
   events.push(

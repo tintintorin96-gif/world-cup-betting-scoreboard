@@ -4,10 +4,13 @@ import tournamentJson from '../../config/tournament.json';
 import registryJson from '../../data/teams.registry.json';
 import {
   calculateMatchScore,
+  calculateGroupWinnerScore,
   calculateLeaderboard,
   computeMaxPossibleScore,
+  computeGroupStanding,
   deriveBreakdownFromEvents,
   createScoringEvent,
+  isGroupStageComplete,
 } from '../../src/engine';
 import type { ScoringConfig } from '../../src/types/scoring';
 import type { TournamentConfig } from '../../src/types/tournament';
@@ -40,6 +43,36 @@ function buildTournament(): TournamentConfig {
 }
 
 const tournament = buildTournament();
+
+function groupAMatchesFinished() {
+  const mexicoWins = new Set(['A-1', 'A-2', 'A-3']);
+  return {
+    version: 1,
+    fetchedAt: new Date().toISOString(),
+    matches: tournament.groupMatches
+      .filter((match) => match.group === 'A')
+      .map((match) => ({
+        matchId: match.matchId,
+        status: 'finished' as const,
+        homeTeamId: match.homeTeamId!,
+        awayTeamId: match.awayTeamId!,
+        homeScore: mexicoWins.has(match.matchId)
+          ? 1
+          : match.homeTeamId === 'MEX'
+            ? 1
+            : 0,
+        awayScore: mexicoWins.has(match.matchId)
+          ? 0
+          : match.awayTeamId === 'MEX'
+            ? 0
+            : 1,
+        updatedAt: new Date().toISOString(),
+        source: 'manual' as const,
+      })),
+    groupStandings: [],
+    knockout: [],
+  };
+}
 
 describe('scoring engine', () => {
   it('awards exact score points with full audit fields', () => {
@@ -139,6 +172,65 @@ describe('scoring engine', () => {
 
   it('max possible score equals 657', () => {
     expect(computeMaxPossibleScore(config, tournament)).toBe(657);
+  });
+
+  it('does not award group winner points until the group is complete', () => {
+    const groupAMatches = tournament.groupMatches.filter((match) => match.group === 'A');
+    const partialResults = {
+      version: 1,
+      fetchedAt: new Date().toISOString(),
+      matches: [
+        {
+          matchId: 'A-1',
+          status: 'finished' as const,
+          homeTeamId: 'MEX',
+          awayTeamId: 'RSA',
+          homeScore: 2,
+          awayScore: 0,
+          updatedAt: new Date().toISOString(),
+          source: 'manual' as const,
+        },
+      ],
+      groupStandings: [],
+      knockout: [],
+    };
+
+    expect(isGroupStageComplete('A', tournament, partialResults)).toBe(false);
+    expect(computeGroupStanding('A', tournament, partialResults, registry)).toBeNull();
+
+    const pending = calculateGroupWinnerScore(
+      'wilmer',
+      { group: 'A', winnerId: 'MEX' },
+      null,
+      false,
+      config,
+      'Mexico',
+      (id) => id,
+      new Date().toISOString(),
+    );
+    expect(pending.category).toBe('pending');
+    expect(pending.points).toBe(0);
+  });
+
+  it('awards group winner points after all group matches finish', () => {
+    const finishedGroupA = groupAMatchesFinished();
+    expect(isGroupStageComplete('A', tournament, finishedGroupA)).toBe(true);
+
+    const standing = computeGroupStanding('A', tournament, finishedGroupA, registry);
+    expect(standing?.positions[0]).toBe('MEX');
+
+    const event = calculateGroupWinnerScore(
+      'wilmer',
+      { group: 'A', winnerId: 'MEX' },
+      standing,
+      true,
+      config,
+      'Mexico',
+      (id) => id,
+      new Date().toISOString(),
+    );
+    expect(event.points).toBe(5);
+    expect(event.category).toBe('group_winner');
   });
 
   it('calculates leaderboard with tiebreak', () => {

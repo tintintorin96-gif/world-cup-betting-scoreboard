@@ -3,6 +3,7 @@ export * from './scoring-categories';
 export * from './create-scoring-event';
 export * from './derive-breakdown';
 export * from './calculate-match-score';
+export * from './compute-group-standings';
 export * from './calculate-group-winner-score';
 export * from './calculate-knockout-score';
 export * from './calculate-final-score';

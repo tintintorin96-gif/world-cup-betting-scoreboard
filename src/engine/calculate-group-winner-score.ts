@@ -7,13 +7,40 @@ import { getPoints } from './scoring-config';
 export function calculateGroupWinnerScore(
   participantId: string,
   prediction: GroupWinnerPrediction,
-  standing: GroupStanding | undefined,
+  standing: GroupStanding | null,
+  groupComplete: boolean,
   config: ScoringConfig,
   predictedTeamName: string,
   actualTeamName: (id: string) => string,
   timestamp: string,
-): ScoringEvent | null {
-  if (!standing || standing.positions.length === 0) return null;
+): ScoringEvent {
+  if (!groupComplete) {
+    return createScoringEvent({
+      participantId,
+      type: 'pending',
+      points: 0,
+      label: 'Awaiting group completion',
+      description: `Group ${prediction.group} winner`,
+      prediction: predictedTeamName,
+      actualResult: 'Group stage in progress',
+      teamId: prediction.winnerId,
+      timestamp,
+    });
+  }
+
+  if (!standing || standing.positions.length === 0) {
+    return createScoringEvent({
+      participantId,
+      type: 'pending',
+      points: 0,
+      label: 'Awaiting group result',
+      description: `Group ${prediction.group} winner`,
+      prediction: predictedTeamName,
+      actualResult: 'Standing unavailable',
+      teamId: prediction.winnerId,
+      timestamp,
+    });
+  }
 
   const actualWinnerId = standing.positions[0];
   const actualWinnerName = actualTeamName(actualWinnerId);

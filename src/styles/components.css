@@ -238,6 +238,16 @@
   color: var(--color-text-primary);
 }
 
+.detail-event-picks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  margin-top: var(--space-xs);
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--color-text-secondary);
+}
+
 .detail-event-meta {
   display: flex;
   justify-content: space-between;
@@ -254,6 +264,16 @@
   font-variant-numeric: tabular-nums;
   color: var(--color-text-secondary);
   white-space: nowrap;
+}
+
+.detail-event-points.is-positive {
+  color: var(--color-text-primary);
+}
+
+.detail-event-points.is-pending {
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-weight: 400;
 }
 
 .details-empty {
