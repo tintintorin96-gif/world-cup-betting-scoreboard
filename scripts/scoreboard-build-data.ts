@@ -15,6 +15,7 @@ import {
   computeMaxPossibleScore,
   deriveBreakdownFromEvents,
 } from '../src/engine';
+import { generateGroupMatches } from './tournament-utils';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const PUBLIC_DATA = path.join(ROOT, 'public/data');
@@ -35,38 +36,10 @@ function writeJson(filePath: string, data: unknown) {
   writeFileSync(filePath, JSON.stringify(data, null, 2));
 }
 
-function generateGroupMatches(tournament: TournamentConfig, registry: TeamRegistry): TournamentConfig {
-  if (tournament.groupMatches.length > 0) return tournament;
-
-  const groups = tournament.groups;
-  const groupMatches: TournamentConfig['groupMatches'] = [];
-
-  for (const group of groups) {
-    const teams = registry.teams.filter((t) => t.group === group);
-    let matchNum = 1;
-    for (let i = 0; i < teams.length; i++) {
-      for (let j = i + 1; j < teams.length; j++) {
-        groupMatches.push({
-          matchId: `${group}-${matchNum}`,
-          group,
-          homeSlot: teams[i].id,
-          awaySlot: teams[j].id,
-          homeTeamId: teams[i].id,
-          awayTeamId: teams[j].id,
-        });
-        matchNum++;
-      }
-    }
-  }
-
-  return { ...tournament, groupMatches };
-}
-
 function getDemoResults(tournament: TournamentConfig): ResultsBundle {
   const now = new Date().toISOString();
   const demoFinished = ['A-1', 'G-2'];
   const matches = tournament.groupMatches.map((m) => {
-    const isDemo = demoFinished.includes(m.matchId);
     if (m.matchId === 'A-1') {
       return {
         matchId: m.matchId,

@@ -37,10 +37,13 @@ Enable GitHub Pages with source: **GitHub Actions**.
 
 ## Secrets (optional live data)
 
-| Secret | Purpose |
-|--------|---------|
-| `FOOTBALL_DATA_API_KEY` | Primary API (football-data.org) |
-| `API_FOOTBALL_KEY` | Fallback API (api-sports.io) |
+| Secret | Required | Purpose |
+|--------|----------|---------|
+| `WORLDCUP2026_TOKEN` | No | JWT for [worldcup26.ir](https://worldcup26.ir) if public endpoints start requiring auth. Get one via `POST /auth/authenticate`. |
+| `FOOTBALL_DATA_API_KEY` | No | Fallback API ([football-data.org](https://www.football-data.org/)) |
+| `API_FOOTBALL_KEY` | No | Fallback API ([api-sports.io](https://www.api-football.com/)) |
+
+Live scores are fetched from **worldcup26.ir** by default (free, no key required today). Paid APIs are optional fallbacks. Manual overrides in `public/data/results.manual.json` always win.
 
 Keys are used only in CI — never exposed to the browser.
 
@@ -67,5 +70,5 @@ Place `public/data/results.manual.json` with the same schema as `results.json`. 
 
 - **Source of truth:** Markdown in `vault/`
 - **Scoring:** Config-driven pure functions in `src/engine/`
-- **Live data:** GitHub Actions fetches APIs → commits JSON → rebuilds site
+- **Live data:** GitHub Actions fetches [worldcup26.ir](https://worldcup26.ir) (and optional fallback APIs) → commits JSON → rebuilds site
 - **UI:** Vanilla TypeScript SPA with hash router

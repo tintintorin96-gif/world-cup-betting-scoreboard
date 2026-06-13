@@ -4,6 +4,7 @@ import tournamentJson from '../config/tournament.json';
 import registryJson from '../data/teams.registry.json';
 import { fetchFootballDataResults } from '../src/adapters/football-data-org';
 import { mergeResults } from './merge-results';
+import { generateGroupMatches } from './tournament-utils';
 import type { ResultsBundle, TournamentConfig } from '../src/types';
 import type { TeamRegistry } from '../src/types/team';
 
@@ -18,7 +19,7 @@ async function main() {
     process.exit(1);
   }
 
-  const tournament = tournamentJson as TournamentConfig;
+  const tournament = generateGroupMatches(tournamentJson as TournamentConfig, registry);
   const registry = registryJson as TeamRegistry;
   const previous = existsSync(RESULTS_PATH)
     ? (JSON.parse(readFileSync(RESULTS_PATH, 'utf-8')) as ResultsBundle)
@@ -35,7 +36,7 @@ async function main() {
     console.warn('football-data.org fetch failed:', err);
   }
 
-  const merged = mergeResults(manual, primary, null, previous);
+  const merged = mergeResults(manual, previous, primary);
   writeFileSync(RESULTS_PATH, JSON.stringify(merged, null, 2));
   console.log(`Results written v${merged.version}`);
 }

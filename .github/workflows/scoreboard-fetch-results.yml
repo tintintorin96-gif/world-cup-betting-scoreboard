@@ -28,6 +28,7 @@ jobs:
 
       - name: Fetch from APIs
         env:
+          WORLDCUP2026_TOKEN: ${{ secrets.WORLDCUP2026_TOKEN }}
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: npx tsx scripts/fetch-api-football.ts

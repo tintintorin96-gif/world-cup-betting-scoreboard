@@ -10,9 +10,35 @@
       "label": "Correct outcome",
       "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
       "prediction": "🇲🇽 Mexico win",
-      "actualResult": "2-1",
+      "actualResult": "2-0",
       "matchId": "A-1",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
+    },
+    {
+      "id": "milton:group_winner:MEX:3",
+      "participantId": "milton",
+      "type": "group_winner",
+      "category": "group_winner",
+      "points": 5,
+      "label": "Correct group winner",
+      "description": "Group A winner",
+      "prediction": "🇲🇽 Mexico",
+      "actualResult": "🇲🇽 Mexico",
+      "teamId": "MEX",
+      "timestamp": "2026-06-13T07:19:28.750Z"
+    },
+    {
+      "id": "milton:group_winner:MAR:4",
+      "participantId": "milton",
+      "type": "group_winner",
+      "category": "group_winner",
+      "points": 0,
+      "label": "Wrong group winner",
+      "description": "Group C winner",
+      "prediction": "🇲🇦 Morocco",
+      "actualResult": "🇧🇷 Brazil",
+      "teamId": "MAR",
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
       "id": "milton:third_place_reach:BRA:5",
@@ -26,7 +52,7 @@
       "actualResult": "Did not reach third-place match",
       "teamId": "BRA",
       "round": "third",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
       "id": "milton:third_place_reach:BRA:6",
@@ -40,36 +66,10 @@
       "actualResult": "Did not reach third-place match",
       "teamId": "BRA",
       "round": "third",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
-      "id": "milton:pending:B-6:2",
-      "participantId": "milton",
-      "type": "pending",
-      "category": "pending",
-      "points": 0,
-      "label": "Awaiting result",
-      "description": "🇶🇦 Qatar vs 🇧🇷 Brazil",
-      "prediction": "0-4",
-      "actualResult": "Match not finished",
-      "matchId": "B-6",
-      "timestamp": "2026-06-12T13:56:55.411Z"
-    },
-    {
-      "id": "milton:pending:C-3:3",
-      "participantId": "milton",
-      "type": "pending",
-      "category": "pending",
-      "points": 0,
-      "label": "Awaiting result",
-      "description": "🇺🇸 United States vs 🇲🇦 Morocco",
-      "prediction": "1-2",
-      "actualResult": "Match not finished",
-      "matchId": "C-3",
-      "timestamp": "2026-06-12T13:56:55.411Z"
-    },
-    {
-      "id": "milton:pending:G-3:4",
+      "id": "milton:pending:G-3:2",
       "participantId": "milton",
       "type": "pending",
       "category": "pending",
@@ -79,17 +79,17 @@
       "prediction": "2-2",
       "actualResult": "Match not finished",
       "matchId": "G-3",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     }
   ],
-  "totalPoints": 2,
-  "groupStagePoints": 2,
+  "totalPoints": 7,
+  "groupStagePoints": 7,
   "knockoutPoints": 0,
   "pointsByCategory": {
     "exact_score": 0,
     "correct_outcome": 2,
     "wrong_outcome": 0,
-    "group_winner": 0,
+    "group_winner": 5,
     "round_of_32": 0,
     "round_of_16": 0,
     "quarter_final": 0,
@@ -100,11 +100,11 @@
     "champion": 0,
     "pending": 0
   },
-  "correctPicks": 1,
-  "missedPicks": 2,
+  "correctPicks": 2,
+  "missedPicks": 3,
   "exactScoreHits": 0,
   "correctOutcomeHits": 1,
-  "groupWinnerHits": 0,
+  "groupWinnerHits": 1,
   "knockoutHits": 0,
-  "accuracyPct": 33
+  "accuracyPct": 40
 }

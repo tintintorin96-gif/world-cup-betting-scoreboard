@@ -2,31 +2,43 @@
   "participantId": "tintin-and-pappa",
   "events": [
     {
-      "id": "tintin-and-pappa:exact_score:A-1:1",
+      "id": "tintin-and-pappa:correct_outcome:A-1:1",
       "participantId": "tintin-and-pappa",
-      "type": "group_exact_score",
-      "category": "exact_score",
-      "points": 5,
-      "label": "Exact score",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
       "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
-      "prediction": "2-1",
-      "actualResult": "2-1",
+      "prediction": "🇲🇽 Mexico win",
+      "actualResult": "2-0",
       "matchId": "A-1",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
-      "id": "tintin-and-pappa:third_place_reach:ESP:5",
+      "id": "tintin-and-pappa:group_winner:MEX:4",
       "participantId": "tintin-and-pappa",
-      "type": "knockout_third_reach",
-      "category": "third_place_reach",
+      "type": "group_winner",
+      "category": "group_winner",
+      "points": 5,
+      "label": "Correct group winner",
+      "description": "Group A winner",
+      "prediction": "🇲🇽 Mexico",
+      "actualResult": "🇲🇽 Mexico",
+      "teamId": "MEX",
+      "timestamp": "2026-06-13T07:19:28.750Z"
+    },
+    {
+      "id": "tintin-and-pappa:group_winner:ENG:5",
+      "participantId": "tintin-and-pappa",
+      "type": "group_winner",
+      "category": "group_winner",
       "points": 0,
-      "label": "Missed third-place reach",
-      "description": "🇪🇸 Spain",
-      "prediction": "Reaches third-place match",
-      "actualResult": "Did not reach third-place match",
-      "teamId": "ESP",
-      "round": "third",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "label": "Wrong group winner",
+      "description": "Group J winner",
+      "prediction": "🏴 England",
+      "actualResult": "🇦🇷 Argentina",
+      "teamId": "ENG",
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
       "id": "tintin-and-pappa:third_place_reach:ESP:6",
@@ -40,23 +52,24 @@
       "actualResult": "Did not reach third-place match",
       "teamId": "ESP",
       "round": "third",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
-      "id": "tintin-and-pappa:pending:B-6:2",
+      "id": "tintin-and-pappa:third_place_reach:ESP:7",
       "participantId": "tintin-and-pappa",
-      "type": "pending",
-      "category": "pending",
+      "type": "knockout_third_reach",
+      "category": "third_place_reach",
       "points": 0,
-      "label": "Awaiting result",
-      "description": "🇶🇦 Qatar vs 🇧🇷 Brazil",
-      "prediction": "0-3",
-      "actualResult": "Match not finished",
-      "matchId": "B-6",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "label": "Missed third-place reach",
+      "description": "🇪🇸 Spain",
+      "prediction": "Reaches third-place match",
+      "actualResult": "Did not reach third-place match",
+      "teamId": "ESP",
+      "round": "third",
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
-      "id": "tintin-and-pappa:pending:G-3:3",
+      "id": "tintin-and-pappa:pending:G-3:2",
       "participantId": "tintin-and-pappa",
       "type": "pending",
       "category": "pending",
@@ -66,10 +79,10 @@
       "prediction": "2-1",
       "actualResult": "Match not finished",
       "matchId": "G-3",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
-      "id": "tintin-and-pappa:pending:J-6:4",
+      "id": "tintin-and-pappa:pending:J-6:3",
       "participantId": "tintin-and-pappa",
       "type": "pending",
       "category": "pending",
@@ -79,17 +92,17 @@
       "prediction": "0-2",
       "actualResult": "Match not finished",
       "matchId": "J-6",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     }
   ],
-  "totalPoints": 5,
-  "groupStagePoints": 5,
+  "totalPoints": 7,
+  "groupStagePoints": 7,
   "knockoutPoints": 0,
   "pointsByCategory": {
-    "exact_score": 5,
-    "correct_outcome": 0,
+    "exact_score": 0,
+    "correct_outcome": 2,
     "wrong_outcome": 0,
-    "group_winner": 0,
+    "group_winner": 5,
     "round_of_32": 0,
     "round_of_16": 0,
     "quarter_final": 0,
@@ -100,11 +113,11 @@
     "champion": 0,
     "pending": 0
   },
-  "correctPicks": 1,
-  "missedPicks": 2,
-  "exactScoreHits": 1,
-  "correctOutcomeHits": 0,
-  "groupWinnerHits": 0,
+  "correctPicks": 2,
+  "missedPicks": 3,
+  "exactScoreHits": 0,
+  "correctOutcomeHits": 1,
+  "groupWinnerHits": 1,
   "knockoutHits": 0,
-  "accuracyPct": 33
+  "accuracyPct": 40
 }

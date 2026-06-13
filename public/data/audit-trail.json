@@ -1,7 +1,7 @@
 [
   {
-    "timestamp": "2026-06-12T13:56:55.411Z",
-    "resultsVersion": 1,
+    "timestamp": "2026-06-13T07:19:28.750Z",
+    "resultsVersion": 3,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:A-1:1",
@@ -12,16 +12,36 @@
       "label": "Correct outcome",
       "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
       "prediction": "🇲🇽 Mexico win",
-      "actualResult": "2-1",
+      "actualResult": "2-0",
       "matchId": "A-1",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-12T13:56:55.411Z",
-    "resultsVersion": 1,
+    "timestamp": "2026-06-13T07:19:28.750Z",
+    "resultsVersion": 3,
+    "participantId": "mamma",
+    "event": {
+      "id": "mamma:group_winner:MEX:6",
+      "participantId": "mamma",
+      "type": "group_winner",
+      "category": "group_winner",
+      "points": 5,
+      "label": "Correct group winner",
+      "description": "Group A winner",
+      "prediction": "🇲🇽 Mexico",
+      "actualResult": "🇲🇽 Mexico",
+      "teamId": "MEX",
+      "timestamp": "2026-06-13T07:19:28.750Z"
+    },
+    "pointsDelta": 5,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-13T07:19:28.750Z",
+    "resultsVersion": 3,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:A-1:1",
@@ -32,49 +52,109 @@
       "label": "Correct outcome",
       "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
       "prediction": "🇲🇽 Mexico win",
-      "actualResult": "2-1",
+      "actualResult": "2-0",
       "matchId": "A-1",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-12T13:56:55.411Z",
-    "resultsVersion": 1,
-    "participantId": "tintin-and-pappa",
+    "timestamp": "2026-06-13T07:19:28.750Z",
+    "resultsVersion": 3,
+    "participantId": "milton",
     "event": {
-      "id": "tintin-and-pappa:exact_score:A-1:1",
-      "participantId": "tintin-and-pappa",
-      "type": "group_exact_score",
-      "category": "exact_score",
+      "id": "milton:group_winner:MEX:3",
+      "participantId": "milton",
+      "type": "group_winner",
+      "category": "group_winner",
       "points": 5,
-      "label": "Exact score",
-      "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
-      "prediction": "2-1",
-      "actualResult": "2-1",
-      "matchId": "A-1",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "label": "Correct group winner",
+      "description": "Group A winner",
+      "prediction": "🇲🇽 Mexico",
+      "actualResult": "🇲🇽 Mexico",
+      "teamId": "MEX",
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     "pointsDelta": 5,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-12T13:56:55.411Z",
-    "resultsVersion": 1,
+    "timestamp": "2026-06-13T07:19:28.750Z",
+    "resultsVersion": 3,
+    "participantId": "tintin-and-pappa",
+    "event": {
+      "id": "tintin-and-pappa:correct_outcome:A-1:1",
+      "participantId": "tintin-and-pappa",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
+      "prediction": "🇲🇽 Mexico win",
+      "actualResult": "2-0",
+      "matchId": "A-1",
+      "timestamp": "2026-06-13T07:19:28.750Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-13T07:19:28.750Z",
+    "resultsVersion": 3,
+    "participantId": "tintin-and-pappa",
+    "event": {
+      "id": "tintin-and-pappa:group_winner:MEX:4",
+      "participantId": "tintin-and-pappa",
+      "type": "group_winner",
+      "category": "group_winner",
+      "points": 5,
+      "label": "Correct group winner",
+      "description": "Group A winner",
+      "prediction": "🇲🇽 Mexico",
+      "actualResult": "🇲🇽 Mexico",
+      "teamId": "MEX",
+      "timestamp": "2026-06-13T07:19:28.750Z"
+    },
+    "pointsDelta": 5,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-13T07:19:28.750Z",
+    "resultsVersion": 3,
     "participantId": "wilmer",
     "event": {
-      "id": "wilmer:exact_score:A-1:1",
+      "id": "wilmer:correct_outcome:A-1:1",
       "participantId": "wilmer",
-      "type": "group_exact_score",
-      "category": "exact_score",
-      "points": 5,
-      "label": "Exact score",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
       "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
-      "prediction": "2-1",
-      "actualResult": "2-1",
+      "prediction": "🇲🇽 Mexico win",
+      "actualResult": "2-0",
       "matchId": "A-1",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-13T07:19:28.750Z",
+    "resultsVersion": 3,
+    "participantId": "wilmer",
+    "event": {
+      "id": "wilmer:group_winner:MEX:6",
+      "participantId": "wilmer",
+      "type": "group_winner",
+      "category": "group_winner",
+      "points": 5,
+      "label": "Correct group winner",
+      "description": "Group A winner",
+      "prediction": "🇲🇽 Mexico",
+      "actualResult": "🇲🇽 Mexico",
+      "teamId": "MEX",
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     "pointsDelta": 5,
     "reason": "initial"

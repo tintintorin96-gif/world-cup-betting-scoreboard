@@ -10,12 +10,38 @@
       "label": "Correct outcome",
       "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
       "prediction": "🇲🇽 Mexico win",
-      "actualResult": "2-1",
+      "actualResult": "2-0",
       "matchId": "A-1",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
-      "id": "mamma:third_place_reach:GER:6",
+      "id": "mamma:group_winner:MEX:6",
+      "participantId": "mamma",
+      "type": "group_winner",
+      "category": "group_winner",
+      "points": 5,
+      "label": "Correct group winner",
+      "description": "Group A winner",
+      "prediction": "🇲🇽 Mexico",
+      "actualResult": "🇲🇽 Mexico",
+      "teamId": "MEX",
+      "timestamp": "2026-06-13T07:19:28.750Z"
+    },
+    {
+      "id": "mamma:group_winner:FRA:7",
+      "participantId": "mamma",
+      "type": "group_winner",
+      "category": "group_winner",
+      "points": 0,
+      "label": "Wrong group winner",
+      "description": "Group H winner",
+      "prediction": "🇫🇷 France",
+      "actualResult": "🇪🇸 Spain",
+      "teamId": "FRA",
+      "timestamp": "2026-06-13T07:19:28.750Z"
+    },
+    {
+      "id": "mamma:third_place_reach:GER:8",
       "participantId": "mamma",
       "type": "knockout_third_reach",
       "category": "third_place_reach",
@@ -26,10 +52,10 @@
       "actualResult": "Did not reach third-place match",
       "teamId": "GER",
       "round": "third",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
-      "id": "mamma:third_place_reach:GER:7",
+      "id": "mamma:third_place_reach:GER:9",
       "participantId": "mamma",
       "type": "knockout_third_reach",
       "category": "third_place_reach",
@@ -40,7 +66,7 @@
       "actualResult": "Did not reach third-place match",
       "teamId": "GER",
       "round": "third",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
       "id": "mamma:pending:A-2:2",
@@ -53,7 +79,7 @@
       "prediction": "2-1",
       "actualResult": "Match not finished",
       "matchId": "A-2",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
       "id": "mamma:pending:G-3:3",
@@ -66,7 +92,7 @@
       "prediction": "1-1",
       "actualResult": "Match not finished",
       "matchId": "G-3",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
       "id": "mamma:pending:H-1:4",
@@ -79,7 +105,7 @@
       "prediction": "3-0",
       "actualResult": "Match not finished",
       "matchId": "H-1",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
       "id": "mamma:pending:D-3:5",
@@ -92,17 +118,17 @@
       "prediction": "2-0",
       "actualResult": "Match not finished",
       "matchId": "D-3",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     }
   ],
-  "totalPoints": 2,
-  "groupStagePoints": 2,
+  "totalPoints": 7,
+  "groupStagePoints": 7,
   "knockoutPoints": 0,
   "pointsByCategory": {
     "exact_score": 0,
     "correct_outcome": 2,
     "wrong_outcome": 0,
-    "group_winner": 0,
+    "group_winner": 5,
     "round_of_32": 0,
     "round_of_16": 0,
     "quarter_final": 0,
@@ -113,11 +139,11 @@
     "champion": 0,
     "pending": 0
   },
-  "correctPicks": 1,
-  "missedPicks": 2,
+  "correctPicks": 2,
+  "missedPicks": 3,
   "exactScoreHits": 0,
   "correctOutcomeHits": 1,
-  "groupWinnerHits": 0,
+  "groupWinnerHits": 1,
   "knockoutHits": 0,
-  "accuracyPct": 33
+  "accuracyPct": 40
 }

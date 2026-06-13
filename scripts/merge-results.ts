@@ -2,9 +2,8 @@ import type { MatchResult, ResultsBundle } from '../src/types/results';
 
 export function mergeResults(
   manual: ResultsBundle | null,
-  primary: ResultsBundle | null,
-  fallback: ResultsBundle | null,
   previous: ResultsBundle | null,
+  ...apiSources: (ResultsBundle | null)[]
 ): ResultsBundle {
   const base = previous ?? {
     version: 1,
@@ -14,7 +13,7 @@ export function mergeResults(
     knockout: [],
   };
 
-  const sources = [manual, primary, fallback].filter(Boolean) as ResultsBundle[];
+  const sources = [manual, ...apiSources].filter(Boolean) as ResultsBundle[];
   if (!sources.length) return base;
 
   const matchMap = new Map<string, MatchResult>();
@@ -27,11 +26,14 @@ export function mergeResults(
     for (const s of src.groupStandings) standingMap.set(s.group, s);
   }
 
+  const apiOnly = apiSources.filter(Boolean) as ResultsBundle[];
+  const preferredApi = [...apiOnly].reverse().find((src) => src.knockout.length) ?? apiOnly.at(-1);
+
   const knockout = manual?.knockout.length
     ? manual.knockout
-    : primary?.knockout.length
-      ? primary.knockout
-      : fallback?.knockout ?? base.knockout;
+    : preferredApi?.knockout.length
+      ? preferredApi.knockout
+      : base.knockout;
 
   const merged: ResultsBundle = {
     version: base.version,
@@ -39,8 +41,12 @@ export function mergeResults(
     matches: Array.from(matchMap.values()),
     groupStandings: Array.from(standingMap.values()),
     knockout,
-    championId: manual?.championId ?? primary?.championId ?? fallback?.championId,
-    finalists: manual?.finalists ?? primary?.finalists ?? fallback?.finalists,
+    championId:
+      manual?.championId ??
+      [...apiOnly].reverse().find((src) => src.championId)?.championId,
+    finalists:
+      manual?.finalists ??
+      [...apiOnly].reverse().find((src) => src.finalists)?.finalists,
   };
 
   const changed =

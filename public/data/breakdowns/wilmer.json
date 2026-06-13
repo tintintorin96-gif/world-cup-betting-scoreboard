@@ -2,33 +2,59 @@
   "participantId": "wilmer",
   "events": [
     {
-      "id": "wilmer:exact_score:A-1:1",
+      "id": "wilmer:correct_outcome:A-1:1",
       "participantId": "wilmer",
-      "type": "group_exact_score",
-      "category": "exact_score",
-      "points": 5,
-      "label": "Exact score",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
       "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
-      "prediction": "2-1",
-      "actualResult": "2-1",
+      "prediction": "🇲🇽 Mexico win",
+      "actualResult": "2-0",
       "matchId": "A-1",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
-      "id": "wilmer:wrong_outcome:G-2:5",
+      "id": "wilmer:group_winner:MEX:6",
       "participantId": "wilmer",
-      "type": "group_wrong_outcome",
-      "category": "wrong_outcome",
-      "points": 0,
-      "label": "Wrong outcome",
-      "description": "🇪🇸 Spain vs 🇸🇦 Saudi Arabia",
-      "prediction": "2-0 (🇪🇸 Spain win)",
-      "actualResult": "1-1",
-      "matchId": "G-2",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "type": "group_winner",
+      "category": "group_winner",
+      "points": 5,
+      "label": "Correct group winner",
+      "description": "Group A winner",
+      "prediction": "🇲🇽 Mexico",
+      "actualResult": "🇲🇽 Mexico",
+      "teamId": "MEX",
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
-      "id": "wilmer:third_place_reach:ESP:7",
+      "id": "wilmer:group_winner:BRA:7",
+      "participantId": "wilmer",
+      "type": "group_winner",
+      "category": "group_winner",
+      "points": 0,
+      "label": "Wrong group winner",
+      "description": "Group B winner",
+      "prediction": "🇧🇷 Brazil",
+      "actualResult": "🇨🇦 Canada",
+      "teamId": "BRA",
+      "timestamp": "2026-06-13T07:19:28.750Z"
+    },
+    {
+      "id": "wilmer:group_winner:ESP:8",
+      "participantId": "wilmer",
+      "type": "group_winner",
+      "category": "group_winner",
+      "points": 0,
+      "label": "Wrong group winner",
+      "description": "Group G winner",
+      "prediction": "🇪🇸 Spain",
+      "actualResult": "🇧🇪 Belgium",
+      "teamId": "ESP",
+      "timestamp": "2026-06-13T07:19:28.750Z"
+    },
+    {
+      "id": "wilmer:third_place_reach:ESP:9",
       "participantId": "wilmer",
       "type": "knockout_third_reach",
       "category": "third_place_reach",
@@ -39,10 +65,10 @@
       "actualResult": "Did not reach third-place match",
       "teamId": "ESP",
       "round": "third",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
-      "id": "wilmer:third_place_reach:ESP:8",
+      "id": "wilmer:third_place_reach:ESP:10",
       "participantId": "wilmer",
       "type": "knockout_third_reach",
       "category": "third_place_reach",
@@ -53,7 +79,7 @@
       "actualResult": "Did not reach third-place match",
       "teamId": "ESP",
       "round": "third",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
       "id": "wilmer:pending:A-2:2",
@@ -66,23 +92,10 @@
       "prediction": "1-1",
       "actualResult": "Match not finished",
       "matchId": "A-2",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
-      "id": "wilmer:pending:A-3:3",
-      "participantId": "wilmer",
-      "type": "pending",
-      "category": "pending",
-      "points": 0,
-      "label": "Awaiting result",
-      "description": "🇲🇽 Mexico vs 🇩🇰 Denmark",
-      "prediction": "2-0",
-      "actualResult": "Match not finished",
-      "matchId": "A-3",
-      "timestamp": "2026-06-12T13:56:55.411Z"
-    },
-    {
-      "id": "wilmer:pending:G-1:4",
+      "id": "wilmer:pending:G-1:3",
       "participantId": "wilmer",
       "type": "pending",
       "category": "pending",
@@ -92,10 +105,23 @@
       "prediction": "3-0",
       "actualResult": "Match not finished",
       "matchId": "G-1",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     },
     {
-      "id": "wilmer:pending:H-1:6",
+      "id": "wilmer:pending:G-2:4",
+      "participantId": "wilmer",
+      "type": "pending",
+      "category": "pending",
+      "points": 0,
+      "label": "Awaiting result",
+      "description": "🇪🇸 Spain vs 🇸🇦 Saudi Arabia",
+      "prediction": "2-0",
+      "actualResult": "Match not finished",
+      "matchId": "G-2",
+      "timestamp": "2026-06-13T07:19:28.750Z"
+    },
+    {
+      "id": "wilmer:pending:H-1:5",
       "participantId": "wilmer",
       "type": "pending",
       "category": "pending",
@@ -105,17 +131,17 @@
       "prediction": "2-1",
       "actualResult": "Match not finished",
       "matchId": "H-1",
-      "timestamp": "2026-06-12T13:56:55.411Z"
+      "timestamp": "2026-06-13T07:19:28.750Z"
     }
   ],
-  "totalPoints": 5,
-  "groupStagePoints": 5,
+  "totalPoints": 7,
+  "groupStagePoints": 7,
   "knockoutPoints": 0,
   "pointsByCategory": {
-    "exact_score": 5,
-    "correct_outcome": 0,
+    "exact_score": 0,
+    "correct_outcome": 2,
     "wrong_outcome": 0,
-    "group_winner": 0,
+    "group_winner": 5,
     "round_of_32": 0,
     "round_of_16": 0,
     "quarter_final": 0,
@@ -126,11 +152,11 @@
     "champion": 0,
     "pending": 0
   },
-  "correctPicks": 1,
-  "missedPicks": 3,
-  "exactScoreHits": 1,
-  "correctOutcomeHits": 0,
-  "groupWinnerHits": 0,
+  "correctPicks": 2,
+  "missedPicks": 4,
+  "exactScoreHits": 0,
+  "correctOutcomeHits": 1,
+  "groupWinnerHits": 1,
   "knockoutHits": 0,
-  "accuracyPct": 25
+  "accuracyPct": 33
 }
