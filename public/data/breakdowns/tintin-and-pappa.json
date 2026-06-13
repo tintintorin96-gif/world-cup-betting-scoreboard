@@ -12,7 +12,7 @@
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "tintin-and-pappa:pending:H-5:2",
@@ -25,7 +25,7 @@
       "prediction": "2-1",
       "actualResult": "Match not finished",
       "matchId": "H-5",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "tintin-and-pappa:pending:L-4:3",
@@ -38,7 +38,7 @@
       "prediction": "2-0",
       "actualResult": "Match not finished",
       "matchId": "L-4",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "tintin-and-pappa:pending:MEX:4",
@@ -51,7 +51,7 @@
       "prediction": "🇲🇽 Mexico",
       "actualResult": "Group stage in progress",
       "teamId": "MEX",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "tintin-and-pappa:pending:ENG:5",
@@ -64,7 +64,7 @@
       "prediction": "🏴 England",
       "actualResult": "Group stage in progress",
       "teamId": "ENG",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "tintin-and-pappa:pending:ESP:6",
@@ -78,7 +78,7 @@
       "actualResult": "Knockout stage in progress",
       "teamId": "ESP",
       "round": "third",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "tintin-and-pappa:pending:ESP:7",
@@ -92,7 +92,7 @@
       "actualResult": "Knockout stage in progress",
       "teamId": "ESP",
       "round": "third",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     }
   ],
   "totalPoints": 2,

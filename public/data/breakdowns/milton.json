@@ -12,7 +12,7 @@
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "milton:correct_outcome:D-5:2",
@@ -25,7 +25,7 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "milton:pending:H-5:3",
@@ -38,7 +38,7 @@
       "prediction": "2-2",
       "actualResult": "Match not finished",
       "matchId": "H-5",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "milton:pending:MEX:4",
@@ -51,7 +51,7 @@
       "prediction": "🇲🇽 Mexico",
       "actualResult": "Group stage in progress",
       "teamId": "MEX",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "milton:pending:USA:5",
@@ -64,7 +64,7 @@
       "prediction": "🇺🇸 United States",
       "actualResult": "Group stage in progress",
       "teamId": "USA",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "milton:pending:BRA:6",
@@ -78,7 +78,7 @@
       "actualResult": "Knockout stage in progress",
       "teamId": "BRA",
       "round": "third",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "milton:pending:BRA:7",
@@ -92,7 +92,7 @@
       "actualResult": "Knockout stage in progress",
       "teamId": "BRA",
       "round": "third",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     }
   ],
   "totalPoints": 4,

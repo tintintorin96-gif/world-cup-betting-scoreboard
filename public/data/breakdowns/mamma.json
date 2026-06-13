@@ -12,7 +12,7 @@
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "mamma:pending:A-4:2",
@@ -25,7 +25,7 @@
       "prediction": "1-2",
       "actualResult": "Match not finished",
       "matchId": "A-4",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "mamma:pending:H-5:3",
@@ -38,7 +38,7 @@
       "prediction": "1-1",
       "actualResult": "Match not finished",
       "matchId": "H-5",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "mamma:pending:I-3:4",
@@ -51,7 +51,7 @@
       "prediction": "3-0",
       "actualResult": "Match not finished",
       "matchId": "I-3",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "mamma:pending:E-6:5",
@@ -64,7 +64,7 @@
       "prediction": "0-2",
       "actualResult": "Match not finished",
       "matchId": "E-6",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "mamma:pending:MEX:6",
@@ -77,7 +77,7 @@
       "prediction": "🇲🇽 Mexico",
       "actualResult": "Group stage in progress",
       "teamId": "MEX",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "mamma:pending:FRA:7",
@@ -90,7 +90,7 @@
       "prediction": "🇫🇷 France",
       "actualResult": "Group stage in progress",
       "teamId": "FRA",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "mamma:pending:GER:8",
@@ -104,7 +104,7 @@
       "actualResult": "Knockout stage in progress",
       "teamId": "GER",
       "round": "third",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     },
     {
       "id": "mamma:pending:GER:9",
@@ -118,7 +118,7 @@
       "actualResult": "Knockout stage in progress",
       "teamId": "GER",
       "round": "third",
-      "timestamp": "2026-06-13T07:33:02.409Z"
+      "timestamp": "2026-06-13T07:40:48.756Z"
     }
   ],
   "totalPoints": 2,
