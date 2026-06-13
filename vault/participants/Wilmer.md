@@ -6,7 +6,6 @@
 |-------|------------|
 | 🇲🇽 Mexico vs 🇿🇦 South Africa | 2-1 |
 | 🇲🇽 Mexico vs 🇰🇷 South Korea | 1-1 |
-| 🇲🇽 Mexico vs 🇩🇰 Denmark | 2-0 |
 | 🇪🇸 Spain vs 🇨🇻 Cape Verde | 3-0 |
 | 🇪🇸 Spain vs 🇸🇦 Saudi Arabia | 2-0 |
 | 🇫🇷 France vs 🇸🇳 Senegal | 2-1 |
@@ -15,17 +14,17 @@
 
 ### Group A
 1. 🇲🇽 Mexico
-2. 🇩🇰 Denmark
+2. 🇨🇿 Czechia
 3. 🇰🇷 South Korea
 4. 🇿🇦 South Africa
 
-### Group B
+### Group C
 1. 🇧🇷 Brazil
 2. 🇨🇭 Switzerland
 3. 🇨🇦 Canada
 4. 🇶🇦 Qatar
 
-### Group G
+### Group H
 1. 🇪🇸 Spain
 2. 🇺🇾 Uruguay
 3. 🇨🇻 Cape Verde
@@ -36,8 +35,8 @@
 | Group | Winner |
 |-------|--------|
 | Group A | 🇲🇽 Mexico |
-| Group B | 🇧🇷 Brazil |
-| Group G | 🇪🇸 Spain |
+| Group C | 🇧🇷 Brazil |
+| Group H | 🇪🇸 Spain |
 
 ## Knockout Predictions
 

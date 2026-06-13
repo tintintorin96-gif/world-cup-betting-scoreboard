@@ -11,11 +11,11 @@
 
 ### Group A
 1. 🇲🇽 Mexico
-2. 🇩🇰 Denmark
+2. 🇨🇿 Czechia
 3. 🇰🇷 South Korea
 4. 🇿🇦 South Africa
 
-### Group G
+### Group H
 1. 🇪🇸 Spain
 2. 🇺🇾 Uruguay
 3. 🇨🇻 Cape Verde
@@ -26,7 +26,7 @@
 | Group | Winner |
 |-------|--------|
 | Group A | 🇲🇽 Mexico |
-| Group G | 🇪🇸 Spain |
+| Group H | 🇪🇸 Spain |
 
 ## Knockout Predictions
 

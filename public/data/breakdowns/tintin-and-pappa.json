@@ -2,7 +2,7 @@
   "participantId": "tintin-and-pappa",
   "events": [
     {
-      "id": "tintin-and-pappa:correct_outcome:A-1:1",
+      "id": "tintin-and-pappa:correct_outcome:A-6:1",
       "participantId": "tintin-and-pappa",
       "type": "group_correct_outcome",
       "category": "correct_outcome",
@@ -11,11 +11,11 @@
       "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
-      "matchId": "A-1",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "matchId": "A-6",
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
-      "id": "tintin-and-pappa:pending:G-3:2",
+      "id": "tintin-and-pappa:pending:H-5:2",
       "participantId": "tintin-and-pappa",
       "type": "pending",
       "category": "pending",
@@ -24,21 +24,21 @@
       "description": "🇪🇸 Spain vs 🇺🇾 Uruguay",
       "prediction": "2-1",
       "actualResult": "Match not finished",
-      "matchId": "G-3",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "matchId": "H-5",
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
-      "id": "tintin-and-pappa:pending:J-6:3",
+      "id": "tintin-and-pappa:pending:L-4:3",
       "participantId": "tintin-and-pappa",
       "type": "pending",
       "category": "pending",
       "points": 0,
       "label": "Awaiting result",
-      "description": "🇬🇭 Ghana vs 🏴 England",
-      "prediction": "0-2",
+      "description": "🏴 England vs 🇬🇭 Ghana",
+      "prediction": "2-0",
       "actualResult": "Match not finished",
-      "matchId": "J-6",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "matchId": "L-4",
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
       "id": "tintin-and-pappa:pending:MEX:4",
@@ -51,7 +51,7 @@
       "prediction": "🇲🇽 Mexico",
       "actualResult": "Group stage in progress",
       "teamId": "MEX",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
       "id": "tintin-and-pappa:pending:ENG:5",
@@ -64,7 +64,7 @@
       "prediction": "🏴 England",
       "actualResult": "Group stage in progress",
       "teamId": "ENG",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
       "id": "tintin-and-pappa:pending:ESP:6",
@@ -78,7 +78,7 @@
       "actualResult": "Knockout stage in progress",
       "teamId": "ESP",
       "round": "third",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
       "id": "tintin-and-pappa:pending:ESP:7",
@@ -92,7 +92,7 @@
       "actualResult": "Knockout stage in progress",
       "teamId": "ESP",
       "round": "third",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "timestamp": "2026-06-13T07:33:02.409Z"
     }
   ],
   "totalPoints": 2,

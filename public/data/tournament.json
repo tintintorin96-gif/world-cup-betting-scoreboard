@@ -20,53 +20,85 @@
     {
       "matchId": "A-1",
       "group": "A",
+      "homeSlot": "CZE",
+      "awaySlot": "KOR",
+      "homeTeamId": "CZE",
+      "awayTeamId": "KOR"
+    },
+    {
+      "matchId": "A-2",
+      "group": "A",
+      "homeSlot": "CZE",
+      "awaySlot": "MEX",
+      "homeTeamId": "CZE",
+      "awayTeamId": "MEX"
+    },
+    {
+      "matchId": "A-3",
+      "group": "A",
+      "homeSlot": "CZE",
+      "awaySlot": "RSA",
+      "homeTeamId": "CZE",
+      "awayTeamId": "RSA"
+    },
+    {
+      "matchId": "A-4",
+      "group": "A",
+      "homeSlot": "KOR",
+      "awaySlot": "MEX",
+      "homeTeamId": "KOR",
+      "awayTeamId": "MEX"
+    },
+    {
+      "matchId": "A-5",
+      "group": "A",
+      "homeSlot": "KOR",
+      "awaySlot": "RSA",
+      "homeTeamId": "KOR",
+      "awayTeamId": "RSA"
+    },
+    {
+      "matchId": "A-6",
+      "group": "A",
       "homeSlot": "MEX",
       "awaySlot": "RSA",
       "homeTeamId": "MEX",
       "awayTeamId": "RSA"
     },
     {
-      "matchId": "A-2",
-      "group": "A",
-      "homeSlot": "MEX",
-      "awaySlot": "KOR",
-      "homeTeamId": "MEX",
-      "awayTeamId": "KOR"
-    },
-    {
-      "matchId": "A-3",
-      "group": "A",
-      "homeSlot": "MEX",
-      "awaySlot": "DEN",
-      "homeTeamId": "MEX",
-      "awayTeamId": "DEN"
-    },
-    {
-      "matchId": "A-4",
-      "group": "A",
-      "homeSlot": "RSA",
-      "awaySlot": "KOR",
-      "homeTeamId": "RSA",
-      "awayTeamId": "KOR"
-    },
-    {
-      "matchId": "A-5",
-      "group": "A",
-      "homeSlot": "RSA",
-      "awaySlot": "DEN",
-      "homeTeamId": "RSA",
-      "awayTeamId": "DEN"
-    },
-    {
-      "matchId": "A-6",
-      "group": "A",
-      "homeSlot": "KOR",
-      "awaySlot": "DEN",
-      "homeTeamId": "KOR",
-      "awayTeamId": "DEN"
-    },
-    {
       "matchId": "B-1",
+      "group": "B",
+      "homeSlot": "BIH",
+      "awaySlot": "CAN",
+      "homeTeamId": "BIH",
+      "awayTeamId": "CAN"
+    },
+    {
+      "matchId": "B-2",
+      "group": "B",
+      "homeSlot": "BIH",
+      "awaySlot": "QAT",
+      "homeTeamId": "BIH",
+      "awayTeamId": "QAT"
+    },
+    {
+      "matchId": "B-3",
+      "group": "B",
+      "homeSlot": "BIH",
+      "awaySlot": "SUI",
+      "homeTeamId": "BIH",
+      "awayTeamId": "SUI"
+    },
+    {
+      "matchId": "B-4",
+      "group": "B",
+      "homeSlot": "CAN",
+      "awaySlot": "QAT",
+      "homeTeamId": "CAN",
+      "awayTeamId": "QAT"
+    },
+    {
+      "matchId": "B-5",
       "group": "B",
       "homeSlot": "CAN",
       "awaySlot": "SUI",
@@ -74,524 +106,492 @@
       "awayTeamId": "SUI"
     },
     {
-      "matchId": "B-2",
-      "group": "B",
-      "homeSlot": "CAN",
-      "awaySlot": "QAT",
-      "homeTeamId": "CAN",
-      "awayTeamId": "QAT"
-    },
-    {
-      "matchId": "B-3",
-      "group": "B",
-      "homeSlot": "CAN",
-      "awaySlot": "BRA",
-      "homeTeamId": "CAN",
-      "awayTeamId": "BRA"
-    },
-    {
-      "matchId": "B-4",
-      "group": "B",
-      "homeSlot": "SUI",
-      "awaySlot": "QAT",
-      "homeTeamId": "SUI",
-      "awayTeamId": "QAT"
-    },
-    {
-      "matchId": "B-5",
-      "group": "B",
-      "homeSlot": "SUI",
-      "awaySlot": "BRA",
-      "homeTeamId": "SUI",
-      "awayTeamId": "BRA"
-    },
-    {
       "matchId": "B-6",
       "group": "B",
       "homeSlot": "QAT",
-      "awaySlot": "BRA",
+      "awaySlot": "SUI",
       "homeTeamId": "QAT",
-      "awayTeamId": "BRA"
+      "awayTeamId": "SUI"
     },
     {
       "matchId": "C-1",
       "group": "C",
-      "homeSlot": "USA",
-      "awaySlot": "PAR",
-      "homeTeamId": "USA",
-      "awayTeamId": "PAR"
+      "homeSlot": "BRA",
+      "awaySlot": "HAI",
+      "homeTeamId": "BRA",
+      "awayTeamId": "HAI"
     },
     {
       "matchId": "C-2",
       "group": "C",
-      "homeSlot": "USA",
-      "awaySlot": "AUS",
-      "homeTeamId": "USA",
-      "awayTeamId": "AUS"
+      "homeSlot": "BRA",
+      "awaySlot": "MAR",
+      "homeTeamId": "BRA",
+      "awayTeamId": "MAR"
     },
     {
       "matchId": "C-3",
       "group": "C",
-      "homeSlot": "USA",
-      "awaySlot": "MAR",
-      "homeTeamId": "USA",
-      "awayTeamId": "MAR"
+      "homeSlot": "BRA",
+      "awaySlot": "SCO",
+      "homeTeamId": "BRA",
+      "awayTeamId": "SCO"
     },
     {
       "matchId": "C-4",
       "group": "C",
-      "homeSlot": "PAR",
-      "awaySlot": "AUS",
-      "homeTeamId": "PAR",
-      "awayTeamId": "AUS"
+      "homeSlot": "HAI",
+      "awaySlot": "MAR",
+      "homeTeamId": "HAI",
+      "awayTeamId": "MAR"
     },
     {
       "matchId": "C-5",
       "group": "C",
-      "homeSlot": "PAR",
-      "awaySlot": "MAR",
-      "homeTeamId": "PAR",
-      "awayTeamId": "MAR"
+      "homeSlot": "HAI",
+      "awaySlot": "SCO",
+      "homeTeamId": "HAI",
+      "awayTeamId": "SCO"
     },
     {
       "matchId": "C-6",
       "group": "C",
-      "homeSlot": "AUS",
-      "awaySlot": "MAR",
-      "homeTeamId": "AUS",
-      "awayTeamId": "MAR"
+      "homeSlot": "MAR",
+      "awaySlot": "SCO",
+      "homeTeamId": "MAR",
+      "awayTeamId": "SCO"
     },
     {
       "matchId": "D-1",
       "group": "D",
-      "homeSlot": "GER",
-      "awaySlot": "CUW",
-      "homeTeamId": "GER",
-      "awayTeamId": "CUW"
+      "homeSlot": "AUS",
+      "awaySlot": "PAR",
+      "homeTeamId": "AUS",
+      "awayTeamId": "PAR"
     },
     {
       "matchId": "D-2",
       "group": "D",
-      "homeSlot": "GER",
-      "awaySlot": "CIV",
-      "homeTeamId": "GER",
-      "awayTeamId": "CIV"
+      "homeSlot": "AUS",
+      "awaySlot": "TUR",
+      "homeTeamId": "AUS",
+      "awayTeamId": "TUR"
     },
     {
       "matchId": "D-3",
       "group": "D",
-      "homeSlot": "GER",
-      "awaySlot": "ECU",
-      "homeTeamId": "GER",
-      "awayTeamId": "ECU"
+      "homeSlot": "AUS",
+      "awaySlot": "USA",
+      "homeTeamId": "AUS",
+      "awayTeamId": "USA"
     },
     {
       "matchId": "D-4",
       "group": "D",
-      "homeSlot": "CUW",
-      "awaySlot": "CIV",
-      "homeTeamId": "CUW",
-      "awayTeamId": "CIV"
+      "homeSlot": "PAR",
+      "awaySlot": "TUR",
+      "homeTeamId": "PAR",
+      "awayTeamId": "TUR"
     },
     {
       "matchId": "D-5",
       "group": "D",
-      "homeSlot": "CUW",
-      "awaySlot": "ECU",
-      "homeTeamId": "CUW",
-      "awayTeamId": "ECU"
+      "homeSlot": "PAR",
+      "awaySlot": "USA",
+      "homeTeamId": "PAR",
+      "awayTeamId": "USA"
     },
     {
       "matchId": "D-6",
       "group": "D",
+      "homeSlot": "TUR",
+      "awaySlot": "USA",
+      "homeTeamId": "TUR",
+      "awayTeamId": "USA"
+    },
+    {
+      "matchId": "E-1",
+      "group": "E",
+      "homeSlot": "CIV",
+      "awaySlot": "CUW",
+      "homeTeamId": "CIV",
+      "awayTeamId": "CUW"
+    },
+    {
+      "matchId": "E-2",
+      "group": "E",
       "homeSlot": "CIV",
       "awaySlot": "ECU",
       "homeTeamId": "CIV",
       "awayTeamId": "ECU"
     },
     {
-      "matchId": "E-1",
-      "group": "E",
-      "homeSlot": "NED",
-      "awaySlot": "JPN",
-      "homeTeamId": "NED",
-      "awayTeamId": "JPN"
-    },
-    {
-      "matchId": "E-2",
-      "group": "E",
-      "homeSlot": "NED",
-      "awaySlot": "TUN",
-      "homeTeamId": "NED",
-      "awayTeamId": "TUN"
-    },
-    {
       "matchId": "E-3",
       "group": "E",
-      "homeSlot": "NED",
-      "awaySlot": "UKR",
-      "homeTeamId": "NED",
-      "awayTeamId": "UKR"
+      "homeSlot": "CIV",
+      "awaySlot": "GER",
+      "homeTeamId": "CIV",
+      "awayTeamId": "GER"
     },
     {
       "matchId": "E-4",
       "group": "E",
+      "homeSlot": "CUW",
+      "awaySlot": "ECU",
+      "homeTeamId": "CUW",
+      "awayTeamId": "ECU"
+    },
+    {
+      "matchId": "E-5",
+      "group": "E",
+      "homeSlot": "CUW",
+      "awaySlot": "GER",
+      "homeTeamId": "CUW",
+      "awayTeamId": "GER"
+    },
+    {
+      "matchId": "E-6",
+      "group": "E",
+      "homeSlot": "ECU",
+      "awaySlot": "GER",
+      "homeTeamId": "ECU",
+      "awayTeamId": "GER"
+    },
+    {
+      "matchId": "F-1",
+      "group": "F",
+      "homeSlot": "JPN",
+      "awaySlot": "NED",
+      "homeTeamId": "JPN",
+      "awayTeamId": "NED"
+    },
+    {
+      "matchId": "F-2",
+      "group": "F",
+      "homeSlot": "JPN",
+      "awaySlot": "SWE",
+      "homeTeamId": "JPN",
+      "awayTeamId": "SWE"
+    },
+    {
+      "matchId": "F-3",
+      "group": "F",
       "homeSlot": "JPN",
       "awaySlot": "TUN",
       "homeTeamId": "JPN",
       "awayTeamId": "TUN"
     },
     {
-      "matchId": "E-5",
-      "group": "E",
-      "homeSlot": "JPN",
-      "awaySlot": "UKR",
-      "homeTeamId": "JPN",
-      "awayTeamId": "UKR"
-    },
-    {
-      "matchId": "E-6",
-      "group": "E",
-      "homeSlot": "TUN",
-      "awaySlot": "UKR",
-      "homeTeamId": "TUN",
-      "awayTeamId": "UKR"
-    },
-    {
-      "matchId": "F-1",
+      "matchId": "F-4",
       "group": "F",
+      "homeSlot": "NED",
+      "awaySlot": "SWE",
+      "homeTeamId": "NED",
+      "awayTeamId": "SWE"
+    },
+    {
+      "matchId": "F-5",
+      "group": "F",
+      "homeSlot": "NED",
+      "awaySlot": "TUN",
+      "homeTeamId": "NED",
+      "awayTeamId": "TUN"
+    },
+    {
+      "matchId": "F-6",
+      "group": "F",
+      "homeSlot": "SWE",
+      "awaySlot": "TUN",
+      "homeTeamId": "SWE",
+      "awayTeamId": "TUN"
+    },
+    {
+      "matchId": "G-1",
+      "group": "G",
+      "homeSlot": "BEL",
+      "awaySlot": "EGY",
+      "homeTeamId": "BEL",
+      "awayTeamId": "EGY"
+    },
+    {
+      "matchId": "G-2",
+      "group": "G",
       "homeSlot": "BEL",
       "awaySlot": "IRN",
       "homeTeamId": "BEL",
       "awayTeamId": "IRN"
     },
     {
-      "matchId": "F-2",
-      "group": "F",
-      "homeSlot": "BEL",
-      "awaySlot": "NZL",
-      "homeTeamId": "BEL",
-      "awayTeamId": "NZL"
-    },
-    {
-      "matchId": "F-3",
-      "group": "F",
-      "homeSlot": "BEL",
-      "awaySlot": "EGY",
-      "homeTeamId": "BEL",
-      "awayTeamId": "EGY"
-    },
-    {
-      "matchId": "F-4",
-      "group": "F",
-      "homeSlot": "IRN",
-      "awaySlot": "NZL",
-      "homeTeamId": "IRN",
-      "awayTeamId": "NZL"
-    },
-    {
-      "matchId": "F-5",
-      "group": "F",
-      "homeSlot": "IRN",
-      "awaySlot": "EGY",
-      "homeTeamId": "IRN",
-      "awayTeamId": "EGY"
-    },
-    {
-      "matchId": "F-6",
-      "group": "F",
-      "homeSlot": "NZL",
-      "awaySlot": "EGY",
-      "homeTeamId": "NZL",
-      "awayTeamId": "EGY"
-    },
-    {
-      "matchId": "G-1",
-      "group": "G",
-      "homeSlot": "ESP",
-      "awaySlot": "CPV",
-      "homeTeamId": "ESP",
-      "awayTeamId": "CPV"
-    },
-    {
-      "matchId": "G-2",
-      "group": "G",
-      "homeSlot": "ESP",
-      "awaySlot": "KSA",
-      "homeTeamId": "ESP",
-      "awayTeamId": "KSA"
-    },
-    {
       "matchId": "G-3",
       "group": "G",
-      "homeSlot": "ESP",
-      "awaySlot": "URU",
-      "homeTeamId": "ESP",
-      "awayTeamId": "URU"
+      "homeSlot": "BEL",
+      "awaySlot": "NZL",
+      "homeTeamId": "BEL",
+      "awayTeamId": "NZL"
     },
     {
       "matchId": "G-4",
       "group": "G",
+      "homeSlot": "EGY",
+      "awaySlot": "IRN",
+      "homeTeamId": "EGY",
+      "awayTeamId": "IRN"
+    },
+    {
+      "matchId": "G-5",
+      "group": "G",
+      "homeSlot": "EGY",
+      "awaySlot": "NZL",
+      "homeTeamId": "EGY",
+      "awayTeamId": "NZL"
+    },
+    {
+      "matchId": "G-6",
+      "group": "G",
+      "homeSlot": "IRN",
+      "awaySlot": "NZL",
+      "homeTeamId": "IRN",
+      "awayTeamId": "NZL"
+    },
+    {
+      "matchId": "H-1",
+      "group": "H",
+      "homeSlot": "CPV",
+      "awaySlot": "ESP",
+      "homeTeamId": "CPV",
+      "awayTeamId": "ESP"
+    },
+    {
+      "matchId": "H-2",
+      "group": "H",
       "homeSlot": "CPV",
       "awaySlot": "KSA",
       "homeTeamId": "CPV",
       "awayTeamId": "KSA"
     },
     {
-      "matchId": "G-5",
-      "group": "G",
+      "matchId": "H-3",
+      "group": "H",
       "homeSlot": "CPV",
       "awaySlot": "URU",
       "homeTeamId": "CPV",
       "awayTeamId": "URU"
     },
     {
-      "matchId": "G-6",
-      "group": "G",
+      "matchId": "H-4",
+      "group": "H",
+      "homeSlot": "ESP",
+      "awaySlot": "KSA",
+      "homeTeamId": "ESP",
+      "awayTeamId": "KSA"
+    },
+    {
+      "matchId": "H-5",
+      "group": "H",
+      "homeSlot": "ESP",
+      "awaySlot": "URU",
+      "homeTeamId": "ESP",
+      "awayTeamId": "URU"
+    },
+    {
+      "matchId": "H-6",
+      "group": "H",
       "homeSlot": "KSA",
       "awaySlot": "URU",
       "homeTeamId": "KSA",
       "awayTeamId": "URU"
     },
     {
-      "matchId": "H-1",
-      "group": "H",
+      "matchId": "I-1",
+      "group": "I",
+      "homeSlot": "FRA",
+      "awaySlot": "IRQ",
+      "homeTeamId": "FRA",
+      "awayTeamId": "IRQ"
+    },
+    {
+      "matchId": "I-2",
+      "group": "I",
+      "homeSlot": "FRA",
+      "awaySlot": "NOR",
+      "homeTeamId": "FRA",
+      "awayTeamId": "NOR"
+    },
+    {
+      "matchId": "I-3",
+      "group": "I",
       "homeSlot": "FRA",
       "awaySlot": "SEN",
       "homeTeamId": "FRA",
       "awayTeamId": "SEN"
     },
     {
-      "matchId": "H-2",
-      "group": "H",
-      "homeSlot": "FRA",
-      "awaySlot": "NOR",
-      "homeTeamId": "FRA",
-      "awayTeamId": "NOR"
-    },
-    {
-      "matchId": "H-3",
-      "group": "H",
-      "homeSlot": "FRA",
-      "awaySlot": "COL",
-      "homeTeamId": "FRA",
-      "awayTeamId": "COL"
-    },
-    {
-      "matchId": "H-4",
-      "group": "H",
-      "homeSlot": "SEN",
-      "awaySlot": "NOR",
-      "homeTeamId": "SEN",
-      "awayTeamId": "NOR"
-    },
-    {
-      "matchId": "H-5",
-      "group": "H",
-      "homeSlot": "SEN",
-      "awaySlot": "COL",
-      "homeTeamId": "SEN",
-      "awayTeamId": "COL"
-    },
-    {
-      "matchId": "H-6",
-      "group": "H",
-      "homeSlot": "NOR",
-      "awaySlot": "COL",
-      "homeTeamId": "NOR",
-      "awayTeamId": "COL"
-    },
-    {
-      "matchId": "I-1",
-      "group": "I",
-      "homeSlot": "ARG",
-      "awaySlot": "ALG",
-      "homeTeamId": "ARG",
-      "awayTeamId": "ALG"
-    },
-    {
-      "matchId": "I-2",
-      "group": "I",
-      "homeSlot": "ARG",
-      "awaySlot": "AUT",
-      "homeTeamId": "ARG",
-      "awayTeamId": "AUT"
-    },
-    {
-      "matchId": "I-3",
-      "group": "I",
-      "homeSlot": "ARG",
-      "awaySlot": "JOR",
-      "homeTeamId": "ARG",
-      "awayTeamId": "JOR"
-    },
-    {
       "matchId": "I-4",
       "group": "I",
-      "homeSlot": "ALG",
-      "awaySlot": "AUT",
-      "homeTeamId": "ALG",
-      "awayTeamId": "AUT"
+      "homeSlot": "IRQ",
+      "awaySlot": "NOR",
+      "homeTeamId": "IRQ",
+      "awayTeamId": "NOR"
     },
     {
       "matchId": "I-5",
       "group": "I",
+      "homeSlot": "IRQ",
+      "awaySlot": "SEN",
+      "homeTeamId": "IRQ",
+      "awayTeamId": "SEN"
+    },
+    {
+      "matchId": "I-6",
+      "group": "I",
+      "homeSlot": "NOR",
+      "awaySlot": "SEN",
+      "homeTeamId": "NOR",
+      "awayTeamId": "SEN"
+    },
+    {
+      "matchId": "J-1",
+      "group": "J",
+      "homeSlot": "ALG",
+      "awaySlot": "ARG",
+      "homeTeamId": "ALG",
+      "awayTeamId": "ARG"
+    },
+    {
+      "matchId": "J-2",
+      "group": "J",
+      "homeSlot": "ALG",
+      "awaySlot": "AUT",
+      "homeTeamId": "ALG",
+      "awayTeamId": "AUT"
+    },
+    {
+      "matchId": "J-3",
+      "group": "J",
       "homeSlot": "ALG",
       "awaySlot": "JOR",
       "homeTeamId": "ALG",
       "awayTeamId": "JOR"
     },
     {
-      "matchId": "I-6",
-      "group": "I",
+      "matchId": "J-4",
+      "group": "J",
+      "homeSlot": "ARG",
+      "awaySlot": "AUT",
+      "homeTeamId": "ARG",
+      "awayTeamId": "AUT"
+    },
+    {
+      "matchId": "J-5",
+      "group": "J",
+      "homeSlot": "ARG",
+      "awaySlot": "JOR",
+      "homeTeamId": "ARG",
+      "awayTeamId": "JOR"
+    },
+    {
+      "matchId": "J-6",
+      "group": "J",
       "homeSlot": "AUT",
       "awaySlot": "JOR",
       "homeTeamId": "AUT",
       "awayTeamId": "JOR"
     },
     {
-      "matchId": "J-1",
-      "group": "J",
+      "matchId": "K-1",
+      "group": "K",
+      "homeSlot": "COD",
+      "awaySlot": "COL",
+      "homeTeamId": "COD",
+      "awayTeamId": "COL"
+    },
+    {
+      "matchId": "K-2",
+      "group": "K",
+      "homeSlot": "COD",
+      "awaySlot": "POR",
+      "homeTeamId": "COD",
+      "awayTeamId": "POR"
+    },
+    {
+      "matchId": "K-3",
+      "group": "K",
+      "homeSlot": "COD",
+      "awaySlot": "UZB",
+      "homeTeamId": "COD",
+      "awayTeamId": "UZB"
+    },
+    {
+      "matchId": "K-4",
+      "group": "K",
+      "homeSlot": "COL",
+      "awaySlot": "POR",
+      "homeTeamId": "COL",
+      "awayTeamId": "POR"
+    },
+    {
+      "matchId": "K-5",
+      "group": "K",
+      "homeSlot": "COL",
+      "awaySlot": "UZB",
+      "homeTeamId": "COL",
+      "awayTeamId": "UZB"
+    },
+    {
+      "matchId": "K-6",
+      "group": "K",
       "homeSlot": "POR",
       "awaySlot": "UZB",
       "homeTeamId": "POR",
       "awayTeamId": "UZB"
     },
     {
-      "matchId": "J-2",
-      "group": "J",
-      "homeSlot": "POR",
+      "matchId": "L-1",
+      "group": "L",
+      "homeSlot": "CRO",
+      "awaySlot": "ENG",
+      "homeTeamId": "CRO",
+      "awayTeamId": "ENG"
+    },
+    {
+      "matchId": "L-2",
+      "group": "L",
+      "homeSlot": "CRO",
       "awaySlot": "GHA",
-      "homeTeamId": "POR",
+      "homeTeamId": "CRO",
       "awayTeamId": "GHA"
     },
     {
-      "matchId": "J-3",
-      "group": "J",
-      "homeSlot": "POR",
-      "awaySlot": "ENG",
-      "homeTeamId": "POR",
-      "awayTeamId": "ENG"
-    },
-    {
-      "matchId": "J-4",
-      "group": "J",
-      "homeSlot": "UZB",
-      "awaySlot": "GHA",
-      "homeTeamId": "UZB",
-      "awayTeamId": "GHA"
-    },
-    {
-      "matchId": "J-5",
-      "group": "J",
-      "homeSlot": "UZB",
-      "awaySlot": "ENG",
-      "homeTeamId": "UZB",
-      "awayTeamId": "ENG"
-    },
-    {
-      "matchId": "J-6",
-      "group": "J",
-      "homeSlot": "GHA",
-      "awaySlot": "ENG",
-      "homeTeamId": "GHA",
-      "awayTeamId": "ENG"
-    },
-    {
-      "matchId": "K-1",
-      "group": "K",
+      "matchId": "L-3",
+      "group": "L",
       "homeSlot": "CRO",
       "awaySlot": "PAN",
       "homeTeamId": "CRO",
       "awayTeamId": "PAN"
     },
     {
-      "matchId": "K-2",
-      "group": "K",
-      "homeSlot": "CRO",
-      "awaySlot": "SCO",
-      "homeTeamId": "CRO",
-      "awayTeamId": "SCO"
-    },
-    {
-      "matchId": "K-3",
-      "group": "K",
-      "homeSlot": "CRO",
-      "awaySlot": "HAI",
-      "homeTeamId": "CRO",
-      "awayTeamId": "HAI"
-    },
-    {
-      "matchId": "K-4",
-      "group": "K",
-      "homeSlot": "PAN",
-      "awaySlot": "SCO",
-      "homeTeamId": "PAN",
-      "awayTeamId": "SCO"
-    },
-    {
-      "matchId": "K-5",
-      "group": "K",
-      "homeSlot": "PAN",
-      "awaySlot": "HAI",
-      "homeTeamId": "PAN",
-      "awayTeamId": "HAI"
-    },
-    {
-      "matchId": "K-6",
-      "group": "K",
-      "homeSlot": "SCO",
-      "awaySlot": "HAI",
-      "homeTeamId": "SCO",
-      "awayTeamId": "HAI"
-    },
-    {
-      "matchId": "L-1",
-      "group": "L",
-      "homeSlot": "ITA",
-      "awaySlot": "CRC",
-      "homeTeamId": "ITA",
-      "awayTeamId": "CRC"
-    },
-    {
-      "matchId": "L-2",
-      "group": "L",
-      "homeSlot": "ITA",
-      "awaySlot": "POL",
-      "homeTeamId": "ITA",
-      "awayTeamId": "POL"
-    },
-    {
-      "matchId": "L-3",
-      "group": "L",
-      "homeSlot": "ITA",
-      "awaySlot": "PER",
-      "homeTeamId": "ITA",
-      "awayTeamId": "PER"
-    },
-    {
       "matchId": "L-4",
       "group": "L",
-      "homeSlot": "CRC",
-      "awaySlot": "POL",
-      "homeTeamId": "CRC",
-      "awayTeamId": "POL"
+      "homeSlot": "ENG",
+      "awaySlot": "GHA",
+      "homeTeamId": "ENG",
+      "awayTeamId": "GHA"
     },
     {
       "matchId": "L-5",
       "group": "L",
-      "homeSlot": "CRC",
-      "awaySlot": "PER",
-      "homeTeamId": "CRC",
-      "awayTeamId": "PER"
+      "homeSlot": "ENG",
+      "awaySlot": "PAN",
+      "homeTeamId": "ENG",
+      "awayTeamId": "PAN"
     },
     {
       "matchId": "L-6",
       "group": "L",
-      "homeSlot": "POL",
-      "awaySlot": "PER",
-      "homeTeamId": "POL",
-      "awayTeamId": "PER"
+      "homeSlot": "GHA",
+      "awaySlot": "PAN",
+      "homeTeamId": "GHA",
+      "awayTeamId": "PAN"
     }
   ],
   "knockoutRounds": [

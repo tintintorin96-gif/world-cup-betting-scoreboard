@@ -15,10 +15,10 @@
 ### Group A
 1. 🇲🇽 Mexico
 2. 🇰🇷 South Korea
-3. 🇩🇰 Denmark
+3. 🇨🇿 Czechia
 4. 🇿🇦 South Africa
 
-### Group H
+### Group I
 1. 🇫🇷 France
 2. 🇨🇴 Colombia
 3. 🇳🇴 Norway
@@ -29,7 +29,7 @@
 | Group | Winner |
 |-------|--------|
 | Group A | 🇲🇽 Mexico |
-| Group H | 🇫🇷 France |
+| Group I | 🇫🇷 France |
 
 ## Knockout Predictions
 

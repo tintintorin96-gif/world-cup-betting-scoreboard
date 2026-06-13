@@ -6,7 +6,7 @@
 |-------|------------|
 | 🇲🇽 Mexico vs 🇿🇦 South Africa | 3-0 |
 | 🇧🇷 Brazil vs 🇶🇦 Qatar | 4-0 |
-| 🇺🇸 United States vs 🇲🇦 Morocco | 1-2 |
+| 🇺🇸 United States vs 🇵🇾 Paraguay | 2-1 |
 | 🇪🇸 Spain vs 🇺🇾 Uruguay | 2-2 |
 
 ## Predicted Group Standings
@@ -14,21 +14,21 @@
 ### Group A
 1. 🇲🇽 Mexico
 2. 🇿🇦 South Africa
-3. 🇩🇰 Denmark
+3. 🇨🇿 Czechia
 4. 🇰🇷 South Korea
 
-### Group C
-1. 🇲🇦 Morocco
-2. 🇺🇸 United States
+### Group D
+1. 🇺🇸 United States
+2. 🇵🇾 Paraguay
 3. 🇦🇺 Australia
-4. 🇵🇾 Paraguay
+4. 🇹🇷 Türkiye
 
 ## Predicted Group Winners
 
 | Group | Winner |
 |-------|--------|
 | Group A | 🇲🇽 Mexico |
-| Group C | 🇲🇦 Morocco |
+| Group D | 🇺🇸 United States |
 
 ## Knockout Predictions
 

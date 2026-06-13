@@ -2,7 +2,7 @@ import { z } from 'zod';
 import type { KnockoutRound, TournamentConfig } from '../types/tournament';
 import type { Participant, Prediction, PredictionBundle } from '../types/prediction';
 import type { TeamRegistry } from '../types/team';
-import { resolveTeamId } from '../normalize/resolve-team';
+import { resolveTeamId, tryResolveTeamId } from '../normalize/resolve-team';
 import { ParseError } from './errors';
 import { assertRequiredHeadings, splitByH2 } from './parse-sections';
 import { parseMarkdownTable, parseOrderedList } from './parse-tables';
@@ -69,9 +69,10 @@ function findMatchId(
   awayRaw: string,
   tournament: TournamentConfig,
   registry: TeamRegistry,
-): string {
-  const homeId = resolveTeamId(homeRaw, registry);
-  const awayId = resolveTeamId(awayRaw, registry);
+): string | null {
+  const homeId = tryResolveTeamId(homeRaw, registry);
+  const awayId = tryResolveTeamId(awayRaw, registry);
+  if (!homeId || !awayId) return null;
 
   const match = tournament.groupMatches.find(
     (m) =>
@@ -79,13 +80,7 @@ function findMatchId(
       (m.homeTeamId === awayId && m.awayTeamId === homeId),
   );
 
-  if (!match) {
-    throw new ParseError(
-      `No tournament match found for ${homeRaw} vs ${awayRaw}`,
-      'tournament',
-    );
-  }
-  return match.matchId;
+  return match?.matchId ?? null;
 }
 
 function parseGroupStage(
@@ -109,6 +104,10 @@ function parseGroupStage(
         throw new ParseError(`Invalid group match row: ${row.cells.join(' | ')}`, filePath, line);
       }
       const matchId = findMatchId(teams.home, teams.away, tournament, registry);
+      if (!matchId) {
+        console.warn(`[warn] Skipping unmapped match in ${filePath}: ${teams.home} vs ${teams.away}`);
+        continue;
+      }
       const matchRef = tournament.groupMatches.find((m) => m.matchId === matchId)!;
       const homeId = resolveTeamId(teams.home, registry);
       const isHomeFirst = matchRef.homeTeamId === homeId;
@@ -127,6 +126,10 @@ function parseGroupStage(
     const alt = trimmed.match(/^(.+?)\s+(\d+)\s*[-–]\s*(\d+)\s+(.+)$/);
     if (alt) {
       const matchId = findMatchId(alt[1], alt[4], tournament, registry);
+      if (!matchId) {
+        console.warn(`[warn] Skipping unmapped match in ${filePath}: ${alt[1]} vs ${alt[4]}`);
+        continue;
+      }
       const matchRef = tournament.groupMatches.find((m) => m.matchId === matchId)!;
       const homeId = resolveTeamId(alt[1], registry);
       const isHomeFirst = matchRef.homeTeamId === homeId;
@@ -155,7 +158,11 @@ function parseStandings(content: string, filePath: string, registry: TeamRegistr
     }
     standings.push({
       group,
-      positions: items.slice(0, 4).map((t) => resolveTeamId(t, registry)),
+      positions: items.slice(0, 4).flatMap((t) => {
+        const id = tryResolveTeamId(t, registry);
+        if (!id) console.warn(`[warn] Skipping unknown team in ${filePath} Group ${group}: ${t}`);
+        return id ? [id] : [];
+      }),
     });
   }
 
@@ -183,7 +190,9 @@ function parseWinners(content: string, registry: TeamRegistry) {
       const team = row.cells[1] ?? '';
       if (/^group$/i.test(group) || /^winner$/i.test(team)) continue;
       if (group && team) {
-        winners.push({ group, winnerId: resolveTeamId(team, registry) });
+        const winnerId = tryResolveTeamId(team, registry);
+        if (winnerId) winners.push({ group, winnerId });
+        else console.warn(`[warn] Skipping unknown group winner in Group ${group}: ${team}`);
       }
     }
     return winners;

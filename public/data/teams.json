@@ -1,6 +1,30 @@
 {
   "teams": [
     {
+      "id": "CZE",
+      "name": "Czechia",
+      "emoji": "🇨🇿",
+      "aliases": [
+        "czechia",
+        "czech republic",
+        "czech",
+        "cze"
+      ],
+      "group": "A"
+    },
+    {
+      "id": "KOR",
+      "name": "South Korea",
+      "emoji": "🇰🇷",
+      "aliases": [
+        "south korea",
+        "korea republic",
+        "korea",
+        "kor"
+      ],
+      "group": "A"
+    },
+    {
       "id": "MEX",
       "name": "Mexico",
       "emoji": "🇲🇽",
@@ -21,25 +45,16 @@
       "group": "A"
     },
     {
-      "id": "KOR",
-      "name": "South Korea",
-      "emoji": "🇰🇷",
+      "id": "BIH",
+      "name": "Bosnia and Herzegovina",
+      "emoji": "🇧🇦",
       "aliases": [
-        "south korea",
-        "korea republic",
-        "kor"
+        "bosnia",
+        "bosnia and herzegovina",
+        "bosnia-herzegovina",
+        "bih"
       ],
-      "group": "A"
-    },
-    {
-      "id": "DEN",
-      "name": "Denmark",
-      "emoji": "🇩🇰",
-      "aliases": [
-        "denmark",
-        "den"
-      ],
-      "group": "A"
+      "group": "B"
     },
     {
       "id": "CAN",
@@ -48,16 +63,6 @@
       "aliases": [
         "canada",
         "can"
-      ],
-      "group": "B"
-    },
-    {
-      "id": "SUI",
-      "name": "Switzerland",
-      "emoji": "🇨🇭",
-      "aliases": [
-        "switzerland",
-        "sui"
       ],
       "group": "B"
     },
@@ -72,6 +77,16 @@
       "group": "B"
     },
     {
+      "id": "SUI",
+      "name": "Switzerland",
+      "emoji": "🇨🇭",
+      "aliases": [
+        "switzerland",
+        "sui"
+      ],
+      "group": "B"
+    },
+    {
       "id": "BRA",
       "name": "Brazil",
       "emoji": "🇧🇷",
@@ -79,36 +94,15 @@
         "brazil",
         "bra"
       ],
-      "group": "B"
-    },
-    {
-      "id": "USA",
-      "name": "United States",
-      "emoji": "🇺🇸",
-      "aliases": [
-        "united states",
-        "usa",
-        "us"
-      ],
       "group": "C"
     },
     {
-      "id": "PAR",
-      "name": "Paraguay",
-      "emoji": "🇵🇾",
+      "id": "HAI",
+      "name": "Haiti",
+      "emoji": "🇭🇹",
       "aliases": [
-        "paraguay",
-        "par"
-      ],
-      "group": "C"
-    },
-    {
-      "id": "AUS",
-      "name": "Australia",
-      "emoji": "🇦🇺",
-      "aliases": [
-        "australia",
-        "aus"
+        "haiti",
+        "hai"
       ],
       "group": "C"
     },
@@ -123,23 +117,56 @@
       "group": "C"
     },
     {
-      "id": "GER",
-      "name": "Germany",
-      "emoji": "🇩🇪",
+      "id": "SCO",
+      "name": "Scotland",
+      "emoji": "🏴",
       "aliases": [
-        "germany",
-        "ger"
+        "scotland",
+        "sco"
+      ],
+      "group": "C"
+    },
+    {
+      "id": "AUS",
+      "name": "Australia",
+      "emoji": "🇦🇺",
+      "aliases": [
+        "australia",
+        "aus"
       ],
       "group": "D"
     },
     {
-      "id": "CUW",
-      "name": "Curaçao",
-      "emoji": "🇨🇼",
+      "id": "PAR",
+      "name": "Paraguay",
+      "emoji": "🇵🇾",
       "aliases": [
-        "curacao",
-        "curaçao",
-        "cuw"
+        "paraguay",
+        "par"
+      ],
+      "group": "D"
+    },
+    {
+      "id": "TUR",
+      "name": "Türkiye",
+      "emoji": "🇹🇷",
+      "aliases": [
+        "turkiye",
+        "türkiye",
+        "turkey",
+        "tur"
+      ],
+      "group": "D"
+    },
+    {
+      "id": "USA",
+      "name": "United States",
+      "emoji": "🇺🇸",
+      "aliases": [
+        "united states",
+        "usa",
+        "us",
+        "america"
       ],
       "group": "D"
     },
@@ -152,7 +179,18 @@
         "ivory coast",
         "civ"
       ],
-      "group": "D"
+      "group": "E"
+    },
+    {
+      "id": "CUW",
+      "name": "Curaçao",
+      "emoji": "🇨🇼",
+      "aliases": [
+        "curacao",
+        "curaçao",
+        "cuw"
+      ],
+      "group": "E"
     },
     {
       "id": "ECU",
@@ -162,16 +200,15 @@
         "ecuador",
         "ecu"
       ],
-      "group": "D"
+      "group": "E"
     },
     {
-      "id": "NED",
-      "name": "Netherlands",
-      "emoji": "🇳🇱",
+      "id": "GER",
+      "name": "Germany",
+      "emoji": "🇩🇪",
       "aliases": [
-        "netherlands",
-        "ned",
-        "holland"
+        "germany",
+        "ger"
       ],
       "group": "E"
     },
@@ -183,7 +220,28 @@
         "japan",
         "jpn"
       ],
-      "group": "E"
+      "group": "F"
+    },
+    {
+      "id": "NED",
+      "name": "Netherlands",
+      "emoji": "🇳🇱",
+      "aliases": [
+        "netherlands",
+        "holland",
+        "ned"
+      ],
+      "group": "F"
+    },
+    {
+      "id": "SWE",
+      "name": "Sweden",
+      "emoji": "🇸🇪",
+      "aliases": [
+        "sweden",
+        "swe"
+      ],
+      "group": "F"
     },
     {
       "id": "TUN",
@@ -193,17 +251,7 @@
         "tunisia",
         "tun"
       ],
-      "group": "E"
-    },
-    {
-      "id": "UKR",
-      "name": "Ukraine",
-      "emoji": "🇺🇦",
-      "aliases": [
-        "ukraine",
-        "ukr"
-      ],
-      "group": "E"
+      "group": "F"
     },
     {
       "id": "BEL",
@@ -213,27 +261,7 @@
         "belgium",
         "bel"
       ],
-      "group": "F"
-    },
-    {
-      "id": "IRN",
-      "name": "Iran",
-      "emoji": "🇮🇷",
-      "aliases": [
-        "iran",
-        "irn"
-      ],
-      "group": "F"
-    },
-    {
-      "id": "NZL",
-      "name": "New Zealand",
-      "emoji": "🇳🇿",
-      "aliases": [
-        "new zealand",
-        "nzl"
-      ],
-      "group": "F"
+      "group": "G"
     },
     {
       "id": "EGY",
@@ -243,15 +271,25 @@
         "egypt",
         "egy"
       ],
-      "group": "F"
+      "group": "G"
     },
     {
-      "id": "ESP",
-      "name": "Spain",
-      "emoji": "🇪🇸",
+      "id": "IRN",
+      "name": "Iran",
+      "emoji": "🇮🇷",
       "aliases": [
-        "spain",
-        "esp"
+        "iran",
+        "irn"
+      ],
+      "group": "G"
+    },
+    {
+      "id": "NZL",
+      "name": "New Zealand",
+      "emoji": "🇳🇿",
+      "aliases": [
+        "new zealand",
+        "nzl"
       ],
       "group": "G"
     },
@@ -261,9 +299,20 @@
       "emoji": "🇨🇻",
       "aliases": [
         "cape verde",
+        "cabo verde",
         "cpv"
       ],
-      "group": "G"
+      "group": "H"
+    },
+    {
+      "id": "ESP",
+      "name": "Spain",
+      "emoji": "🇪🇸",
+      "aliases": [
+        "spain",
+        "esp"
+      ],
+      "group": "H"
     },
     {
       "id": "KSA",
@@ -273,7 +322,7 @@
         "saudi arabia",
         "ksa"
       ],
-      "group": "G"
+      "group": "H"
     },
     {
       "id": "URU",
@@ -283,7 +332,7 @@
         "uruguay",
         "uru"
       ],
-      "group": "G"
+      "group": "H"
     },
     {
       "id": "FRA",
@@ -293,17 +342,17 @@
         "france",
         "fra"
       ],
-      "group": "H"
+      "group": "I"
     },
     {
-      "id": "SEN",
-      "name": "Senegal",
-      "emoji": "🇸🇳",
+      "id": "IRQ",
+      "name": "Iraq",
+      "emoji": "🇮🇶",
       "aliases": [
-        "senegal",
-        "sen"
+        "iraq",
+        "irq"
       ],
-      "group": "H"
+      "group": "I"
     },
     {
       "id": "NOR",
@@ -313,25 +362,15 @@
         "norway",
         "nor"
       ],
-      "group": "H"
+      "group": "I"
     },
     {
-      "id": "COL",
-      "name": "Colombia",
-      "emoji": "🇨🇴",
+      "id": "SEN",
+      "name": "Senegal",
+      "emoji": "🇸🇳",
       "aliases": [
-        "colombia",
-        "col"
-      ],
-      "group": "H"
-    },
-    {
-      "id": "ARG",
-      "name": "Argentina",
-      "emoji": "🇦🇷",
-      "aliases": [
-        "argentina",
-        "arg"
+        "senegal",
+        "sen"
       ],
       "group": "I"
     },
@@ -343,7 +382,17 @@
         "algeria",
         "alg"
       ],
-      "group": "I"
+      "group": "J"
+    },
+    {
+      "id": "ARG",
+      "name": "Argentina",
+      "emoji": "🇦🇷",
+      "aliases": [
+        "argentina",
+        "arg"
+      ],
+      "group": "J"
     },
     {
       "id": "AUT",
@@ -353,7 +402,7 @@
         "austria",
         "aut"
       ],
-      "group": "I"
+      "group": "J"
     },
     {
       "id": "JOR",
@@ -363,7 +412,31 @@
         "jordan",
         "jor"
       ],
-      "group": "I"
+      "group": "J"
+    },
+    {
+      "id": "COD",
+      "name": "DR Congo",
+      "emoji": "🇨🇩",
+      "aliases": [
+        "dr congo",
+        "congo dr",
+        "democratic republic of congo",
+        "drc",
+        "congo",
+        "cod"
+      ],
+      "group": "K"
+    },
+    {
+      "id": "COL",
+      "name": "Colombia",
+      "emoji": "🇨🇴",
+      "aliases": [
+        "colombia",
+        "col"
+      ],
+      "group": "K"
     },
     {
       "id": "POR",
@@ -373,7 +446,7 @@
         "portugal",
         "por"
       ],
-      "group": "J"
+      "group": "K"
     },
     {
       "id": "UZB",
@@ -383,27 +456,7 @@
         "uzbekistan",
         "uzb"
       ],
-      "group": "J"
-    },
-    {
-      "id": "GHA",
-      "name": "Ghana",
-      "emoji": "🇬🇭",
-      "aliases": [
-        "ghana",
-        "gha"
-      ],
-      "group": "J"
-    },
-    {
-      "id": "ENG",
-      "name": "England",
-      "emoji": "🏴",
-      "aliases": [
-        "england",
-        "eng"
-      ],
-      "group": "J"
+      "group": "K"
     },
     {
       "id": "CRO",
@@ -413,7 +466,27 @@
         "croatia",
         "cro"
       ],
-      "group": "K"
+      "group": "L"
+    },
+    {
+      "id": "ENG",
+      "name": "England",
+      "emoji": "🏴",
+      "aliases": [
+        "england",
+        "eng"
+      ],
+      "group": "L"
+    },
+    {
+      "id": "GHA",
+      "name": "Ghana",
+      "emoji": "🇬🇭",
+      "aliases": [
+        "ghana",
+        "gha"
+      ],
+      "group": "L"
     },
     {
       "id": "PAN",
@@ -422,66 +495,6 @@
       "aliases": [
         "panama",
         "pan"
-      ],
-      "group": "K"
-    },
-    {
-      "id": "SCO",
-      "name": "Scotland",
-      "emoji": "🏴",
-      "aliases": [
-        "scotland",
-        "sco"
-      ],
-      "group": "K"
-    },
-    {
-      "id": "HAI",
-      "name": "Haiti",
-      "emoji": "🇭🇹",
-      "aliases": [
-        "haiti",
-        "hai"
-      ],
-      "group": "K"
-    },
-    {
-      "id": "ITA",
-      "name": "Italy",
-      "emoji": "🇮🇹",
-      "aliases": [
-        "italy",
-        "ita"
-      ],
-      "group": "L"
-    },
-    {
-      "id": "CRC",
-      "name": "Costa Rica",
-      "emoji": "🇨🇷",
-      "aliases": [
-        "costa rica",
-        "crc"
-      ],
-      "group": "L"
-    },
-    {
-      "id": "POL",
-      "name": "Poland",
-      "emoji": "🇵🇱",
-      "aliases": [
-        "poland",
-        "pol"
-      ],
-      "group": "L"
-    },
-    {
-      "id": "PER",
-      "name": "Peru",
-      "emoji": "🇵🇪",
-      "aliases": [
-        "peru",
-        "per"
       ],
       "group": "L"
     }

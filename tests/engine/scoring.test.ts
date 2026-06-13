@@ -45,30 +45,27 @@ function buildTournament(): TournamentConfig {
 const tournament = buildTournament();
 
 function groupAMatchesFinished() {
-  const mexicoWins = new Set(['A-1', 'A-2', 'A-3']);
+  const mexicoWins = new Set(['A-2', 'A-4', 'A-6']);
   return {
     version: 1,
     fetchedAt: new Date().toISOString(),
     matches: tournament.groupMatches
       .filter((match) => match.group === 'A')
-      .map((match) => ({
-        matchId: match.matchId,
-        status: 'finished' as const,
-        homeTeamId: match.homeTeamId!,
-        awayTeamId: match.awayTeamId!,
-        homeScore: mexicoWins.has(match.matchId)
-          ? 1
-          : match.homeTeamId === 'MEX'
-            ? 1
-            : 0,
-        awayScore: mexicoWins.has(match.matchId)
-          ? 0
-          : match.awayTeamId === 'MEX'
-            ? 0
-            : 1,
-        updatedAt: new Date().toISOString(),
-        source: 'manual' as const,
-      })),
+      .map((match) => {
+        const mexHome = match.homeTeamId === 'MEX';
+        const mexAway = match.awayTeamId === 'MEX';
+        const mexWins = mexicoWins.has(match.matchId);
+        return {
+          matchId: match.matchId,
+          status: 'finished' as const,
+          homeTeamId: match.homeTeamId!,
+          awayTeamId: match.awayTeamId!,
+          homeScore: mexWins ? (mexHome ? 2 : 0) : 1,
+          awayScore: mexWins ? (mexAway ? 2 : 0) : 0,
+          updatedAt: new Date().toISOString(),
+          source: 'manual' as const,
+        };
+      }),
     groupStandings: [],
     knockout: [],
   };
@@ -181,7 +178,7 @@ describe('scoring engine', () => {
       fetchedAt: new Date().toISOString(),
       matches: [
         {
-          matchId: 'A-1',
+          matchId: 'A-6',
           status: 'finished' as const,
           homeTeamId: 'MEX',
           awayTeamId: 'RSA',

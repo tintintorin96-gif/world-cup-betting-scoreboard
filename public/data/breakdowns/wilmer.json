@@ -2,7 +2,7 @@
   "participantId": "wilmer",
   "events": [
     {
-      "id": "wilmer:correct_outcome:A-1:1",
+      "id": "wilmer:correct_outcome:A-6:1",
       "participantId": "wilmer",
       "type": "group_correct_outcome",
       "category": "correct_outcome",
@@ -11,37 +11,37 @@
       "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
-      "matchId": "A-1",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "matchId": "A-6",
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
-      "id": "wilmer:pending:A-2:2",
+      "id": "wilmer:pending:A-4:2",
       "participantId": "wilmer",
       "type": "pending",
       "category": "pending",
       "points": 0,
       "label": "Awaiting result",
-      "description": "🇲🇽 Mexico vs 🇰🇷 South Korea",
+      "description": "🇰🇷 South Korea vs 🇲🇽 Mexico",
       "prediction": "1-1",
       "actualResult": "Match not finished",
-      "matchId": "A-2",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "matchId": "A-4",
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
-      "id": "wilmer:pending:G-1:3",
+      "id": "wilmer:pending:H-1:3",
       "participantId": "wilmer",
       "type": "pending",
       "category": "pending",
       "points": 0,
       "label": "Awaiting result",
-      "description": "🇪🇸 Spain vs 🇨🇻 Cape Verde",
-      "prediction": "3-0",
+      "description": "🇨🇻 Cape Verde vs 🇪🇸 Spain",
+      "prediction": "0-3",
       "actualResult": "Match not finished",
-      "matchId": "G-1",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "matchId": "H-1",
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
-      "id": "wilmer:pending:G-2:4",
+      "id": "wilmer:pending:H-4:4",
       "participantId": "wilmer",
       "type": "pending",
       "category": "pending",
@@ -50,11 +50,11 @@
       "description": "🇪🇸 Spain vs 🇸🇦 Saudi Arabia",
       "prediction": "2-0",
       "actualResult": "Match not finished",
-      "matchId": "G-2",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "matchId": "H-4",
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
-      "id": "wilmer:pending:H-1:5",
+      "id": "wilmer:pending:I-3:5",
       "participantId": "wilmer",
       "type": "pending",
       "category": "pending",
@@ -63,8 +63,8 @@
       "description": "🇫🇷 France vs 🇸🇳 Senegal",
       "prediction": "2-1",
       "actualResult": "Match not finished",
-      "matchId": "H-1",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "matchId": "I-3",
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
       "id": "wilmer:pending:MEX:6",
@@ -77,7 +77,7 @@
       "prediction": "🇲🇽 Mexico",
       "actualResult": "Group stage in progress",
       "teamId": "MEX",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
       "id": "wilmer:pending:BRA:7",
@@ -86,11 +86,11 @@
       "category": "pending",
       "points": 0,
       "label": "Awaiting group completion",
-      "description": "Group B winner",
+      "description": "Group C winner",
       "prediction": "🇧🇷 Brazil",
       "actualResult": "Group stage in progress",
       "teamId": "BRA",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
       "id": "wilmer:pending:ESP:8",
@@ -99,11 +99,11 @@
       "category": "pending",
       "points": 0,
       "label": "Awaiting group completion",
-      "description": "Group G winner",
+      "description": "Group H winner",
       "prediction": "🇪🇸 Spain",
       "actualResult": "Group stage in progress",
       "teamId": "ESP",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
       "id": "wilmer:pending:ESP:9",
@@ -117,7 +117,7 @@
       "actualResult": "Knockout stage in progress",
       "teamId": "ESP",
       "round": "third",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
       "id": "wilmer:pending:ESP:10",
@@ -131,7 +131,7 @@
       "actualResult": "Knockout stage in progress",
       "teamId": "ESP",
       "round": "third",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "timestamp": "2026-06-13T07:33:02.409Z"
     }
   ],
   "totalPoints": 2,

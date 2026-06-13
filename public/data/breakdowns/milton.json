@@ -2,7 +2,7 @@
   "participantId": "milton",
   "events": [
     {
-      "id": "milton:correct_outcome:A-1:1",
+      "id": "milton:correct_outcome:A-6:1",
       "participantId": "milton",
       "type": "group_correct_outcome",
       "category": "correct_outcome",
@@ -11,11 +11,24 @@
       "description": "🇲🇽 Mexico vs 🇿🇦 South Africa",
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
-      "matchId": "A-1",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "matchId": "A-6",
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
-      "id": "milton:pending:G-3:2",
+      "id": "milton:correct_outcome:D-5:2",
+      "participantId": "milton",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇵🇾 Paraguay vs 🇺🇸 United States",
+      "prediction": "🇺🇸 United States win",
+      "actualResult": "1-4",
+      "matchId": "D-5",
+      "timestamp": "2026-06-13T07:33:02.409Z"
+    },
+    {
+      "id": "milton:pending:H-5:3",
       "participantId": "milton",
       "type": "pending",
       "category": "pending",
@@ -24,11 +37,11 @@
       "description": "🇪🇸 Spain vs 🇺🇾 Uruguay",
       "prediction": "2-2",
       "actualResult": "Match not finished",
-      "matchId": "G-3",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "matchId": "H-5",
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
-      "id": "milton:pending:MEX:3",
+      "id": "milton:pending:MEX:4",
       "participantId": "milton",
       "type": "pending",
       "category": "pending",
@@ -38,34 +51,20 @@
       "prediction": "🇲🇽 Mexico",
       "actualResult": "Group stage in progress",
       "teamId": "MEX",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
-      "id": "milton:pending:MAR:4",
+      "id": "milton:pending:USA:5",
       "participantId": "milton",
       "type": "pending",
       "category": "pending",
       "points": 0,
       "label": "Awaiting group completion",
-      "description": "Group C winner",
-      "prediction": "🇲🇦 Morocco",
+      "description": "Group D winner",
+      "prediction": "🇺🇸 United States",
       "actualResult": "Group stage in progress",
-      "teamId": "MAR",
-      "timestamp": "2026-06-13T07:19:28.750Z"
-    },
-    {
-      "id": "milton:pending:BRA:5",
-      "participantId": "milton",
-      "type": "pending",
-      "category": "pending",
-      "points": 0,
-      "label": "Awaiting third-place match",
-      "description": "🇧🇷 Brazil",
-      "prediction": "Reaches third-place match",
-      "actualResult": "Knockout stage in progress",
-      "teamId": "BRA",
-      "round": "third",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "teamId": "USA",
+      "timestamp": "2026-06-13T07:33:02.409Z"
     },
     {
       "id": "milton:pending:BRA:6",
@@ -79,15 +78,29 @@
       "actualResult": "Knockout stage in progress",
       "teamId": "BRA",
       "round": "third",
-      "timestamp": "2026-06-13T07:19:28.750Z"
+      "timestamp": "2026-06-13T07:33:02.409Z"
+    },
+    {
+      "id": "milton:pending:BRA:7",
+      "participantId": "milton",
+      "type": "pending",
+      "category": "pending",
+      "points": 0,
+      "label": "Awaiting third-place match",
+      "description": "🇧🇷 Brazil",
+      "prediction": "Reaches third-place match",
+      "actualResult": "Knockout stage in progress",
+      "teamId": "BRA",
+      "round": "third",
+      "timestamp": "2026-06-13T07:33:02.409Z"
     }
   ],
-  "totalPoints": 2,
-  "groupStagePoints": 2,
+  "totalPoints": 4,
+  "groupStagePoints": 4,
   "knockoutPoints": 0,
   "pointsByCategory": {
     "exact_score": 0,
-    "correct_outcome": 2,
+    "correct_outcome": 4,
     "wrong_outcome": 0,
     "group_winner": 0,
     "round_of_32": 0,
@@ -100,10 +113,10 @@
     "champion": 0,
     "pending": 0
   },
-  "correctPicks": 1,
+  "correctPicks": 2,
   "missedPicks": 0,
   "exactScoreHits": 0,
-  "correctOutcomeHits": 1,
+  "correctOutcomeHits": 2,
   "groupWinnerHits": 0,
   "knockoutHits": 0,
   "accuracyPct": 100

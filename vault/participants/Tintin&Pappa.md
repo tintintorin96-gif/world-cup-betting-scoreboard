@@ -13,7 +13,7 @@
 
 ### Group A
 1. 🇲🇽 Mexico
-2. 🇩🇰 Denmark
+2. 🇨🇿 Czechia
 3. 🇰🇷 South Korea
 4. 🇿🇦 South Africa
 

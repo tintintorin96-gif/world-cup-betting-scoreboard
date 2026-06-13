@@ -9,29 +9,29 @@
       "participantId": "mamma",
       "groupMatches": [
         {
-          "matchId": "A-1",
+          "matchId": "A-6",
           "homeScore": 1,
           "awayScore": 0
         },
         {
-          "matchId": "A-2",
-          "homeScore": 2,
-          "awayScore": 1
+          "matchId": "A-4",
+          "homeScore": 1,
+          "awayScore": 2
         },
         {
-          "matchId": "G-3",
+          "matchId": "H-5",
           "homeScore": 1,
           "awayScore": 1
         },
         {
-          "matchId": "H-1",
+          "matchId": "I-3",
           "homeScore": 3,
           "awayScore": 0
         },
         {
-          "matchId": "D-3",
-          "homeScore": 2,
-          "awayScore": 0
+          "matchId": "E-6",
+          "homeScore": 0,
+          "awayScore": 2
         }
       ],
       "groupStandings": [
@@ -40,12 +40,12 @@
           "positions": [
             "MEX",
             "KOR",
-            "DEN",
+            "CZE",
             "RSA"
           ]
         },
         {
-          "group": "H",
+          "group": "I",
           "positions": [
             "FRA",
             "COL",
@@ -60,7 +60,7 @@
           "winnerId": "MEX"
         },
         {
-          "group": "H",
+          "group": "I",
           "winnerId": "FRA"
         }
       ],
@@ -122,22 +122,17 @@
       "participantId": "milton",
       "groupMatches": [
         {
-          "matchId": "A-1",
+          "matchId": "A-6",
           "homeScore": 3,
           "awayScore": 0
         },
         {
-          "matchId": "B-6",
-          "homeScore": 0,
-          "awayScore": 4
-        },
-        {
-          "matchId": "C-3",
+          "matchId": "D-5",
           "homeScore": 1,
           "awayScore": 2
         },
         {
-          "matchId": "G-3",
+          "matchId": "H-5",
           "homeScore": 2,
           "awayScore": 2
         }
@@ -148,17 +143,17 @@
           "positions": [
             "MEX",
             "RSA",
-            "DEN",
+            "CZE",
             "KOR"
           ]
         },
         {
-          "group": "C",
+          "group": "D",
           "positions": [
-            "MAR",
             "USA",
+            "PAR",
             "AUS",
-            "PAR"
+            "TUR"
           ]
         }
       ],
@@ -168,8 +163,8 @@
           "winnerId": "MEX"
         },
         {
-          "group": "C",
-          "winnerId": "MAR"
+          "group": "D",
+          "winnerId": "USA"
         }
       ],
       "knockout": [
@@ -229,24 +224,19 @@
       "participantId": "tintin-and-pappa",
       "groupMatches": [
         {
-          "matchId": "A-1",
+          "matchId": "A-6",
           "homeScore": 2,
           "awayScore": 1
         },
         {
-          "matchId": "B-6",
-          "homeScore": 0,
-          "awayScore": 3
-        },
-        {
-          "matchId": "G-3",
+          "matchId": "H-5",
           "homeScore": 2,
           "awayScore": 1
         },
         {
-          "matchId": "J-6",
-          "homeScore": 0,
-          "awayScore": 2
+          "matchId": "L-4",
+          "homeScore": 2,
+          "awayScore": 0
         }
       ],
       "groupStandings": [
@@ -254,7 +244,7 @@
           "group": "A",
           "positions": [
             "MEX",
-            "DEN",
+            "CZE",
             "KOR",
             "RSA"
           ]
@@ -338,32 +328,27 @@
       "participantId": "wilmer",
       "groupMatches": [
         {
-          "matchId": "A-1",
+          "matchId": "A-6",
           "homeScore": 2,
           "awayScore": 1
         },
         {
-          "matchId": "A-2",
+          "matchId": "A-4",
           "homeScore": 1,
           "awayScore": 1
         },
         {
-          "matchId": "A-3",
-          "homeScore": 2,
-          "awayScore": 0
-        },
-        {
-          "matchId": "G-1",
-          "homeScore": 3,
-          "awayScore": 0
-        },
-        {
-          "matchId": "G-2",
-          "homeScore": 2,
-          "awayScore": 0
-        },
-        {
           "matchId": "H-1",
+          "homeScore": 0,
+          "awayScore": 3
+        },
+        {
+          "matchId": "H-4",
+          "homeScore": 2,
+          "awayScore": 0
+        },
+        {
+          "matchId": "I-3",
           "homeScore": 2,
           "awayScore": 1
         }
@@ -373,13 +358,13 @@
           "group": "A",
           "positions": [
             "MEX",
-            "DEN",
+            "CZE",
             "KOR",
             "RSA"
           ]
         },
         {
-          "group": "B",
+          "group": "C",
           "positions": [
             "BRA",
             "SUI",
@@ -388,7 +373,7 @@
           ]
         },
         {
-          "group": "G",
+          "group": "H",
           "positions": [
             "ESP",
             "URU",
@@ -403,11 +388,11 @@
           "winnerId": "MEX"
         },
         {
-          "group": "B",
+          "group": "C",
           "winnerId": "BRA"
         },
         {
-          "group": "G",
+          "group": "H",
           "winnerId": "ESP"
         }
       ],
