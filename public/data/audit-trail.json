@@ -1,7 +1,7 @@
 [
   {
-    "timestamp": "2026-06-13T19:06:00.289Z",
-    "resultsVersion": 9,
+    "timestamp": "2026-06-14T02:31:49.708Z",
+    "resultsVersion": 10,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:A-6:1",
@@ -14,14 +14,34 @@
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-13T19:06:00.289Z"
+      "timestamp": "2026-06-14T02:31:49.708Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-13T19:06:00.289Z",
-    "resultsVersion": 9,
+    "timestamp": "2026-06-14T02:31:49.708Z",
+    "resultsVersion": 10,
+    "participantId": "mamma",
+    "event": {
+      "id": "mamma:exact_score:C-2:13",
+      "participantId": "mamma",
+      "type": "group_exact_score",
+      "category": "exact_score",
+      "points": 5,
+      "label": "Exact score",
+      "description": "🇧🇷 Brazil vs 🇲🇦 Morocco",
+      "prediction": "1-1",
+      "actualResult": "1-1",
+      "matchId": "C-2",
+      "timestamp": "2026-06-14T02:31:49.708Z"
+    },
+    "pointsDelta": 5,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-14T02:31:49.708Z",
+    "resultsVersion": 10,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:D-5:20",
@@ -34,14 +54,14 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-13T19:06:00.289Z"
+      "timestamp": "2026-06-14T02:31:49.708Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-13T19:06:00.289Z",
-    "resultsVersion": 9,
+    "timestamp": "2026-06-14T02:31:49.708Z",
+    "resultsVersion": 10,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:A-6:1",
@@ -54,14 +74,14 @@
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-13T19:06:00.289Z"
+      "timestamp": "2026-06-14T02:31:49.708Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-13T19:06:00.289Z",
-    "resultsVersion": 9,
+    "timestamp": "2026-06-14T02:31:49.708Z",
+    "resultsVersion": 10,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:D-5:20",
@@ -74,14 +94,14 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-13T19:06:00.289Z"
+      "timestamp": "2026-06-14T02:31:49.708Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-13T19:06:00.289Z",
-    "resultsVersion": 9,
+    "timestamp": "2026-06-14T02:31:49.708Z",
+    "resultsVersion": 10,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:exact_score:A-6:1",
@@ -94,14 +114,14 @@
       "prediction": "2-0",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-13T19:06:00.289Z"
+      "timestamp": "2026-06-14T02:31:49.708Z"
     },
     "pointsDelta": 5,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-13T19:06:00.289Z",
-    "resultsVersion": 9,
+    "timestamp": "2026-06-14T02:31:49.708Z",
+    "resultsVersion": 10,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:correct_outcome:D-5:20",
@@ -114,14 +134,14 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-13T19:06:00.289Z"
+      "timestamp": "2026-06-14T02:31:49.708Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-13T19:06:00.289Z",
-    "resultsVersion": 9,
+    "timestamp": "2026-06-14T02:31:49.708Z",
+    "resultsVersion": 10,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:A-6:1",
@@ -134,14 +154,14 @@
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-13T19:06:00.289Z"
+      "timestamp": "2026-06-14T02:31:49.708Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-13T19:06:00.289Z",
-    "resultsVersion": 9,
+    "timestamp": "2026-06-14T02:31:49.708Z",
+    "resultsVersion": 10,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:exact_score:B-1:7",
@@ -154,14 +174,14 @@
       "prediction": "1-1",
       "actualResult": "1-1",
       "matchId": "B-1",
-      "timestamp": "2026-06-13T19:06:00.289Z"
+      "timestamp": "2026-06-14T02:31:49.708Z"
     },
     "pointsDelta": 5,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-13T19:06:00.289Z",
-    "resultsVersion": 9,
+    "timestamp": "2026-06-14T02:31:49.708Z",
+    "resultsVersion": 10,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:D-5:20",
@@ -174,7 +194,7 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-13T19:06:00.289Z"
+      "timestamp": "2026-06-14T02:31:49.708Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
