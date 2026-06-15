@@ -1,7 +1,7 @@
 [
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:A-6:1",
@@ -14,14 +14,14 @@
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "mamma",
     "event": {
       "id": "mamma:exact_score:C-2:13",
@@ -34,14 +34,14 @@
       "prediction": "1-1",
       "actualResult": "1-1",
       "matchId": "C-2",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 5,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "mamma",
     "event": {
       "id": "mamma:exact_score:C-5:14",
@@ -54,14 +54,14 @@
       "prediction": "0-1",
       "actualResult": "0-1",
       "matchId": "C-5",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 5,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:D-5:20",
@@ -74,14 +74,74 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
+    "participantId": "mamma",
+    "event": {
+      "id": "mamma:correct_outcome:E-5:25",
+      "participantId": "mamma",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇨🇼 Curaçao vs 🇩🇪 Germany",
+      "prediction": "🇩🇪 Germany win",
+      "actualResult": "1-7",
+      "matchId": "E-5",
+      "timestamp": "2026-06-15T11:42:34.032Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
+    "participantId": "mamma",
+    "event": {
+      "id": "mamma:correct_outcome:F-1:31",
+      "participantId": "mamma",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇯🇵 Japan vs 🇳🇱 Netherlands",
+      "prediction": "Draw",
+      "actualResult": "2-2",
+      "matchId": "F-1",
+      "timestamp": "2026-06-15T11:42:34.032Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
+    "participantId": "mamma",
+    "event": {
+      "id": "mamma:correct_outcome:F-6:32",
+      "participantId": "mamma",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇸🇪 Sweden vs 🇹🇳 Tunisia",
+      "prediction": "🇸🇪 Sweden win",
+      "actualResult": "5-1",
+      "matchId": "F-6",
+      "timestamp": "2026-06-15T11:42:34.032Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:A-6:1",
@@ -94,14 +154,14 @@
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:C-5:14",
@@ -114,14 +174,14 @@
       "prediction": "🏴 Scotland win",
       "actualResult": "0-1",
       "matchId": "C-5",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:D-5:20",
@@ -134,14 +194,54 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
+    "participantId": "milton",
+    "event": {
+      "id": "milton:correct_outcome:E-5:25",
+      "participantId": "milton",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇨🇼 Curaçao vs 🇩🇪 Germany",
+      "prediction": "🇩🇪 Germany win",
+      "actualResult": "1-7",
+      "matchId": "E-5",
+      "timestamp": "2026-06-15T11:42:34.032Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
+    "participantId": "milton",
+    "event": {
+      "id": "milton:correct_outcome:F-6:32",
+      "participantId": "milton",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇸🇪 Sweden vs 🇹🇳 Tunisia",
+      "prediction": "🇸🇪 Sweden win",
+      "actualResult": "5-1",
+      "matchId": "F-6",
+      "timestamp": "2026-06-15T11:42:34.032Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:exact_score:A-6:1",
@@ -154,14 +254,14 @@
       "prediction": "2-0",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 5,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:correct_outcome:C-5:14",
@@ -174,14 +274,14 @@
       "prediction": "🏴 Scotland win",
       "actualResult": "0-1",
       "matchId": "C-5",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:correct_outcome:D-5:20",
@@ -194,14 +294,54 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
+    "participantId": "tintin-and-pappa",
+    "event": {
+      "id": "tintin-and-pappa:correct_outcome:E-5:25",
+      "participantId": "tintin-and-pappa",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇨🇼 Curaçao vs 🇩🇪 Germany",
+      "prediction": "🇩🇪 Germany win",
+      "actualResult": "1-7",
+      "matchId": "E-5",
+      "timestamp": "2026-06-15T11:42:34.032Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
+    "participantId": "tintin-and-pappa",
+    "event": {
+      "id": "tintin-and-pappa:correct_outcome:F-6:32",
+      "participantId": "tintin-and-pappa",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇸🇪 Sweden vs 🇹🇳 Tunisia",
+      "prediction": "🇸🇪 Sweden win",
+      "actualResult": "5-1",
+      "matchId": "F-6",
+      "timestamp": "2026-06-15T11:42:34.032Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:A-6:1",
@@ -214,14 +354,14 @@
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:exact_score:B-1:7",
@@ -234,14 +374,14 @@
       "prediction": "1-1",
       "actualResult": "1-1",
       "matchId": "B-1",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 5,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:C-5:14",
@@ -254,14 +394,14 @@
       "prediction": "🏴 Scotland win",
       "actualResult": "0-1",
       "matchId": "C-5",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-14T19:06:39.896Z",
-    "resultsVersion": 13,
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:D-5:20",
@@ -274,7 +414,47 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-14T19:06:39.896Z"
+      "timestamp": "2026-06-15T11:42:34.032Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
+    "participantId": "wilmer",
+    "event": {
+      "id": "wilmer:correct_outcome:E-5:25",
+      "participantId": "wilmer",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇨🇼 Curaçao vs 🇩🇪 Germany",
+      "prediction": "🇩🇪 Germany win",
+      "actualResult": "1-7",
+      "matchId": "E-5",
+      "timestamp": "2026-06-15T11:42:34.032Z"
+    },
+    "pointsDelta": 2,
+    "reason": "initial"
+  },
+  {
+    "timestamp": "2026-06-15T11:42:34.032Z",
+    "resultsVersion": 14,
+    "participantId": "wilmer",
+    "event": {
+      "id": "wilmer:correct_outcome:F-6:32",
+      "participantId": "wilmer",
+      "type": "group_correct_outcome",
+      "category": "correct_outcome",
+      "points": 2,
+      "label": "Correct outcome",
+      "description": "🇸🇪 Sweden vs 🇹🇳 Tunisia",
+      "prediction": "🇸🇪 Sweden win",
+      "actualResult": "5-1",
+      "matchId": "F-6",
+      "timestamp": "2026-06-15T11:42:34.032Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
