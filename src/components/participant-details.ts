@@ -4,6 +4,7 @@ import type { ScoringBreakdown, ScoringEvent } from '../types/scoring';
 interface DetailSection {
   title: string;
   filter: (e: ScoringEvent) => boolean;
+  sort?: (events: ScoringEvent[]) => ScoringEvent[];
 }
 
 const DETAIL_SECTIONS: DetailSection[] = [
@@ -11,7 +12,8 @@ const DETAIL_SECTIONS: DetailSection[] = [
     title: 'Group Matches',
     filter: (e) =>
       Boolean(e.matchId) &&
-      ['exact_score', 'correct_outcome', 'wrong_outcome', 'pending'].includes(e.category),
+      ['exact_score', 'correct_outcome', 'wrong_outcome'].includes(e.category),
+    sort: (events) => [...events].reverse(),
   },
   {
     title: 'Group Winners',
@@ -84,7 +86,8 @@ export function participantDetails(breakdown: ScoringBreakdown | undefined): HTM
 
   let hasContent = false;
   for (const section of DETAIL_SECTIONS) {
-    const events = breakdown.events.filter(section.filter);
+    const filtered = breakdown.events.filter(section.filter);
+    const events = section.sort ? section.sort(filtered) : filtered;
     const block = detailSection(section.title, events);
     if (block) {
       panel.append(block);
