@@ -1,6 +1,6 @@
 {
-  "version": 17,
-  "fetchedAt": "2026-06-16T16:23:17.390Z",
+  "version": 18,
+  "fetchedAt": "2026-06-16T20:35:40.047Z",
   "matches": [
     {
       "matchId": "D-2",
@@ -218,11 +218,12 @@
     },
     {
       "matchId": "I-3",
-      "status": "scheduled",
+      "status": "live",
       "homeTeamId": "FRA",
       "awayTeamId": "SEN",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
+      "winnerId": "FRA",
       "updatedAt": "06/16/2026 15:00",
       "source": "api"
     },
@@ -731,127 +732,6 @@
       "source": "api"
     }
   ],
-  "groupStandings": [
-    {
-      "group": "A",
-      "positions": [
-        "MEX",
-        "KOR",
-        "CZE",
-        "RSA"
-      ],
-      "updatedAt": "2026-06-16T16:23:17.390Z"
-    },
-    {
-      "group": "B",
-      "positions": [
-        "CAN",
-        "BIH",
-        "QAT",
-        "SUI"
-      ],
-      "updatedAt": "2026-06-16T16:23:17.390Z"
-    },
-    {
-      "group": "C",
-      "positions": [
-        "SCO",
-        "BRA",
-        "MAR",
-        "HAI"
-      ],
-      "updatedAt": "2026-06-16T16:23:17.390Z"
-    },
-    {
-      "group": "D",
-      "positions": [
-        "USA",
-        "AUS",
-        "TUR",
-        "PAR"
-      ],
-      "updatedAt": "2026-06-16T16:23:17.390Z"
-    },
-    {
-      "group": "E",
-      "positions": [
-        "GER",
-        "CIV",
-        "ECU",
-        "CUW"
-      ],
-      "updatedAt": "2026-06-16T16:23:17.390Z"
-    },
-    {
-      "group": "F",
-      "positions": [
-        "SWE",
-        "NED",
-        "JPN",
-        "TUN"
-      ],
-      "updatedAt": "2026-06-16T16:23:17.390Z"
-    },
-    {
-      "group": "G",
-      "positions": [
-        "IRN",
-        "NZL",
-        "BEL",
-        "EGY"
-      ],
-      "updatedAt": "2026-06-16T16:23:17.390Z"
-    },
-    {
-      "group": "H",
-      "positions": [
-        "ESP",
-        "CPV",
-        "KSA",
-        "URU"
-      ],
-      "updatedAt": "2026-06-16T16:23:17.390Z"
-    },
-    {
-      "group": "I",
-      "positions": [
-        "FRA",
-        "SEN",
-        "IRQ",
-        "NOR"
-      ],
-      "updatedAt": "2026-06-16T16:23:17.390Z"
-    },
-    {
-      "group": "J",
-      "positions": [
-        "ARG",
-        "ALG",
-        "AUT",
-        "JOR"
-      ],
-      "updatedAt": "2026-06-16T16:23:17.390Z"
-    },
-    {
-      "group": "K",
-      "positions": [
-        "POR",
-        "COD",
-        "UZB",
-        "COL"
-      ],
-      "updatedAt": "2026-06-16T16:23:17.390Z"
-    },
-    {
-      "group": "L",
-      "positions": [
-        "ENG",
-        "CRO",
-        "GHA",
-        "PAN"
-      ],
-      "updatedAt": "2026-06-16T16:23:17.390Z"
-    }
-  ],
+  "groupStandings": [],
   "knockout": []
 }
