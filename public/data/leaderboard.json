@@ -12,10 +12,10 @@
   {
     "participantId": "wilmer",
     "displayName": "Wilmer",
-    "totalPoints": 15,
-    "delta": 0,
-    "progressPct": 2.3,
-    "groupStagePoints": 15,
+    "totalPoints": 20,
+    "delta": 5,
+    "progressPct": 3,
+    "groupStagePoints": 20,
     "knockoutPoints": 0,
     "rank": 2
   },
@@ -32,10 +32,10 @@
   {
     "participantId": "milton",
     "displayName": "Milton",
-    "totalPoints": 10,
-    "delta": 0,
-    "progressPct": 1.5,
-    "groupStagePoints": 10,
+    "totalPoints": 12,
+    "delta": 2,
+    "progressPct": 1.8,
+    "groupStagePoints": 12,
     "knockoutPoints": 0,
     "rank": 4
   }
