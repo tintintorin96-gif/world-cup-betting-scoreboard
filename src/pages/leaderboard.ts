@@ -8,15 +8,13 @@ export async function renderLeaderboardPage(main: HTMLElement, data: AppData) {
   const leader = data.leaderboard.find((e) => e.rank === 1);
 
   main.append(
-    h('div', { className: 'glass-sheet' },
-      leader
-        ? h('div', { className: 'sheet-hero', 'aria-hidden': 'true' },
-            h('p', { className: 'sheet-hero-label' }, 'Leading'),
-            h('p', { className: 'sheet-hero-name' }, leader.displayName),
-            h('p', { className: 'sheet-hero-points' }, `${leader.totalPoints} points`),
-          )
-        : null,
-      leaderboardTable(data.leaderboard, breakdowns),
-    ),
+    leader
+      ? h('div', { className: 'sheet-hero', 'aria-hidden': 'true' },
+          h('p', { className: 'sheet-hero-label' }, 'Leading'),
+          h('p', { className: 'sheet-hero-name' }, leader.displayName),
+          h('p', { className: 'sheet-hero-points' }, `${leader.totalPoints} points`),
+        )
+      : null,
+    leaderboardTable(data.leaderboard, breakdowns),
   );
 }

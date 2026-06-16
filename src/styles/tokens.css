@@ -3,7 +3,6 @@
   --color-black: #030504;
   --color-green-deep: #0a1210;
   --color-green-dark: #0f1a16;
-  --color-green-glass: rgba(12, 22, 18, 0.52);
   --color-green-light: rgba(48, 110, 82, 0.55);
   --color-green-glow: rgba(56, 130, 96, 0.22);
 
@@ -16,8 +15,11 @@
   --color-text-secondary: var(--color-grey-soft);
   --color-text-muted: var(--color-grey-muted);
 
-  --font-ui: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
-  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+  --font-family: 'Geist Sans', 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-ui: var(--font-family);
+  --font-display: var(--font-family);
+  --font-brand: var(--font-family);
+  --font-body: var(--font-family);
 
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
@@ -28,8 +30,6 @@
   --space-3xl: 4.5rem;
   --space-4xl: 6rem;
 
-  --blur-bg: 64px;
-  --blur-glass: 48px;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 
   /* Single light source — upper right */

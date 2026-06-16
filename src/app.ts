@@ -26,12 +26,10 @@ export function createApp(root: HTMLElement) {
       main.classList.add('is-visible');
     } catch (err) {
       main.replaceChildren(
-        h('div', { className: 'glass-sheet' },
-          h('div', { className: 'error-panel' },
-            h('h2', {}, 'Unable to load competition'),
-            h('p', {}, err instanceof Error ? err.message : 'Unknown error'),
-            h('p', { className: 'hint' }, 'Run npm run scoreboard:data to generate data files.'),
-          ),
+        h('div', { className: 'error-panel' },
+          h('h2', {}, 'Unable to load competition'),
+          h('p', {}, err instanceof Error ? err.message : 'Unknown error'),
+          h('p', { className: 'hint' }, 'Run npm run scoreboard:data to generate data files.'),
         ),
       );
       main.classList.add('is-visible');

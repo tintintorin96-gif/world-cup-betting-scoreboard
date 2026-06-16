@@ -1,6 +1,8 @@
 import { h } from '../utils/dom';
+import { createTeamTorinLogo } from './team-torin-logo';
 
-const INTRO_MS = 1000;
+const INTRO_HOLD_MS = 4700;
+const INTRO_EXIT_MS = 500;
 
 export function playIntro(onComplete: () => void): void {
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -11,7 +13,7 @@ export function playIntro(onComplete: () => void): void {
   }
 
   const overlay = h('div', { className: 'intro-overlay', 'aria-hidden': 'true' },
-    h('div', { className: 'intro-light' }),
+    createTeamTorinLogo(),
   );
 
   document.body.append(overlay);
@@ -22,6 +24,6 @@ export function playIntro(onComplete: () => void): void {
     window.setTimeout(() => {
       overlay.remove();
       onComplete();
-    }, 450);
-  }, INTRO_MS);
+    }, INTRO_EXIT_MS);
+  }, INTRO_HOLD_MS);
 }
