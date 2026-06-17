@@ -20,22 +20,22 @@
     "rank": 2
   },
   {
+    "participantId": "milton",
+    "displayName": "Milton",
+    "totalPoints": 25,
+    "delta": 5,
+    "progressPct": 3.8,
+    "groupStagePoints": 25,
+    "knockoutPoints": 0,
+    "rank": 3
+  },
+  {
     "participantId": "tintin-and-pappa",
     "displayName": "Tintin&Pappa",
     "totalPoints": 21,
     "delta": 0,
     "progressPct": 3.2,
     "groupStagePoints": 21,
-    "knockoutPoints": 0,
-    "rank": 3
-  },
-  {
-    "participantId": "milton",
-    "displayName": "Milton",
-    "totalPoints": 20,
-    "delta": 0,
-    "progressPct": 3,
-    "groupStagePoints": 20,
     "knockoutPoints": 0,
     "rank": 4
   }
