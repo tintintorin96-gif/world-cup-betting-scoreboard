@@ -1,7 +1,7 @@
 [
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:A-6:1",
@@ -14,14 +14,14 @@
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "mamma",
     "event": {
       "id": "mamma:exact_score:C-2:13",
@@ -34,14 +34,14 @@
       "prediction": "1-1",
       "actualResult": "1-1",
       "matchId": "C-2",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 5,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "mamma",
     "event": {
       "id": "mamma:exact_score:C-5:14",
@@ -54,14 +54,14 @@
       "prediction": "0-1",
       "actualResult": "0-1",
       "matchId": "C-5",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 5,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:D-5:20",
@@ -74,14 +74,14 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:E-5:25",
@@ -94,14 +94,14 @@
       "prediction": "🇩🇪 Germany win",
       "actualResult": "1-7",
       "matchId": "E-5",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:F-1:31",
@@ -114,14 +114,14 @@
       "prediction": "Draw",
       "actualResult": "2-2",
       "matchId": "F-1",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:F-6:32",
@@ -134,14 +134,14 @@
       "prediction": "🇸🇪 Sweden win",
       "actualResult": "5-1",
       "matchId": "F-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:I-3:49",
@@ -154,14 +154,14 @@
       "prediction": "🇫🇷 France win",
       "actualResult": "3-1",
       "matchId": "I-3",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:I-4:50",
@@ -174,14 +174,14 @@
       "prediction": "🇳🇴 Norway win",
       "actualResult": "1-4",
       "matchId": "I-4",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:J-1:55",
@@ -194,14 +194,14 @@
       "prediction": "🇦🇷 Argentina win",
       "actualResult": "0-3",
       "matchId": "J-1",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "mamma",
     "event": {
       "id": "mamma:correct_outcome:J-6:56",
@@ -214,14 +214,14 @@
       "prediction": "🇦🇹 Austria win",
       "actualResult": "3-1",
       "matchId": "J-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:A-6:1",
@@ -234,14 +234,14 @@
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:C-5:14",
@@ -254,14 +254,14 @@
       "prediction": "🏴 Scotland win",
       "actualResult": "0-1",
       "matchId": "C-5",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:D-5:20",
@@ -274,14 +274,14 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:E-5:25",
@@ -294,14 +294,14 @@
       "prediction": "🇩🇪 Germany win",
       "actualResult": "1-7",
       "matchId": "E-5",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:F-6:32",
@@ -314,14 +314,14 @@
       "prediction": "🇸🇪 Sweden win",
       "actualResult": "5-1",
       "matchId": "F-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:G-6:38",
@@ -334,14 +334,14 @@
       "prediction": "Draw",
       "actualResult": "2-2",
       "matchId": "G-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:I-3:49",
@@ -354,14 +354,14 @@
       "prediction": "🇫🇷 France win",
       "actualResult": "3-1",
       "matchId": "I-3",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:I-4:50",
@@ -374,14 +374,14 @@
       "prediction": "🇳🇴 Norway win",
       "actualResult": "1-4",
       "matchId": "I-4",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:J-1:55",
@@ -394,14 +394,14 @@
       "prediction": "🇦🇷 Argentina win",
       "actualResult": "0-3",
       "matchId": "J-1",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "milton",
     "event": {
       "id": "milton:correct_outcome:J-6:56",
@@ -414,14 +414,14 @@
       "prediction": "🇦🇹 Austria win",
       "actualResult": "3-1",
       "matchId": "J-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:exact_score:A-6:1",
@@ -434,14 +434,14 @@
       "prediction": "2-0",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 5,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:correct_outcome:C-5:14",
@@ -454,14 +454,14 @@
       "prediction": "🏴 Scotland win",
       "actualResult": "0-1",
       "matchId": "C-5",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:correct_outcome:D-5:20",
@@ -474,14 +474,14 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:correct_outcome:E-5:25",
@@ -494,14 +494,14 @@
       "prediction": "🇩🇪 Germany win",
       "actualResult": "1-7",
       "matchId": "E-5",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:correct_outcome:F-6:32",
@@ -514,14 +514,14 @@
       "prediction": "🇸🇪 Sweden win",
       "actualResult": "5-1",
       "matchId": "F-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:correct_outcome:I-3:49",
@@ -534,14 +534,14 @@
       "prediction": "🇫🇷 France win",
       "actualResult": "3-1",
       "matchId": "I-3",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:correct_outcome:I-4:50",
@@ -554,14 +554,14 @@
       "prediction": "🇳🇴 Norway win",
       "actualResult": "1-4",
       "matchId": "I-4",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:correct_outcome:J-1:55",
@@ -574,14 +574,14 @@
       "prediction": "🇦🇷 Argentina win",
       "actualResult": "0-3",
       "matchId": "J-1",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "tintin-and-pappa",
     "event": {
       "id": "tintin-and-pappa:correct_outcome:J-6:56",
@@ -594,14 +594,14 @@
       "prediction": "🇦🇹 Austria win",
       "actualResult": "3-1",
       "matchId": "J-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:A-6:1",
@@ -614,14 +614,14 @@
       "prediction": "🇲🇽 Mexico win",
       "actualResult": "2-0",
       "matchId": "A-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:exact_score:B-1:7",
@@ -634,14 +634,14 @@
       "prediction": "1-1",
       "actualResult": "1-1",
       "matchId": "B-1",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 5,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:C-5:14",
@@ -654,14 +654,14 @@
       "prediction": "🏴 Scotland win",
       "actualResult": "0-1",
       "matchId": "C-5",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:D-5:20",
@@ -674,14 +674,14 @@
       "prediction": "🇺🇸 United States win",
       "actualResult": "1-4",
       "matchId": "D-5",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:E-5:25",
@@ -694,14 +694,14 @@
       "prediction": "🇩🇪 Germany win",
       "actualResult": "1-7",
       "matchId": "E-5",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:F-6:32",
@@ -714,14 +714,14 @@
       "prediction": "🇸🇪 Sweden win",
       "actualResult": "5-1",
       "matchId": "F-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:exact_score:G-1:37",
@@ -734,14 +734,14 @@
       "prediction": "1-1",
       "actualResult": "1-1",
       "matchId": "G-1",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 5,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:I-3:49",
@@ -754,14 +754,14 @@
       "prediction": "🇫🇷 France win",
       "actualResult": "3-1",
       "matchId": "I-3",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:I-4:50",
@@ -774,14 +774,14 @@
       "prediction": "🇳🇴 Norway win",
       "actualResult": "1-4",
       "matchId": "I-4",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:J-1:55",
@@ -794,14 +794,14 @@
       "prediction": "🇦🇷 Argentina win",
       "actualResult": "0-3",
       "matchId": "J-1",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
   },
   {
-    "timestamp": "2026-06-17T10:23:33.643Z",
-    "resultsVersion": 19,
+    "timestamp": "2026-06-17T14:48:08.025Z",
+    "resultsVersion": 20,
     "participantId": "wilmer",
     "event": {
       "id": "wilmer:correct_outcome:J-6:56",
@@ -814,7 +814,7 @@
       "prediction": "🇦🇹 Austria win",
       "actualResult": "3-1",
       "matchId": "J-6",
-      "timestamp": "2026-06-17T10:23:33.643Z"
+      "timestamp": "2026-06-17T14:48:08.025Z"
     },
     "pointsDelta": 2,
     "reason": "initial"
