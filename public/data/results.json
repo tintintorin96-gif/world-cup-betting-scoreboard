@@ -1,6 +1,6 @@
 {
-  "version": 25,
-  "fetchedAt": "2026-06-19T19:23:16.467Z",
+  "version": 26,
+  "fetchedAt": "2026-06-20T02:09:45.227Z",
   "matches": [
     {
       "matchId": "A-6",
@@ -302,31 +302,33 @@
     },
     {
       "matchId": "C-1",
-      "status": "scheduled",
+      "status": "live",
       "homeTeamId": "BRA",
       "awayTeamId": "HAI",
-      "homeScore": 0,
+      "homeScore": 3,
       "awayScore": 0,
+      "winnerId": "BRA",
       "updatedAt": "06/19/2026 21:00",
       "source": "api"
     },
     {
       "matchId": "C-6",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeamId": "MAR",
       "awayTeamId": "SCO",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
+      "winnerId": "MAR",
       "updatedAt": "06/19/2026 18:00",
       "source": "api"
     },
     {
       "matchId": "D-3",
-      "status": "live",
+      "status": "finished",
       "homeTeamId": "AUS",
       "awayTeamId": "USA",
       "homeScore": 0,
-      "awayScore": 1,
+      "awayScore": 2,
       "winnerId": "USA",
       "updatedAt": "06/19/2026 12:00",
       "source": "api"
@@ -336,8 +338,8 @@
       "status": "scheduled",
       "homeTeamId": "PAR",
       "awayTeamId": "TUR",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": null,
+      "awayScore": null,
       "updatedAt": "06/19/2026 20:00",
       "source": "api"
     },
@@ -751,7 +753,7 @@
         "CPV",
         "KSA"
       ],
-      "updatedAt": "2026-06-19T19:23:16.467Z"
+      "updatedAt": "2026-06-20T02:09:45.227Z"
     },
     {
       "group": "I",
@@ -761,7 +763,7 @@
         "SEN",
         "IRQ"
       ],
-      "updatedAt": "2026-06-19T19:23:16.467Z"
+      "updatedAt": "2026-06-20T02:09:45.227Z"
     },
     {
       "group": "D",
@@ -771,7 +773,7 @@
         "TUR",
         "PAR"
       ],
-      "updatedAt": "2026-06-19T19:23:16.467Z"
+      "updatedAt": "2026-06-20T02:09:45.227Z"
     },
     {
       "group": "E",
@@ -781,7 +783,7 @@
         "ECU",
         "CUW"
       ],
-      "updatedAt": "2026-06-19T19:23:16.467Z"
+      "updatedAt": "2026-06-20T02:09:45.227Z"
     },
     {
       "group": "F",
@@ -791,7 +793,7 @@
         "JPN",
         "TUN"
       ],
-      "updatedAt": "2026-06-19T19:23:16.467Z"
+      "updatedAt": "2026-06-20T02:09:45.227Z"
     },
     {
       "group": "G",
@@ -801,7 +803,7 @@
         "BEL",
         "EGY"
       ],
-      "updatedAt": "2026-06-19T19:23:16.467Z"
+      "updatedAt": "2026-06-20T02:09:45.227Z"
     },
     {
       "group": "A",
@@ -811,7 +813,7 @@
         "CZE",
         "RSA"
       ],
-      "updatedAt": "2026-06-19T19:23:16.467Z"
+      "updatedAt": "2026-06-20T02:09:45.227Z"
     },
     {
       "group": "B",
@@ -821,7 +823,7 @@
         "BIH",
         "QAT"
       ],
-      "updatedAt": "2026-06-19T19:23:16.467Z"
+      "updatedAt": "2026-06-20T02:09:45.227Z"
     },
     {
       "group": "L",
@@ -831,7 +833,7 @@
         "PAN",
         "CRO"
       ],
-      "updatedAt": "2026-06-19T19:23:16.467Z"
+      "updatedAt": "2026-06-20T02:09:45.227Z"
     },
     {
       "group": "K",
@@ -841,17 +843,17 @@
         "COD",
         "UZB"
       ],
-      "updatedAt": "2026-06-19T19:23:16.467Z"
+      "updatedAt": "2026-06-20T02:09:45.227Z"
     },
     {
       "group": "C",
       "positions": [
+        "MAR",
         "SCO",
         "BRA",
-        "MAR",
         "HAI"
       ],
-      "updatedAt": "2026-06-19T19:23:16.467Z"
+      "updatedAt": "2026-06-20T02:09:45.227Z"
     },
     {
       "group": "J",
@@ -861,7 +863,7 @@
         "JOR",
         "ALG"
       ],
-      "updatedAt": "2026-06-19T19:23:16.467Z"
+      "updatedAt": "2026-06-20T02:09:45.227Z"
     }
   ],
   "knockout": []
