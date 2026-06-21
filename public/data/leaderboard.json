@@ -2,40 +2,40 @@
   {
     "participantId": "mamma",
     "displayName": "Mamma",
-    "totalPoints": 49,
+    "totalPoints": 51,
     "delta": 2,
-    "progressPct": 7.5,
-    "groupStagePoints": 49,
+    "progressPct": 7.8,
+    "groupStagePoints": 51,
     "knockoutPoints": 0,
     "rank": 1
   },
   {
     "participantId": "tintin-and-pappa",
     "displayName": "Tintin&Pappa",
-    "totalPoints": 47,
+    "totalPoints": 49,
     "delta": 2,
-    "progressPct": 7.2,
-    "groupStagePoints": 47,
+    "progressPct": 7.5,
+    "groupStagePoints": 49,
     "knockoutPoints": 0,
     "rank": 2
   },
   {
     "participantId": "wilmer",
     "displayName": "Wilmer",
-    "totalPoints": 46,
+    "totalPoints": 48,
     "delta": 2,
-    "progressPct": 7,
-    "groupStagePoints": 46,
+    "progressPct": 7.3,
+    "groupStagePoints": 48,
     "knockoutPoints": 0,
     "rank": 3
   },
   {
     "participantId": "milton",
     "displayName": "Milton",
-    "totalPoints": 44,
+    "totalPoints": 46,
     "delta": 2,
-    "progressPct": 6.7,
-    "groupStagePoints": 44,
+    "progressPct": 7,
+    "groupStagePoints": 46,
     "knockoutPoints": 0,
     "rank": 4
   }
