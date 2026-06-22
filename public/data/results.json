@@ -1,6 +1,6 @@
 {
-  "version": 34,
-  "fetchedAt": "2026-06-22T02:37:44.407Z",
+  "version": 35,
+  "fetchedAt": "2026-06-22T11:31:34.357Z",
   "matches": [
     {
       "matchId": "A-6",
@@ -399,10 +399,10 @@
     },
     {
       "matchId": "G-5",
-      "status": "live",
+      "status": "finished",
       "homeTeamId": "EGY",
       "awayTeamId": "NZL",
-      "homeScore": 2,
+      "homeScore": 3,
       "awayScore": 1,
       "winnerId": "EGY",
       "updatedAt": "06/21/2026 18:00",
@@ -750,127 +750,6 @@
       "source": "api"
     }
   ],
-  "groupStandings": [
-    {
-      "group": "H",
-      "positions": [
-        "ESP",
-        "URU",
-        "CPV",
-        "KSA"
-      ],
-      "updatedAt": "2026-06-22T02:37:44.407Z"
-    },
-    {
-      "group": "I",
-      "positions": [
-        "NOR",
-        "FRA",
-        "SEN",
-        "IRQ"
-      ],
-      "updatedAt": "2026-06-22T02:37:44.407Z"
-    },
-    {
-      "group": "D",
-      "positions": [
-        "USA",
-        "AUS",
-        "PAR",
-        "TUR"
-      ],
-      "updatedAt": "2026-06-22T02:37:44.407Z"
-    },
-    {
-      "group": "E",
-      "positions": [
-        "GER",
-        "CIV",
-        "ECU",
-        "CUW"
-      ],
-      "updatedAt": "2026-06-22T02:37:44.407Z"
-    },
-    {
-      "group": "F",
-      "positions": [
-        "NED",
-        "JPN",
-        "SWE",
-        "TUN"
-      ],
-      "updatedAt": "2026-06-22T02:37:44.407Z"
-    },
-    {
-      "group": "G",
-      "positions": [
-        "IRN",
-        "BEL",
-        "NZL",
-        "EGY"
-      ],
-      "updatedAt": "2026-06-22T02:37:44.407Z"
-    },
-    {
-      "group": "A",
-      "positions": [
-        "MEX",
-        "KOR",
-        "CZE",
-        "RSA"
-      ],
-      "updatedAt": "2026-06-22T02:37:44.407Z"
-    },
-    {
-      "group": "B",
-      "positions": [
-        "CAN",
-        "SUI",
-        "BIH",
-        "QAT"
-      ],
-      "updatedAt": "2026-06-22T02:37:44.407Z"
-    },
-    {
-      "group": "L",
-      "positions": [
-        "ENG",
-        "GHA",
-        "PAN",
-        "CRO"
-      ],
-      "updatedAt": "2026-06-22T02:37:44.407Z"
-    },
-    {
-      "group": "K",
-      "positions": [
-        "COL",
-        "POR",
-        "COD",
-        "UZB"
-      ],
-      "updatedAt": "2026-06-22T02:37:44.407Z"
-    },
-    {
-      "group": "C",
-      "positions": [
-        "BRA",
-        "MAR",
-        "SCO",
-        "HAI"
-      ],
-      "updatedAt": "2026-06-22T02:37:44.407Z"
-    },
-    {
-      "group": "J",
-      "positions": [
-        "ARG",
-        "AUT",
-        "JOR",
-        "ALG"
-      ],
-      "updatedAt": "2026-06-22T02:37:44.407Z"
-    }
-  ],
+  "groupStandings": [],
   "knockout": []
 }
