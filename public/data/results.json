@@ -1,6 +1,6 @@
 {
-  "version": 35,
-  "fetchedAt": "2026-06-22T11:31:34.357Z",
+  "version": 36,
+  "fetchedAt": "2026-06-22T20:31:58.506Z",
   "matches": [
     {
       "matchId": "A-6",
@@ -434,8 +434,8 @@
       "status": "scheduled",
       "homeTeamId": "FRA",
       "awayTeamId": "IRQ",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": null,
+      "awayScore": null,
       "updatedAt": "06/22/2026 17:00",
       "source": "api"
     },
@@ -451,11 +451,12 @@
     },
     {
       "matchId": "J-4",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeamId": "ARG",
       "awayTeamId": "AUT",
-      "homeScore": 0,
+      "homeScore": 2,
       "awayScore": 0,
+      "winnerId": "ARG",
       "updatedAt": "06/22/2026 12:00",
       "source": "api"
     },
