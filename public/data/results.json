@@ -1,6 +1,6 @@
 {
-  "version": 39,
-  "fetchedAt": "2026-06-23T14:22:21.932Z",
+  "version": 40,
+  "fetchedAt": "2026-06-23T19:47:56.816Z",
   "matches": [
     {
       "matchId": "A-6",
@@ -475,11 +475,12 @@
     },
     {
       "matchId": "K-6",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeamId": "POR",
       "awayTeamId": "UZB",
-      "homeScore": 0,
+      "homeScore": 5,
       "awayScore": 0,
+      "winnerId": "POR",
       "updatedAt": "06/23/2026 12:00",
       "source": "api"
     },
@@ -488,8 +489,8 @@
       "status": "scheduled",
       "homeTeamId": "CRO",
       "awayTeamId": "PAN",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": null,
+      "awayScore": null,
       "updatedAt": "06/23/2026 19:00",
       "source": "api"
     },
@@ -508,8 +509,8 @@
       "status": "scheduled",
       "homeTeamId": "ENG",
       "awayTeamId": "GHA",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": null,
+      "awayScore": null,
       "updatedAt": "06/23/2026 16:00",
       "source": "api"
     },
@@ -763,7 +764,7 @@
         "CPV",
         "KSA"
       ],
-      "updatedAt": "2026-06-23T14:22:21.932Z"
+      "updatedAt": "2026-06-23T19:47:56.816Z"
     },
     {
       "group": "I",
@@ -773,7 +774,7 @@
         "SEN",
         "IRQ"
       ],
-      "updatedAt": "2026-06-23T14:22:21.932Z"
+      "updatedAt": "2026-06-23T19:47:56.816Z"
     },
     {
       "group": "D",
@@ -783,7 +784,7 @@
         "PAR",
         "TUR"
       ],
-      "updatedAt": "2026-06-23T14:22:21.932Z"
+      "updatedAt": "2026-06-23T19:47:56.816Z"
     },
     {
       "group": "E",
@@ -793,7 +794,7 @@
         "ECU",
         "CUW"
       ],
-      "updatedAt": "2026-06-23T14:22:21.932Z"
+      "updatedAt": "2026-06-23T19:47:56.816Z"
     },
     {
       "group": "F",
@@ -803,7 +804,7 @@
         "SWE",
         "TUN"
       ],
-      "updatedAt": "2026-06-23T14:22:21.932Z"
+      "updatedAt": "2026-06-23T19:47:56.816Z"
     },
     {
       "group": "G",
@@ -813,7 +814,7 @@
         "BEL",
         "NZL"
       ],
-      "updatedAt": "2026-06-23T14:22:21.932Z"
+      "updatedAt": "2026-06-23T19:47:56.816Z"
     },
     {
       "group": "A",
@@ -823,7 +824,7 @@
         "CZE",
         "RSA"
       ],
-      "updatedAt": "2026-06-23T14:22:21.932Z"
+      "updatedAt": "2026-06-23T19:47:56.816Z"
     },
     {
       "group": "B",
@@ -833,7 +834,7 @@
         "BIH",
         "QAT"
       ],
-      "updatedAt": "2026-06-23T14:22:21.932Z"
+      "updatedAt": "2026-06-23T19:47:56.816Z"
     },
     {
       "group": "L",
@@ -843,17 +844,17 @@
         "PAN",
         "CRO"
       ],
-      "updatedAt": "2026-06-23T14:22:21.932Z"
+      "updatedAt": "2026-06-23T19:47:56.816Z"
     },
     {
       "group": "K",
       "positions": [
-        "COL",
         "POR",
+        "COL",
         "COD",
         "UZB"
       ],
-      "updatedAt": "2026-06-23T14:22:21.932Z"
+      "updatedAt": "2026-06-23T19:47:56.816Z"
     },
     {
       "group": "C",
@@ -863,7 +864,7 @@
         "SCO",
         "HAI"
       ],
-      "updatedAt": "2026-06-23T14:22:21.932Z"
+      "updatedAt": "2026-06-23T19:47:56.816Z"
     },
     {
       "group": "J",
@@ -873,7 +874,7 @@
         "ALG",
         "JOR"
       ],
-      "updatedAt": "2026-06-23T14:22:21.932Z"
+      "updatedAt": "2026-06-23T19:47:56.816Z"
     }
   ],
   "knockout": []
