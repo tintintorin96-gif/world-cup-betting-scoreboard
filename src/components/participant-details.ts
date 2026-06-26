@@ -1,4 +1,5 @@
 import { h } from '../utils/dom';
+import { parseMatchKickoff } from '../services/format';
 import type { ScoringBreakdown, ScoringEvent } from '../types/scoring';
 
 interface DetailSection {
@@ -7,36 +8,55 @@ interface DetailSection {
   sort?: (events: ScoringEvent[]) => ScoringEvent[];
 }
 
-const DETAIL_SECTIONS: DetailSection[] = [
-  {
-    title: 'Group Matches',
-    filter: (e) =>
-      Boolean(e.matchId) &&
-      ['exact_score', 'correct_outcome', 'wrong_outcome'].includes(e.category),
-    sort: (events) => [...events].reverse(),
-  },
-  {
-    title: 'Group Winners',
-    filter: (e) =>
-      e.category === 'group_winner' ||
-      (e.category === 'pending' && e.description.endsWith(' winner')),
-  },
-  {
-    title: 'Knockout',
-    filter: (e) =>
-      ['round_of_32', 'round_of_16', 'quarter_final', 'semi_final', 'third_place_reach', 'third_place_winner'].includes(
-        e.category,
-      ) ||
-      (e.category === 'pending' && Boolean(e.round) && e.round !== 'final'),
-  },
-  {
-    title: 'Finalists & Champion',
-    filter: (e) =>
-      e.category === 'finalist' ||
-      e.category === 'champion' ||
-      (e.category === 'pending' && e.round === 'final'),
-  },
-];
+export function sortGroupMatchEventsByKickoff(
+  events: ScoringEvent[],
+  matchKickoffs: Map<string, number>,
+): ScoringEvent[] {
+  return [...events].sort((a, b) => {
+    const aTime = a.matchId ? (matchKickoffs.get(a.matchId) ?? 0) : 0;
+    const bTime = b.matchId ? (matchKickoffs.get(b.matchId) ?? 0) : 0;
+    return bTime - aTime;
+  });
+}
+
+function buildDetailSections(matchKickoffs: Map<string, number>): DetailSection[] {
+  return [
+    {
+      title: 'Group Matches',
+      filter: (e) =>
+        Boolean(e.matchId) &&
+        ['exact_score', 'correct_outcome', 'wrong_outcome'].includes(e.category),
+      sort: (events) => sortGroupMatchEventsByKickoff(events, matchKickoffs),
+    },
+    {
+      title: 'Group Winners',
+      filter: (e) =>
+        e.category === 'group_winner' ||
+        (e.category === 'pending' && e.description.endsWith(' winner')),
+    },
+    {
+      title: 'Knockout',
+      filter: (e) =>
+        ['round_of_32', 'round_of_16', 'quarter_final', 'semi_final', 'third_place_reach', 'third_place_winner'].includes(
+          e.category,
+        ) ||
+        (e.category === 'pending' && Boolean(e.round) && e.round !== 'final'),
+    },
+    {
+      title: 'Finalists & Champion',
+      filter: (e) =>
+        e.category === 'finalist' ||
+        e.category === 'champion' ||
+        (e.category === 'pending' && e.round === 'final'),
+    },
+  ];
+}
+
+export function buildMatchKickoffMap(
+  matches: { matchId: string; updatedAt: string }[],
+): Map<string, number> {
+  return new Map(matches.map((m) => [m.matchId, parseMatchKickoff(m.updatedAt)]));
+}
 
 function formatPoints(event: ScoringEvent): string {
   if (event.category === 'pending') return 'Pending';
@@ -76,7 +96,10 @@ function detailSection(title: string, events: ScoringEvent[]): HTMLElement | nul
   );
 }
 
-export function participantDetails(breakdown: ScoringBreakdown | undefined): HTMLElement {
+export function participantDetails(
+  breakdown: ScoringBreakdown | undefined,
+  matchKickoffs: Map<string, number> = new Map(),
+): HTMLElement {
   const panel = h('div', { className: 'participant-details' });
 
   if (!breakdown) {
@@ -84,8 +107,9 @@ export function participantDetails(breakdown: ScoringBreakdown | undefined): HTM
     return panel;
   }
 
+  const detailSections = buildDetailSections(matchKickoffs);
   let hasContent = false;
-  for (const section of DETAIL_SECTIONS) {
+  for (const section of detailSections) {
     const filtered = breakdown.events.filter(section.filter);
     const events = section.sort ? section.sort(filtered) : filtered;
     const block = detailSection(section.title, events);

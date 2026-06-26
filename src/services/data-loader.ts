@@ -27,9 +27,10 @@ async function fetchJson<T>(path: string, version = 0): Promise<T> {
   return res.json() as Promise<T>;
 }
 
-function getCached<T>(key: string): T | null {
+function getCached<T>(key: string, version?: number): T | null {
   const entry = cache.get(key) as CacheEntry<T> | undefined;
   if (!entry) return null;
+  if (version !== undefined && entry.version !== version) return null;
   return entry.data;
 }
 
@@ -84,7 +85,7 @@ export async function loadAppData(): Promise<AppData> {
 export async function loadBreakdown(participantId: string): Promise<ScoringBreakdown> {
   const meta = await loadMeta();
   const cacheKey = `breakdown:${participantId}`;
-  const cached = getCached<ScoringBreakdown>(cacheKey);
+  const cached = getCached<ScoringBreakdown>(cacheKey, meta.version);
   if (cached) return cached;
   const breakdown = await fetchJson<ScoringBreakdown>(`breakdowns/${participantId}.json`, meta.version);
   setCache(cacheKey, breakdown, meta.version);

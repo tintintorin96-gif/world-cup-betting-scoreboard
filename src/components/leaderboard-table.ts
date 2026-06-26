@@ -5,6 +5,7 @@ import { participantDetails } from './participant-details';
 export function leaderboardTable(
   entries: LeaderboardEntry[],
   breakdowns: Map<string, ScoringBreakdown>,
+  matchKickoffs: Map<string, number> = new Map(),
 ): HTMLElement {
   const table = h('div', { className: 'leaderboard' },
     h('div', { className: 'leaderboard-body', role: 'list' }),
@@ -42,7 +43,7 @@ export function leaderboardTable(
       'aria-hidden': 'true',
     },
       h('div', { className: 'lb-details-inner' },
-        participantDetails(breakdown),
+        participantDetails(breakdown, matchKickoffs),
       ),
     );
 

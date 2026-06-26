@@ -32,3 +32,11 @@ export function formatDate(iso: string): string {
     minute: '2-digit',
   });
 }
+
+/** Parses API schedule timestamps like `06/25/2026 19:00`. */
+export function parseMatchKickoff(updatedAt: string): number {
+  const match = updatedAt.match(/^(\d{2})\/(\d{2})\/(\d{4})\s+(\d{2}):(\d{2})$/);
+  if (!match) return 0;
+  const [, mm, dd, yyyy, hh, min] = match;
+  return new Date(Number(yyyy), Number(mm) - 1, Number(dd), Number(hh), Number(min)).getTime();
+}
