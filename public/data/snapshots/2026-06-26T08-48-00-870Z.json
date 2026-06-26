@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-06-26T08:48:00.870Z",
+  "resultsVersion": 50,
+  "leaderboard": [
+    {
+      "participantId": "tintin-and-pappa",
+      "displayName": "Tintin&Pappa",
+      "totalPoints": 118,
+      "delta": 5,
+      "progressPct": 18,
+      "groupStagePoints": 118,
+      "knockoutPoints": 0,
+      "rank": 1
+    },
+    {
+      "participantId": "wilmer",
+      "displayName": "Wilmer",
+      "totalPoints": 116,
+      "delta": 7,
+      "progressPct": 17.7,
+      "groupStagePoints": 116,
+      "knockoutPoints": 0,
+      "rank": 2
+    },
+    {
+      "participantId": "mamma",
+      "displayName": "Mamma",
+      "totalPoints": 112,
+      "delta": 5,
+      "progressPct": 17,
+      "groupStagePoints": 112,
+      "knockoutPoints": 0,
+      "rank": 3
+    },
+    {
+      "participantId": "milton",
+      "displayName": "Milton",
+      "totalPoints": 97,
+      "delta": 4,
+      "progressPct": 14.8,
+      "groupStagePoints": 97,
+      "knockoutPoints": 0,
+      "rank": 4
+    }
+  ]
+}
