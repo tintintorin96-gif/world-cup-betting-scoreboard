@@ -1,6 +1,6 @@
 {
-  "version": 48,
-  "fetchedAt": "2026-06-25T19:44:13.287Z",
+  "version": 49,
+  "fetchedAt": "2026-06-26T02:07:50.715Z",
   "matches": [
     {
       "matchId": "D-2",
@@ -80,11 +80,11 @@
     },
     {
       "matchId": "F-2",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeamId": "JPN",
       "awayTeamId": "SWE",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 1,
+      "awayScore": 1,
       "updatedAt": "06/25/2026 18:00",
       "source": "api"
     },
@@ -167,11 +167,12 @@
     },
     {
       "matchId": "F-5",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeamId": "NED",
       "awayTeamId": "TUN",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 3,
+      "awayScore": 1,
+      "winnerId": "NED",
       "updatedAt": "06/25/2026 18:00",
       "source": "api"
     },
@@ -403,11 +404,12 @@
     },
     {
       "matchId": "D-6",
-      "status": "scheduled",
+      "status": "live",
       "homeTeamId": "TUR",
       "awayTeamId": "USA",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
+      "winnerId": "USA",
       "updatedAt": "06/25/2026 19:00",
       "source": "api"
     },
@@ -673,21 +675,23 @@
     },
     {
       "matchId": "E-1",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeamId": "CIV",
       "awayTeamId": "CUW",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
+      "winnerId": "CIV",
       "updatedAt": "06/25/2026 16:00",
       "source": "api"
     },
     {
       "matchId": "E-6",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeamId": "ECU",
       "awayTeamId": "GER",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 1,
+      "winnerId": "ECU",
       "updatedAt": "06/25/2026 16:00",
       "source": "api"
     },
@@ -744,7 +748,7 @@
     },
     {
       "matchId": "D-1",
-      "status": "scheduled",
+      "status": "live",
       "homeTeamId": "AUS",
       "awayTeamId": "PAR",
       "homeScore": 0,
@@ -772,7 +776,7 @@
         "KOR",
         "CZE"
       ],
-      "updatedAt": "2026-06-25T19:44:13.287Z"
+      "updatedAt": "2026-06-26T02:07:50.715Z"
     },
     {
       "group": "B",
@@ -782,7 +786,7 @@
         "BIH",
         "QAT"
       ],
-      "updatedAt": "2026-06-25T19:44:13.287Z"
+      "updatedAt": "2026-06-26T02:07:50.715Z"
     },
     {
       "group": "C",
@@ -792,7 +796,7 @@
         "SCO",
         "HAI"
       ],
-      "updatedAt": "2026-06-25T19:44:13.287Z"
+      "updatedAt": "2026-06-26T02:07:50.715Z"
     },
     {
       "group": "D",
@@ -802,7 +806,7 @@
         "PAR",
         "TUR"
       ],
-      "updatedAt": "2026-06-25T19:44:13.287Z"
+      "updatedAt": "2026-06-26T02:07:50.715Z"
     },
     {
       "group": "E",
@@ -812,7 +816,7 @@
         "ECU",
         "CUW"
       ],
-      "updatedAt": "2026-06-25T19:44:13.287Z"
+      "updatedAt": "2026-06-26T02:07:50.715Z"
     },
     {
       "group": "F",
@@ -822,7 +826,7 @@
         "SWE",
         "TUN"
       ],
-      "updatedAt": "2026-06-25T19:44:13.287Z"
+      "updatedAt": "2026-06-26T02:07:50.715Z"
     },
     {
       "group": "G",
@@ -832,7 +836,7 @@
         "BEL",
         "NZL"
       ],
-      "updatedAt": "2026-06-25T19:44:13.287Z"
+      "updatedAt": "2026-06-26T02:07:50.715Z"
     },
     {
       "group": "H",
@@ -842,7 +846,7 @@
         "CPV",
         "KSA"
       ],
-      "updatedAt": "2026-06-25T19:44:13.287Z"
+      "updatedAt": "2026-06-26T02:07:50.715Z"
     },
     {
       "group": "I",
@@ -852,7 +856,7 @@
         "SEN",
         "IRQ"
       ],
-      "updatedAt": "2026-06-25T19:44:13.287Z"
+      "updatedAt": "2026-06-26T02:07:50.715Z"
     },
     {
       "group": "J",
@@ -862,7 +866,7 @@
         "ALG",
         "JOR"
       ],
-      "updatedAt": "2026-06-25T19:44:13.287Z"
+      "updatedAt": "2026-06-26T02:07:50.715Z"
     },
     {
       "group": "K",
@@ -872,7 +876,7 @@
         "COD",
         "UZB"
       ],
-      "updatedAt": "2026-06-25T19:44:13.287Z"
+      "updatedAt": "2026-06-26T02:07:50.715Z"
     },
     {
       "group": "L",
@@ -882,7 +886,7 @@
         "CRO",
         "PAN"
       ],
-      "updatedAt": "2026-06-25T19:44:13.287Z"
+      "updatedAt": "2026-06-26T02:07:50.715Z"
     }
   ],
   "knockout": []
