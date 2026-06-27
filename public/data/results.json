@@ -1,6 +1,6 @@
 {
-  "version": 52,
-  "fetchedAt": "2026-06-26T19:26:49.644Z",
+  "version": 53,
+  "fetchedAt": "2026-06-27T02:02:30.124Z",
   "matches": [
     {
       "matchId": "D-2",
@@ -178,11 +178,11 @@
     },
     {
       "matchId": "I-5",
-      "status": "live",
+      "status": "finished",
       "homeTeamId": "IRQ",
       "awayTeamId": "SEN",
       "homeScore": 0,
-      "awayScore": 1,
+      "awayScore": 5,
       "winnerId": "SEN",
       "updatedAt": "06/26/2026 15:00",
       "source": "api"
@@ -416,10 +416,10 @@
     },
     {
       "matchId": "I-2",
-      "status": "live",
+      "status": "finished",
       "homeTeamId": "FRA",
       "awayTeamId": "NOR",
-      "homeScore": 2,
+      "homeScore": 4,
       "awayScore": 1,
       "winnerId": "FRA",
       "updatedAt": "06/26/2026 15:00",
@@ -430,14 +430,14 @@
       "status": "scheduled",
       "homeTeamId": "EGY",
       "awayTeamId": "IRN",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": null,
+      "awayScore": null,
       "updatedAt": "06/26/2026 20:00",
       "source": "api"
     },
     {
       "matchId": "H-2",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeamId": "CPV",
       "awayTeamId": "KSA",
       "homeScore": 0,
@@ -447,11 +447,12 @@
     },
     {
       "matchId": "H-5",
-      "status": "scheduled",
+      "status": "live",
       "homeTeamId": "ESP",
       "awayTeamId": "URU",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
+      "winnerId": "ESP",
       "updatedAt": "06/26/2026 18:00",
       "source": "api"
     },
@@ -763,8 +764,8 @@
       "status": "scheduled",
       "homeTeamId": "BEL",
       "awayTeamId": "NZL",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": null,
+      "awayScore": null,
       "updatedAt": "06/26/2026 20:00",
       "source": "api"
     }
@@ -778,7 +779,7 @@
         "KOR",
         "CZE"
       ],
-      "updatedAt": "2026-06-26T19:26:49.644Z"
+      "updatedAt": "2026-06-27T02:02:30.124Z"
     },
     {
       "group": "B",
@@ -788,7 +789,7 @@
         "BIH",
         "QAT"
       ],
-      "updatedAt": "2026-06-26T19:26:49.644Z"
+      "updatedAt": "2026-06-27T02:02:30.124Z"
     },
     {
       "group": "C",
@@ -798,7 +799,7 @@
         "SCO",
         "HAI"
       ],
-      "updatedAt": "2026-06-26T19:26:49.644Z"
+      "updatedAt": "2026-06-27T02:02:30.124Z"
     },
     {
       "group": "D",
@@ -808,7 +809,7 @@
         "PAR",
         "TUR"
       ],
-      "updatedAt": "2026-06-26T19:26:49.644Z"
+      "updatedAt": "2026-06-27T02:02:30.124Z"
     },
     {
       "group": "E",
@@ -818,7 +819,7 @@
         "ECU",
         "CUW"
       ],
-      "updatedAt": "2026-06-26T19:26:49.644Z"
+      "updatedAt": "2026-06-27T02:02:30.124Z"
     },
     {
       "group": "F",
@@ -828,7 +829,7 @@
         "SWE",
         "TUN"
       ],
-      "updatedAt": "2026-06-26T19:26:49.644Z"
+      "updatedAt": "2026-06-27T02:02:30.124Z"
     },
     {
       "group": "G",
@@ -838,17 +839,17 @@
         "BEL",
         "NZL"
       ],
-      "updatedAt": "2026-06-26T19:26:49.644Z"
+      "updatedAt": "2026-06-27T02:02:30.124Z"
     },
     {
       "group": "H",
       "positions": [
         "ESP",
-        "URU",
         "CPV",
+        "URU",
         "KSA"
       ],
-      "updatedAt": "2026-06-26T19:26:49.644Z"
+      "updatedAt": "2026-06-27T02:02:30.124Z"
     },
     {
       "group": "I",
@@ -858,7 +859,7 @@
         "SEN",
         "IRQ"
       ],
-      "updatedAt": "2026-06-26T19:26:49.644Z"
+      "updatedAt": "2026-06-27T02:02:30.124Z"
     },
     {
       "group": "J",
@@ -868,7 +869,7 @@
         "ALG",
         "JOR"
       ],
-      "updatedAt": "2026-06-26T19:26:49.644Z"
+      "updatedAt": "2026-06-27T02:02:30.124Z"
     },
     {
       "group": "K",
@@ -878,7 +879,7 @@
         "COD",
         "UZB"
       ],
-      "updatedAt": "2026-06-26T19:26:49.644Z"
+      "updatedAt": "2026-06-27T02:02:30.124Z"
     },
     {
       "group": "L",
@@ -888,7 +889,7 @@
         "CRO",
         "PAN"
       ],
-      "updatedAt": "2026-06-26T19:26:49.644Z"
+      "updatedAt": "2026-06-27T02:02:30.124Z"
     }
   ],
   "knockout": []
