@@ -1,6 +1,6 @@
 {
-  "version": 55,
-  "fetchedAt": "2026-06-27T13:05:20.572Z",
+  "version": 56,
+  "fetchedAt": "2026-06-28T02:13:29.928Z",
   "matches": [
     {
       "matchId": "D-2",
@@ -189,21 +189,23 @@
     },
     {
       "matchId": "L-5",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeamId": "ENG",
       "awayTeamId": "PAN",
-      "homeScore": 0,
+      "homeScore": 2,
       "awayScore": 0,
+      "winnerId": "ENG",
       "updatedAt": "06/27/2026 17:00",
       "source": "api"
     },
     {
       "matchId": "K-3",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeamId": "COD",
       "awayTeamId": "UZB",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 3,
+      "awayScore": 1,
+      "winnerId": "COD",
       "updatedAt": "06/27/2026 19:30",
       "source": "api"
     },
@@ -458,7 +460,7 @@
     },
     {
       "matchId": "J-5",
-      "status": "scheduled",
+      "status": "live",
       "homeTeamId": "ARG",
       "awayTeamId": "JOR",
       "homeScore": 0,
@@ -564,7 +566,7 @@
     },
     {
       "matchId": "K-4",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeamId": "COL",
       "awayTeamId": "POR",
       "homeScore": 0,
@@ -700,17 +702,18 @@
     },
     {
       "matchId": "L-2",
-      "status": "scheduled",
+      "status": "finished",
       "homeTeamId": "CRO",
       "awayTeamId": "GHA",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 2,
+      "awayScore": 1,
+      "winnerId": "CRO",
       "updatedAt": "06/27/2026 17:00",
       "source": "api"
     },
     {
       "matchId": "J-2",
-      "status": "scheduled",
+      "status": "live",
       "homeTeamId": "ALG",
       "awayTeamId": "AUT",
       "homeScore": 0,
@@ -780,7 +783,7 @@
         "KOR",
         "CZE"
       ],
-      "updatedAt": "2026-06-27T13:05:20.572Z"
+      "updatedAt": "2026-06-28T02:13:29.928Z"
     },
     {
       "group": "B",
@@ -790,7 +793,7 @@
         "BIH",
         "QAT"
       ],
-      "updatedAt": "2026-06-27T13:05:20.572Z"
+      "updatedAt": "2026-06-28T02:13:29.928Z"
     },
     {
       "group": "C",
@@ -800,7 +803,7 @@
         "SCO",
         "HAI"
       ],
-      "updatedAt": "2026-06-27T13:05:20.572Z"
+      "updatedAt": "2026-06-28T02:13:29.928Z"
     },
     {
       "group": "D",
@@ -810,7 +813,7 @@
         "PAR",
         "TUR"
       ],
-      "updatedAt": "2026-06-27T13:05:20.572Z"
+      "updatedAt": "2026-06-28T02:13:29.928Z"
     },
     {
       "group": "E",
@@ -820,7 +823,7 @@
         "ECU",
         "CUW"
       ],
-      "updatedAt": "2026-06-27T13:05:20.572Z"
+      "updatedAt": "2026-06-28T02:13:29.928Z"
     },
     {
       "group": "F",
@@ -830,7 +833,7 @@
         "SWE",
         "TUN"
       ],
-      "updatedAt": "2026-06-27T13:05:20.572Z"
+      "updatedAt": "2026-06-28T02:13:29.928Z"
     },
     {
       "group": "G",
@@ -840,7 +843,7 @@
         "IRN",
         "NZL"
       ],
-      "updatedAt": "2026-06-27T13:05:20.572Z"
+      "updatedAt": "2026-06-28T02:13:29.928Z"
     },
     {
       "group": "H",
@@ -850,7 +853,7 @@
         "URU",
         "KSA"
       ],
-      "updatedAt": "2026-06-27T13:05:20.572Z"
+      "updatedAt": "2026-06-28T02:13:29.928Z"
     },
     {
       "group": "I",
@@ -860,7 +863,7 @@
         "SEN",
         "IRQ"
       ],
-      "updatedAt": "2026-06-27T13:05:20.572Z"
+      "updatedAt": "2026-06-28T02:13:29.928Z"
     },
     {
       "group": "J",
@@ -870,7 +873,7 @@
         "ALG",
         "JOR"
       ],
-      "updatedAt": "2026-06-27T13:05:20.572Z"
+      "updatedAt": "2026-06-28T02:13:29.928Z"
     },
     {
       "group": "K",
@@ -880,17 +883,17 @@
         "COD",
         "UZB"
       ],
-      "updatedAt": "2026-06-27T13:05:20.572Z"
+      "updatedAt": "2026-06-28T02:13:29.928Z"
     },
     {
       "group": "L",
       "positions": [
         "ENG",
-        "GHA",
         "CRO",
+        "GHA",
         "PAN"
       ],
-      "updatedAt": "2026-06-27T13:05:20.572Z"
+      "updatedAt": "2026-06-28T02:13:29.928Z"
     }
   ],
   "knockout": []
