@@ -1,8 +1,8 @@
 {
   "appName": "World Cup Betting Scoreboard",
-  "version": 71,
-  "resultsVersion": 71,
-  "lastUpdated": "2026-07-01T19:38:50.792Z",
+  "version": 72,
+  "resultsVersion": 72,
+  "lastUpdated": "2026-07-02T02:04:59.468Z",
   "participantCount": 4,
   "maxPoints": 657,
   "degraded": false
