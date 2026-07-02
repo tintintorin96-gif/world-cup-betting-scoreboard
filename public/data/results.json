@@ -1,6 +1,6 @@
 {
-  "version": 73,
-  "fetchedAt": "2026-07-02T08:39:34.336Z",
+  "version": 52,
+  "fetchedAt": "2026-07-02T12:31:01.731Z",
   "matches": [
     {
       "matchId": "A-6",
@@ -784,7 +784,7 @@
         "URU",
         "KSA"
       ],
-      "updatedAt": "2026-07-02T08:39:34.336Z"
+      "updatedAt": "2026-07-02T12:31:01.731Z"
     },
     {
       "group": "I",
@@ -794,7 +794,7 @@
         "SEN",
         "IRQ"
       ],
-      "updatedAt": "2026-07-02T08:39:34.336Z"
+      "updatedAt": "2026-07-02T12:31:01.731Z"
     },
     {
       "group": "D",
@@ -804,7 +804,7 @@
         "PAR",
         "TUR"
       ],
-      "updatedAt": "2026-07-02T08:39:34.336Z"
+      "updatedAt": "2026-07-02T12:31:01.731Z"
     },
     {
       "group": "E",
@@ -814,7 +814,7 @@
         "ECU",
         "CUW"
       ],
-      "updatedAt": "2026-07-02T08:39:34.336Z"
+      "updatedAt": "2026-07-02T12:31:01.731Z"
     },
     {
       "group": "F",
@@ -824,7 +824,7 @@
         "SWE",
         "TUN"
       ],
-      "updatedAt": "2026-07-02T08:39:34.336Z"
+      "updatedAt": "2026-07-02T12:31:01.731Z"
     },
     {
       "group": "G",
@@ -834,7 +834,7 @@
         "IRN",
         "NZL"
       ],
-      "updatedAt": "2026-07-02T08:39:34.336Z"
+      "updatedAt": "2026-07-02T12:31:01.731Z"
     },
     {
       "group": "A",
@@ -844,7 +844,7 @@
         "KOR",
         "CZE"
       ],
-      "updatedAt": "2026-07-02T08:39:34.336Z"
+      "updatedAt": "2026-07-02T12:31:01.731Z"
     },
     {
       "group": "B",
@@ -854,7 +854,7 @@
         "BIH",
         "QAT"
       ],
-      "updatedAt": "2026-07-02T08:39:34.336Z"
+      "updatedAt": "2026-07-02T12:31:01.731Z"
     },
     {
       "group": "L",
@@ -864,7 +864,7 @@
         "GHA",
         "PAN"
       ],
-      "updatedAt": "2026-07-02T08:39:34.336Z"
+      "updatedAt": "2026-07-02T12:31:01.731Z"
     },
     {
       "group": "K",
@@ -874,7 +874,7 @@
         "COD",
         "UZB"
       ],
-      "updatedAt": "2026-07-02T08:39:34.336Z"
+      "updatedAt": "2026-07-02T12:31:01.731Z"
     },
     {
       "group": "C",
@@ -884,7 +884,7 @@
         "SCO",
         "HAI"
       ],
-      "updatedAt": "2026-07-02T08:39:34.336Z"
+      "updatedAt": "2026-07-02T12:31:01.731Z"
     },
     {
       "group": "J",
@@ -894,8 +894,145 @@
         "ALG",
         "JOR"
       ],
-      "updatedAt": "2026-07-02T08:39:34.336Z"
+      "updatedAt": "2026-07-02T12:31:01.731Z"
     }
   ],
-  "knockout": []
+  "knockout": [
+    {
+      "round": "r32",
+      "matchId": "r32-73",
+      "homeTeamId": "RSA",
+      "awayTeamId": "CAN",
+      "winnerId": "CAN"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-74",
+      "homeTeamId": "GER",
+      "awayTeamId": "PAR",
+      "winnerId": "PAR"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-75",
+      "homeTeamId": "NED",
+      "awayTeamId": "MAR",
+      "winnerId": "MAR"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-76",
+      "homeTeamId": "BRA",
+      "awayTeamId": "JPN",
+      "winnerId": "BRA"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-77",
+      "homeTeamId": "FRA",
+      "awayTeamId": "SWE",
+      "winnerId": "FRA"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-78",
+      "homeTeamId": "CIV",
+      "awayTeamId": "NOR",
+      "winnerId": "NOR"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-79",
+      "homeTeamId": "MEX",
+      "awayTeamId": "ECU",
+      "winnerId": "MEX"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-80",
+      "homeTeamId": "ENG",
+      "awayTeamId": "COD",
+      "winnerId": "ENG"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-81",
+      "homeTeamId": "USA",
+      "awayTeamId": "BIH",
+      "winnerId": "USA"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-82",
+      "homeTeamId": "BEL",
+      "awayTeamId": "SEN",
+      "winnerId": "BEL"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-83",
+      "homeTeamId": "POR",
+      "awayTeamId": "CRO"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-84",
+      "homeTeamId": "ESP",
+      "awayTeamId": "AUT"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-85",
+      "homeTeamId": "SUI",
+      "awayTeamId": "ALG"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-86",
+      "homeTeamId": "ARG",
+      "awayTeamId": "CPV"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-87",
+      "homeTeamId": "COL",
+      "awayTeamId": "GHA"
+    },
+    {
+      "round": "r32",
+      "matchId": "r32-88",
+      "homeTeamId": "AUS",
+      "awayTeamId": "EGY"
+    },
+    {
+      "round": "r16",
+      "matchId": "r16-89",
+      "homeTeamId": "PAR",
+      "awayTeamId": "FRA"
+    },
+    {
+      "round": "r16",
+      "matchId": "r16-90",
+      "homeTeamId": "CAN",
+      "awayTeamId": "MAR"
+    },
+    {
+      "round": "r16",
+      "matchId": "r16-91",
+      "homeTeamId": "BRA",
+      "awayTeamId": "NOR"
+    },
+    {
+      "round": "r16",
+      "matchId": "r16-92",
+      "homeTeamId": "MEX",
+      "awayTeamId": "ENG"
+    },
+    {
+      "round": "r16",
+      "matchId": "r16-94",
+      "homeTeamId": "USA",
+      "awayTeamId": "BEL"
+    }
+  ]
 }

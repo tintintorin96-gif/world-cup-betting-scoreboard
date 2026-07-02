@@ -34,7 +34,9 @@ async function main() {
 
   try {
     worldCup2026 = await fetchWorldCup2026Results(tournament, registry, worldCup2026Token);
-    console.log(`worldcup2026: mapped ${worldCup2026.matches.length} group matches`);
+    console.log(
+      `worldcup2026: mapped ${worldCup2026.matches.length} group matches, ${worldCup2026.knockout.length} knockout matches`,
+    );
   } catch (err) {
     console.warn('worldcup2026 fetch failed:', err);
   }

@@ -1,6 +1,6 @@
-import type { MatchResult, ResultsBundle } from '../types/results';
+import type { KnockoutState, MatchResult, ResultsBundle } from '../types/results';
 import type { TeamId, TeamRegistry } from '../types/team';
-import type { TournamentConfig } from '../types/tournament';
+import type { KnockoutRound, TournamentConfig } from '../types/tournament';
 import { tryResolveTeamId } from '../normalize/resolve-team';
 
 const API_BASE = 'https://worldcup26.ir';
@@ -18,7 +18,11 @@ interface WorldCup2026Game {
   home_team_name_en?: string;
   away_team_name_en?: string;
   local_date?: string;
+  home_penalty_score?: string;
+  away_penalty_score?: string;
 }
+
+const KNOCKOUT_ROUNDS = new Set<KnockoutRound>(['r32', 'r16', 'qf', 'sf', 'third', 'final']);
 
 interface WorldCup2026Team {
   id: string;
@@ -49,6 +53,37 @@ export function mapWorldCup2026Status(game: Pick<WorldCup2026Game, 'finished' | 
   if (game.finished === 'TRUE' || elapsed === 'finished') return 'finished';
   if (elapsed && elapsed !== 'notstarted') return 'live';
   return 'scheduled';
+}
+
+export function mapWorldCup2026KnockoutRound(type: string): KnockoutRound | null {
+  return KNOCKOUT_ROUNDS.has(type as KnockoutRound) ? (type as KnockoutRound) : null;
+}
+
+export function resolveKnockoutWinner(
+  game: Pick<
+    WorldCup2026Game,
+    'finished' | 'time_elapsed' | 'home_score' | 'away_score' | 'home_penalty_score' | 'away_penalty_score'
+  >,
+  homeId: TeamId,
+  awayId: TeamId,
+): TeamId | undefined {
+  if (mapWorldCup2026Status(game) !== 'finished') return undefined;
+
+  const homeScore = parseWorldCup2026Score(game.home_score);
+  const awayScore = parseWorldCup2026Score(game.away_score);
+  if (homeScore === null || awayScore === null) return undefined;
+
+  if (homeScore > awayScore) return homeId;
+  if (awayScore > homeScore) return awayId;
+
+  const homePen = parseWorldCup2026Score(game.home_penalty_score);
+  const awayPen = parseWorldCup2026Score(game.away_penalty_score);
+  if (homePen !== null && awayPen !== null) {
+    if (homePen > awayPen) return homeId;
+    if (awayPen > homePen) return awayId;
+  }
+
+  return undefined;
 }
 
 function buildAuthHeaders(token?: string): HeadersInit {
@@ -125,39 +160,54 @@ export async function fetchWorldCup2026Results(
   }
 
   const matches: MatchResult[] = [];
-  for (const game of gamesPayload.games ?? []) {
-    if (game.type !== 'group') continue;
+  const knockout: KnockoutState[] = [];
 
+  for (const game of gamesPayload.games ?? []) {
     const homeId = resolveGameTeamId(game.home_team_name_en, game.home_team_id, byApiId, registry);
     const awayId = resolveGameTeamId(game.away_team_name_en, game.away_team_id, byApiId, registry);
     if (!homeId || !awayId) continue;
 
-    const tournamentMatch = findTournamentMatch(tournament, homeId, awayId);
-    if (!tournamentMatch) continue;
+    if (game.type === 'group') {
+      const tournamentMatch = findTournamentMatch(tournament, homeId, awayId);
+      if (!tournamentMatch) continue;
 
-    const isHomeFirst = tournamentMatch.homeTeamId === homeId;
-    const homeScore = parseWorldCup2026Score(game.home_score);
-    const awayScore = parseWorldCup2026Score(game.away_score);
-    const homeGoals = isHomeFirst ? homeScore : awayScore;
-    const awayGoals = isHomeFirst ? awayScore : homeScore;
+      const isHomeFirst = tournamentMatch.homeTeamId === homeId;
+      const homeScore = parseWorldCup2026Score(game.home_score);
+      const awayScore = parseWorldCup2026Score(game.away_score);
+      const homeGoals = isHomeFirst ? homeScore : awayScore;
+      const awayGoals = isHomeFirst ? awayScore : homeScore;
 
-    matches.push({
-      matchId: tournamentMatch.matchId,
-      status: mapWorldCup2026Status(game),
-      homeTeamId: tournamentMatch.homeTeamId!,
-      awayTeamId: tournamentMatch.awayTeamId!,
-      homeScore: homeGoals,
-      awayScore: awayGoals,
-      winnerId:
-        homeGoals !== null && awayGoals !== null
-          ? homeGoals > awayGoals
-            ? tournamentMatch.homeTeamId
-            : awayGoals > homeGoals
-              ? tournamentMatch.awayTeamId
-              : undefined
-          : undefined,
-      updatedAt: game.local_date ?? now,
-      source: 'api',
+      matches.push({
+        matchId: tournamentMatch.matchId,
+        status: mapWorldCup2026Status(game),
+        homeTeamId: tournamentMatch.homeTeamId!,
+        awayTeamId: tournamentMatch.awayTeamId!,
+        homeScore: homeGoals,
+        awayScore: awayGoals,
+        winnerId:
+          homeGoals !== null && awayGoals !== null
+            ? homeGoals > awayGoals
+              ? tournamentMatch.homeTeamId
+              : awayGoals > homeGoals
+                ? tournamentMatch.awayTeamId
+                : undefined
+            : undefined,
+        updatedAt: game.local_date ?? now,
+        source: 'api',
+      });
+      continue;
+    }
+
+    const round = mapWorldCup2026KnockoutRound(game.type);
+    if (!round) continue;
+
+    const winnerId = resolveKnockoutWinner(game, homeId, awayId);
+    knockout.push({
+      round,
+      matchId: `${round}-${game.id}`,
+      homeTeamId: homeId,
+      awayTeamId: awayId,
+      winnerId,
     });
   }
 
@@ -171,11 +221,16 @@ export async function fetchWorldCup2026Results(
     }
   }
 
+  const finalMatch = knockout.find((m) => m.round === 'final');
+  const championId = finalMatch?.winnerId;
+
   return {
     version: 1,
     fetchedAt: now,
     matches,
     groupStandings,
-    knockout: [],
+    knockout,
+    championId,
+    finalists: finalMatch ? [finalMatch.homeTeamId, finalMatch.awayTeamId] : undefined,
   };
 }

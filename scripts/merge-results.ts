@@ -51,7 +51,9 @@ export function mergeResults(
 
   const changed =
     JSON.stringify(base.matches) !== JSON.stringify(merged.matches) ||
-    JSON.stringify(base.groupStandings) !== JSON.stringify(merged.groupStandings);
+    JSON.stringify(base.groupStandings) !== JSON.stringify(merged.groupStandings) ||
+    JSON.stringify(base.knockout) !== JSON.stringify(merged.knockout) ||
+    base.championId !== merged.championId;
 
   if (changed) merged.version = base.version + 1;
   return merged;
