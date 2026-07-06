@@ -22,21 +22,21 @@
   {
     "participantId": "milton",
     "displayName": "Milton",
-    "totalPoints": 170,
-    "delta": 0,
-    "progressPct": 25.9,
+    "totalPoints": 175,
+    "delta": 5,
+    "progressPct": 26.6,
     "groupStagePoints": 143,
-    "knockoutPoints": 27,
+    "knockoutPoints": 32,
     "rank": 3
   },
   {
     "participantId": "wilmer",
     "displayName": "Wilmer",
-    "totalPoints": 157,
-    "delta": 0,
-    "progressPct": 23.9,
+    "totalPoints": 162,
+    "delta": 5,
+    "progressPct": 24.7,
     "groupStagePoints": 143,
-    "knockoutPoints": 14,
+    "knockoutPoints": 19,
     "rank": 4
   }
 ]
