@@ -1,6 +1,6 @@
 {
-  "version": 67,
-  "fetchedAt": "2026-07-06T02:01:06.509Z",
+  "version": 68,
+  "fetchedAt": "2026-07-06T09:52:31.413Z",
   "matches": [
     {
       "matchId": "A-6",
@@ -784,7 +784,7 @@
         "URU",
         "KSA"
       ],
-      "updatedAt": "2026-07-06T02:01:06.509Z"
+      "updatedAt": "2026-07-06T09:52:31.413Z"
     },
     {
       "group": "I",
@@ -794,7 +794,7 @@
         "SEN",
         "IRQ"
       ],
-      "updatedAt": "2026-07-06T02:01:06.509Z"
+      "updatedAt": "2026-07-06T09:52:31.413Z"
     },
     {
       "group": "D",
@@ -804,7 +804,7 @@
         "PAR",
         "TUR"
       ],
-      "updatedAt": "2026-07-06T02:01:06.509Z"
+      "updatedAt": "2026-07-06T09:52:31.413Z"
     },
     {
       "group": "E",
@@ -814,7 +814,7 @@
         "ECU",
         "CUW"
       ],
-      "updatedAt": "2026-07-06T02:01:06.509Z"
+      "updatedAt": "2026-07-06T09:52:31.413Z"
     },
     {
       "group": "F",
@@ -824,7 +824,7 @@
         "SWE",
         "TUN"
       ],
-      "updatedAt": "2026-07-06T02:01:06.509Z"
+      "updatedAt": "2026-07-06T09:52:31.413Z"
     },
     {
       "group": "G",
@@ -834,7 +834,7 @@
         "IRN",
         "NZL"
       ],
-      "updatedAt": "2026-07-06T02:01:06.509Z"
+      "updatedAt": "2026-07-06T09:52:31.413Z"
     },
     {
       "group": "A",
@@ -844,7 +844,7 @@
         "KOR",
         "CZE"
       ],
-      "updatedAt": "2026-07-06T02:01:06.509Z"
+      "updatedAt": "2026-07-06T09:52:31.413Z"
     },
     {
       "group": "B",
@@ -854,7 +854,7 @@
         "BIH",
         "QAT"
       ],
-      "updatedAt": "2026-07-06T02:01:06.509Z"
+      "updatedAt": "2026-07-06T09:52:31.413Z"
     },
     {
       "group": "L",
@@ -864,7 +864,7 @@
         "GHA",
         "PAN"
       ],
-      "updatedAt": "2026-07-06T02:01:06.509Z"
+      "updatedAt": "2026-07-06T09:52:31.413Z"
     },
     {
       "group": "K",
@@ -874,7 +874,7 @@
         "COD",
         "UZB"
       ],
-      "updatedAt": "2026-07-06T02:01:06.509Z"
+      "updatedAt": "2026-07-06T09:52:31.413Z"
     },
     {
       "group": "C",
@@ -884,7 +884,7 @@
         "SCO",
         "HAI"
       ],
-      "updatedAt": "2026-07-06T02:01:06.509Z"
+      "updatedAt": "2026-07-06T09:52:31.413Z"
     },
     {
       "group": "J",
@@ -894,7 +894,7 @@
         "ALG",
         "JOR"
       ],
-      "updatedAt": "2026-07-06T02:01:06.509Z"
+      "updatedAt": "2026-07-06T09:52:31.413Z"
     }
   ],
   "knockout": [
@@ -1035,7 +1035,8 @@
       "round": "r16",
       "matchId": "r16-92",
       "homeTeamId": "MEX",
-      "awayTeamId": "ENG"
+      "awayTeamId": "ENG",
+      "winnerId": "ENG"
     },
     {
       "round": "r16",
@@ -1066,6 +1067,12 @@
       "matchId": "qf-97",
       "homeTeamId": "FRA",
       "awayTeamId": "MAR"
+    },
+    {
+      "round": "qf",
+      "matchId": "qf-99",
+      "homeTeamId": "NOR",
+      "awayTeamId": "ENG"
     }
   ]
 }
