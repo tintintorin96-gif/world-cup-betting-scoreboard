@@ -2,21 +2,21 @@
   {
     "participantId": "tintin-and-pappa",
     "displayName": "Tintin&Pappa",
-    "totalPoints": 220,
-    "delta": 0,
-    "progressPct": 33.5,
+    "totalPoints": 230,
+    "delta": 10,
+    "progressPct": 35,
     "groupStagePoints": 169,
-    "knockoutPoints": 51,
+    "knockoutPoints": 61,
     "rank": 1
   },
   {
     "participantId": "mamma",
     "displayName": "Mamma",
-    "totalPoints": 206,
-    "delta": 0,
-    "progressPct": 31.4,
+    "totalPoints": 216,
+    "delta": 10,
+    "progressPct": 32.9,
     "groupStagePoints": 166,
-    "knockoutPoints": 40,
+    "knockoutPoints": 50,
     "rank": 2
   },
   {
