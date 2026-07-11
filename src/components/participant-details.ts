@@ -19,21 +19,60 @@ export function sortGroupMatchEventsByKickoff(
   });
 }
 
-function buildDetailSections(matchKickoffs: Map<string, number>): DetailSection[] {
+function groupLetterFromEvent(event: ScoringEvent): string | null {
+  if (event.matchId) return event.matchId.split('-')[0] ?? null;
+  const match = event.description.match(/^Group ([A-Z]) winner$/);
+  return match?.[1] ?? null;
+}
+
+function isGroupMatchEvent(event: ScoringEvent): boolean {
+  return (
+    Boolean(event.matchId) &&
+    ['exact_score', 'correct_outcome', 'wrong_outcome'].includes(event.category)
+  );
+}
+
+function isGroupWinnerEvent(event: ScoringEvent): boolean {
+  return (
+    event.category === 'group_winner' ||
+    (event.category === 'pending' && event.description.endsWith(' winner'))
+  );
+}
+
+function sumEventPoints(events: ScoringEvent[]): number {
+  return events.reduce((sum, e) => sum + (e.category === 'pending' ? 0 : e.points), 0);
+}
+
+function buildGroupStageBuckets(
+  events: ScoringEvent[],
+  matchKickoffs: Map<string, number>,
+): Map<string, ScoringEvent[]> {
+  const buckets = new Map<string, { matches: ScoringEvent[]; winner: ScoringEvent | null }>();
+
+  for (const event of events) {
+    const group = groupLetterFromEvent(event);
+    if (!group) continue;
+
+    const bucket = buckets.get(group) ?? { matches: [], winner: null };
+    if (isGroupMatchEvent(event)) {
+      bucket.matches.push(event);
+    } else if (isGroupWinnerEvent(event)) {
+      bucket.winner = event;
+    }
+    buckets.set(group, bucket);
+  }
+
+  const ordered = new Map<string, ScoringEvent[]>();
+  for (const group of [...buckets.keys()].sort()) {
+    const bucket = buckets.get(group)!;
+    const matches = sortGroupMatchEventsByKickoff(bucket.matches, matchKickoffs);
+    ordered.set(group, bucket.winner ? [...matches, bucket.winner] : matches);
+  }
+  return ordered;
+}
+
+function buildDetailSections(): DetailSection[] {
   return [
-    {
-      title: 'Group Matches',
-      filter: (e) =>
-        Boolean(e.matchId) &&
-        ['exact_score', 'correct_outcome', 'wrong_outcome'].includes(e.category),
-      sort: (events) => sortGroupMatchEventsByKickoff(events, matchKickoffs),
-    },
-    {
-      title: 'Group Winners',
-      filter: (e) =>
-        e.category === 'group_winner' ||
-        (e.category === 'pending' && e.description.endsWith(' winner')),
-    },
     {
       title: 'Knockout',
       filter: (e) =>
@@ -85,15 +124,95 @@ function detailEventRow(event: ScoringEvent): HTMLElement {
   );
 }
 
-function detailSection(title: string, events: ScoringEvent[]): HTMLElement | null {
+function detailSection(title: string, events: ScoringEvent[], points?: number): HTMLElement | null {
   if (!events.length) return null;
 
+  const titleRow = points !== undefined
+    ? h('div', { className: 'detail-section-heading' },
+        h('h4', { className: 'detail-section-title' }, title),
+        h('span', { className: 'detail-section-points' }, `${points} pts`),
+      )
+    : h('h4', { className: 'detail-section-title' }, title);
+
   return h('section', { className: 'detail-section' },
-    h('h4', { className: 'detail-section-title' }, title),
+    titleRow,
     h('div', { className: 'detail-events' },
       ...events.map((event) => detailEventRow(event)),
     ),
   );
+}
+
+function collapsibleSection(
+  title: string,
+  points: number,
+  content: HTMLElement,
+  collapsed = true,
+): HTMLElement {
+  let expanded = !collapsed;
+  const panelId = `detail-panel-${title.toLowerCase().replace(/\s+/g, '-')}`;
+  const expandMark = h('span', { className: 'detail-section-expand', 'aria-hidden': 'true' }, expanded ? '−' : '+');
+
+  const trigger = h('button', {
+    type: 'button',
+    className: 'detail-section-trigger',
+    'aria-expanded': expanded ? 'true' : 'false',
+    'aria-controls': panelId,
+  },
+    h('h4', { className: 'detail-section-title' }, title),
+    h('span', { className: 'detail-section-points' }, `${points} pts`),
+    expandMark,
+  );
+
+  const panel = h('div', {
+    className: 'detail-section-panel',
+    id: panelId,
+    'aria-hidden': expanded ? 'false' : 'true',
+  },
+    h('div', { className: 'detail-section-panel-inner' }, content),
+  );
+
+  const section = h('section', { className: 'detail-section detail-section--collapsible' }, trigger, panel);
+
+  function setExpanded(open: boolean) {
+    expanded = open;
+    trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+    section.classList.toggle('is-expanded', open);
+    expandMark.textContent = open ? '−' : '+';
+  }
+
+  trigger.addEventListener('click', () => setExpanded(!expanded));
+  if (expanded) section.classList.add('is-expanded');
+
+  return section;
+}
+
+function groupStageSection(
+  events: ScoringEvent[],
+  matchKickoffs: Map<string, number>,
+  totalPoints: number,
+): HTMLElement | null {
+  const buckets = buildGroupStageBuckets(events, matchKickoffs);
+  if (!buckets.size) return null;
+
+  const groupsContainer = h('div', { className: 'detail-groups' });
+
+  for (const [group, groupEvents] of buckets) {
+    const groupPoints = sumEventPoints(groupEvents);
+    groupsContainer.append(
+      h('div', { className: 'detail-group' },
+        h('div', { className: 'detail-group-heading' },
+          h('h5', { className: 'detail-group-title' }, `Group ${group}`),
+          h('span', { className: 'detail-group-points' }, `${groupPoints} pts`),
+        ),
+        h('div', { className: 'detail-events detail-events--nested' },
+          ...groupEvents.map((event) => detailEventRow(event)),
+        ),
+      ),
+    );
+  }
+
+  return collapsibleSection('Group Stage', totalPoints, groupsContainer, true);
 }
 
 export function participantDetails(
@@ -107,16 +226,23 @@ export function participantDetails(
     return panel;
   }
 
-  const detailSections = buildDetailSections(matchKickoffs);
+  const detailSections = buildDetailSections();
   let hasContent = false;
+
   for (const section of detailSections) {
     const filtered = breakdown.events.filter(section.filter);
     const events = section.sort ? section.sort(filtered) : filtered;
-    const block = detailSection(section.title, events);
+    const block = detailSection(section.title, events, sumEventPoints(events));
     if (block) {
       panel.append(block);
       hasContent = true;
     }
+  }
+
+  const groupStage = groupStageSection(breakdown.events, matchKickoffs, breakdown.groupStagePoints);
+  if (groupStage) {
+    panel.append(groupStage);
+    hasContent = true;
   }
 
   if (!hasContent) {

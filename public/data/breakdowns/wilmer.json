@@ -1444,20 +1444,6 @@
       "timestamp": "2026-07-11T12:51:13.330Z"
     },
     {
-      "id": "wilmer:quarter_final:NOR:110",
-      "participantId": "wilmer",
-      "type": "knockout_qf",
-      "category": "quarter_final",
-      "points": 0,
-      "label": "Quarter-finals missed",
-      "description": "🇳🇴 Norway",
-      "prediction": "Advances",
-      "actualResult": "Eliminated",
-      "teamId": "NOR",
-      "round": "qf",
-      "timestamp": "2026-07-11T12:51:13.330Z"
-    },
-    {
       "id": "wilmer:quarter_final:ESP:111",
       "participantId": "wilmer",
       "type": "knockout_qf",
@@ -1484,6 +1470,20 @@
       "teamId": "POR",
       "round": "qf",
       "timestamp": "2026-07-11T12:51:13.330Z"
+    },
+    {
+      "id": "wilmer:pending:NOR:110",
+      "participantId": "wilmer",
+      "type": "pending",
+      "category": "pending",
+      "points": 0,
+      "label": "Awaiting Quarter-finals",
+      "description": "🇳🇴 Norway",
+      "prediction": "Advances",
+      "actualResult": "Knockout stage in progress",
+      "teamId": "NOR",
+      "round": "qf",
+      "timestamp": "2026-07-11T12:51:13.330Z"
     }
   ],
   "totalPoints": 182,
@@ -1505,7 +1505,7 @@
     "pending": 0
   },
   "correctPicks": 60,
-  "missedPicks": 52,
+  "missedPicks": 51,
   "exactScoreHits": 10,
   "correctOutcomeHits": 34,
   "groupWinnerHits": 5,

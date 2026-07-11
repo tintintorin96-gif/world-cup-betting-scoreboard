@@ -5,6 +5,7 @@ import registryJson from '../../data/teams.registry.json';
 import {
   calculateMatchScore,
   calculateGroupWinnerScore,
+  calculateKnockoutScore,
   calculateLeaderboard,
   computeMaxPossibleScore,
   computeGroupStanding,
@@ -16,6 +17,7 @@ import type { ScoringConfig } from '../../src/types/scoring';
 import type { TournamentConfig } from '../../src/types/tournament';
 import type { TeamRegistry } from '../../src/types/team';
 import type { PredictionBundle } from '../../src/types/prediction';
+import type { ResultsBundle } from '../../src/types/results';
 
 const config = scoringDefaults as ScoringConfig;
 const registry = registryJson as TeamRegistry;
@@ -290,5 +292,63 @@ describe('scoring engine', () => {
     const board = calculateLeaderboard(bundles, breakdowns, config);
     expect(board[0].participantId).toBe('a');
     expect(board[1].participantId).toBe('b');
+  });
+
+  it('keeps knockout picks pending while their round match is unplayed', () => {
+    const partialQuarterFinals: ResultsBundle = {
+      version: 1,
+      fetchedAt: new Date().toISOString(),
+      matches: [],
+      groupStandings: [],
+      knockout: [
+        {
+          round: 'qf',
+          matchId: 'qf-97',
+          homeTeamId: 'FRA',
+          awayTeamId: 'MAR',
+          winnerId: 'FRA',
+        },
+        {
+          round: 'qf',
+          matchId: 'qf-98',
+          homeTeamId: 'ESP',
+          awayTeamId: 'BEL',
+          winnerId: 'ESP',
+        },
+        {
+          round: 'qf',
+          matchId: 'qf-99',
+          homeTeamId: 'NOR',
+          awayTeamId: 'ENG',
+        },
+        {
+          round: 'qf',
+          matchId: 'qf-100',
+          homeTeamId: 'ARG',
+          awayTeamId: 'SUI',
+        },
+      ],
+    };
+
+    const events = calculateKnockoutScore(
+      'mamma',
+      [{ round: 'qf', advancingTeamIds: ['FRA', 'ESP', 'ARG', 'GER'] }],
+      partialQuarterFinals,
+      config,
+      tournament,
+      (id) => id,
+      new Date().toISOString(),
+    );
+
+    const byTeam = new Map(events.map((event) => [event.teamId, event]));
+
+    expect(byTeam.get('FRA')?.category).toBe('quarter_final');
+    expect(byTeam.get('FRA')?.actualResult).toBe('Advanced');
+    expect(byTeam.get('ESP')?.category).toBe('quarter_final');
+    expect(byTeam.get('ESP')?.actualResult).toBe('Advanced');
+    expect(byTeam.get('ARG')?.category).toBe('pending');
+    expect(byTeam.get('ARG')?.actualResult).toBe('Knockout stage in progress');
+    expect(byTeam.get('GER')?.category).toBe('quarter_final');
+    expect(byTeam.get('GER')?.actualResult).toBe('Eliminated');
   });
 });

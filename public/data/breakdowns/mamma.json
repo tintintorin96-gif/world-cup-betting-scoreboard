@@ -1472,15 +1472,15 @@
       "timestamp": "2026-07-11T12:51:13.330Z"
     },
     {
-      "id": "mamma:quarter_final:ARG:112",
+      "id": "mamma:pending:ARG:112",
       "participantId": "mamma",
-      "type": "knockout_qf",
-      "category": "quarter_final",
+      "type": "pending",
+      "category": "pending",
       "points": 0,
-      "label": "Quarter-finals missed",
+      "label": "Awaiting Quarter-finals",
       "description": "🇦🇷 Argentina",
       "prediction": "Advances",
-      "actualResult": "Eliminated",
+      "actualResult": "Knockout stage in progress",
       "teamId": "ARG",
       "round": "qf",
       "timestamp": "2026-07-11T12:51:13.330Z"
@@ -1505,10 +1505,10 @@
     "pending": 0
   },
   "correctPicks": 72,
-  "missedPicks": 40,
+  "missedPicks": 39,
   "exactScoreHits": 6,
   "correctOutcomeHits": 38,
   "groupWinnerHits": 12,
   "knockoutHits": 16,
-  "accuracyPct": 64
+  "accuracyPct": 65
 }

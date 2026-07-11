@@ -15,12 +15,26 @@ function knockoutEventType(round: KnockoutRound): ScoringEventType | null {
   return map[round] ?? null;
 }
 
+function getRoundMatches(round: KnockoutRound, results: ResultsBundle) {
+  return results.knockout.filter((k) => k.round === round);
+}
+
 function getActualAdvancers(round: KnockoutRound, results: ResultsBundle): Set<string> {
   const advancers = new Set<string>();
-  for (const m of results.knockout.filter((k) => k.round === round)) {
+  for (const m of getRoundMatches(round, results)) {
     if (m.winnerId) advancers.add(m.winnerId);
   }
   return advancers;
+}
+
+function isInUnplayedRoundMatch(
+  teamId: string,
+  round: KnockoutRound,
+  results: ResultsBundle,
+): boolean {
+  return getRoundMatches(round, results).some(
+    (m) => !m.winnerId && (m.homeTeamId === teamId || m.awayTeamId === teamId),
+  );
 }
 
 export function calculateKnockoutScore(
@@ -138,9 +152,27 @@ export function calculateKnockoutScore(
     const pointsEach = getPoints(config, eventType);
 
     for (const teamId of pred.advancingTeamIds) {
-      const correct = actualAdvancers.has(teamId);
       if (!actualAdvancers.size) continue;
 
+      if (isInUnplayedRoundMatch(teamId, pred.round, results)) {
+        events.push(
+          createScoringEvent({
+            participantId,
+            type: 'pending',
+            points: 0,
+            label: `Awaiting ${roundConfig?.label ?? pred.round}`,
+            description: getTeamLabel(teamId),
+            prediction: 'Advances',
+            actualResult: 'Knockout stage in progress',
+            teamId,
+            round: pred.round,
+            timestamp,
+          }),
+        );
+        continue;
+      }
+
+      const correct = actualAdvancers.has(teamId);
       events.push(
         createScoringEvent({
           participantId,
