@@ -1444,7 +1444,7 @@
       "timestamp": "2026-07-11T12:51:13.330Z"
     },
     {
-      "id": "milton:quarter_final:ESP:111",
+      "id": "milton:quarter_final:ESP:110",
       "participantId": "milton",
       "type": "knockout_qf",
       "category": "quarter_final",
@@ -1458,31 +1458,17 @@
       "timestamp": "2026-07-11T12:51:13.330Z"
     },
     {
-      "id": "milton:pending:NOR:110",
+      "id": "milton:semi_final:GER:111",
       "participantId": "milton",
-      "type": "pending",
-      "category": "pending",
+      "type": "knockout_sf",
+      "category": "semi_final",
       "points": 0,
-      "label": "Awaiting Quarter-finals",
-      "description": "🇳🇴 Norway",
+      "label": "Semi-finals missed",
+      "description": "🇩🇪 Germany",
       "prediction": "Advances",
-      "actualResult": "Knockout stage in progress",
-      "teamId": "NOR",
-      "round": "qf",
-      "timestamp": "2026-07-11T12:51:13.330Z"
-    },
-    {
-      "id": "milton:pending:ARG:112",
-      "participantId": "milton",
-      "type": "pending",
-      "category": "pending",
-      "points": 0,
-      "label": "Awaiting Quarter-finals",
-      "description": "🇦🇷 Argentina",
-      "prediction": "Advances",
-      "actualResult": "Knockout stage in progress",
-      "teamId": "ARG",
-      "round": "qf",
+      "actualResult": "Eliminated",
+      "teamId": "GER",
+      "round": "sf",
       "timestamp": "2026-07-11T12:51:13.330Z"
     }
   ],
@@ -1505,10 +1491,10 @@
     "pending": 0
   },
   "correctPicks": 70,
-  "missedPicks": 40,
+  "missedPicks": 41,
   "exactScoreHits": 3,
   "correctOutcomeHits": 39,
   "groupWinnerHits": 10,
   "knockoutHits": 18,
-  "accuracyPct": 64
+  "accuracyPct": 63
 }

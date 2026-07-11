@@ -1470,20 +1470,6 @@
       "teamId": "ESP",
       "round": "qf",
       "timestamp": "2026-07-11T12:51:13.330Z"
-    },
-    {
-      "id": "mamma:pending:ARG:112",
-      "participantId": "mamma",
-      "type": "pending",
-      "category": "pending",
-      "points": 0,
-      "label": "Awaiting Quarter-finals",
-      "description": "🇦🇷 Argentina",
-      "prediction": "Advances",
-      "actualResult": "Knockout stage in progress",
-      "teamId": "ARG",
-      "round": "qf",
-      "timestamp": "2026-07-11T12:51:13.330Z"
     }
   ],
   "totalPoints": 226,

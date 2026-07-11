@@ -294,13 +294,20 @@ describe('scoring engine', () => {
     expect(board[1].participantId).toBe('b');
   });
 
-  it('keeps knockout picks pending while their round match is unplayed', () => {
+  it('keeps knockout picks hidden while their round outcome is undecided', () => {
     const partialQuarterFinals: ResultsBundle = {
       version: 1,
       fetchedAt: new Date().toISOString(),
       matches: [],
       groupStandings: [],
       knockout: [
+        {
+          round: 'r32',
+          matchId: 'r32-74',
+          homeTeamId: 'GER',
+          awayTeamId: 'PAR',
+          winnerId: 'PAR',
+        },
         {
           round: 'qf',
           matchId: 'qf-97',
@@ -346,9 +353,62 @@ describe('scoring engine', () => {
     expect(byTeam.get('FRA')?.actualResult).toBe('Advanced');
     expect(byTeam.get('ESP')?.category).toBe('quarter_final');
     expect(byTeam.get('ESP')?.actualResult).toBe('Advanced');
-    expect(byTeam.get('ARG')?.category).toBe('pending');
-    expect(byTeam.get('ARG')?.actualResult).toBe('Knockout stage in progress');
+    expect(byTeam.get('ARG')).toBeUndefined();
     expect(byTeam.get('GER')?.category).toBe('quarter_final');
     expect(byTeam.get('GER')?.actualResult).toBe('Eliminated');
+  });
+
+  it('does not eliminate teams before their quarter-final fixture exists in results', () => {
+    const partialQuarterFinalsWithoutFixtures: ResultsBundle = {
+      version: 1,
+      fetchedAt: new Date().toISOString(),
+      matches: [],
+      groupStandings: [],
+      knockout: [
+        {
+          round: 'r16',
+          matchId: 'r16-92',
+          homeTeamId: 'MEX',
+          awayTeamId: 'ENG',
+          winnerId: 'ENG',
+        },
+        {
+          round: 'r16',
+          matchId: 'r16-95',
+          homeTeamId: 'ARG',
+          awayTeamId: 'EGY',
+          winnerId: 'ARG',
+        },
+        {
+          round: 'qf',
+          matchId: 'qf-97',
+          homeTeamId: 'FRA',
+          awayTeamId: 'MAR',
+          winnerId: 'FRA',
+        },
+        {
+          round: 'qf',
+          matchId: 'qf-98',
+          homeTeamId: 'ESP',
+          awayTeamId: 'BEL',
+          winnerId: 'ESP',
+        },
+      ],
+    };
+
+    const events = calculateKnockoutScore(
+      'tintin-and-pappa',
+      [{ round: 'qf', advancingTeamIds: ['FRA', 'ESP', 'ENG', 'ARG'] }],
+      partialQuarterFinalsWithoutFixtures,
+      config,
+      tournament,
+      (id) => id,
+      new Date().toISOString(),
+    );
+
+    const byTeam = new Map(events.map((event) => [event.teamId, event]));
+
+    expect(byTeam.get('ENG')).toBeUndefined();
+    expect(byTeam.get('ARG')).toBeUndefined();
   });
 });

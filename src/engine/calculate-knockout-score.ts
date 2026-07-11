@@ -19,22 +19,52 @@ function getRoundMatches(round: KnockoutRound, results: ResultsBundle) {
   return results.knockout.filter((k) => k.round === round);
 }
 
-function getActualAdvancers(round: KnockoutRound, results: ResultsBundle): Set<string> {
-  const advancers = new Set<string>();
-  for (const m of getRoundMatches(round, results)) {
-    if (m.winnerId) advancers.add(m.winnerId);
-  }
-  return advancers;
+const KNOCKOUT_ROUND_ORDER: KnockoutRound[] = ['r32', 'r16', 'qf', 'sf', 'third', 'final'];
+
+function previousKnockoutRound(round: KnockoutRound): KnockoutRound | null {
+  const index = KNOCKOUT_ROUND_ORDER.indexOf(round);
+  return index > 0 ? KNOCKOUT_ROUND_ORDER[index - 1]! : null;
 }
 
-function isInUnplayedRoundMatch(
+function getTeamRoundMatch(
   teamId: string,
   round: KnockoutRound,
   results: ResultsBundle,
-): boolean {
-  return getRoundMatches(round, results).some(
-    (m) => !m.winnerId && (m.homeTeamId === teamId || m.awayTeamId === teamId),
+) {
+  return getRoundMatches(round, results).find(
+    (m) => m.homeTeamId === teamId || m.awayTeamId === teamId,
   );
+}
+
+type KnockoutAdvanceOutcome = 'advanced' | 'eliminated' | 'pending';
+
+function resolveKnockoutAdvanceOutcome(
+  teamId: string,
+  round: KnockoutRound,
+  results: ResultsBundle,
+): KnockoutAdvanceOutcome {
+  const match = getTeamRoundMatch(teamId, round, results);
+  if (match) {
+    if (!match.winnerId) return 'pending';
+    return match.winnerId === teamId ? 'advanced' : 'eliminated';
+  }
+
+  let priorRound = previousKnockoutRound(round);
+  while (priorRound) {
+    const priorMatch = getTeamRoundMatch(teamId, priorRound, results);
+    if (priorMatch) {
+      if (!priorMatch.winnerId) return 'pending';
+      return priorMatch.winnerId === teamId ? 'pending' : 'eliminated';
+    }
+    priorRound = previousKnockoutRound(priorRound);
+  }
+
+  const roundMatches = getRoundMatches(round, results);
+  if (!roundMatches.length || roundMatches.some((m) => !m.winnerId)) {
+    return 'pending';
+  }
+
+  return 'eliminated';
 }
 
 export function calculateKnockoutScore(
@@ -59,20 +89,6 @@ export function calculateKnockoutScore(
 
       for (const teamId of pred.advancingTeamIds) {
         if (thirdMatches.length === 0) {
-          events.push(
-            createScoringEvent({
-              participantId,
-              type: 'pending',
-              points: 0,
-              label: 'Awaiting third-place match',
-              description: getTeamLabel(teamId),
-              prediction: 'Reaches third-place match',
-              actualResult: 'Knockout stage in progress',
-              teamId,
-              round: 'third',
-              timestamp,
-            }),
-          );
           continue;
         }
 
@@ -147,32 +163,14 @@ export function calculateKnockoutScore(
     const eventType = knockoutEventType(pred.round);
     if (!eventType) continue;
 
-    const actualAdvancers = getActualAdvancers(pred.round, results);
     const roundConfig = tournament.knockoutRounds.find((r) => r.round === pred.round);
     const pointsEach = getPoints(config, eventType);
 
     for (const teamId of pred.advancingTeamIds) {
-      if (!actualAdvancers.size) continue;
+      const outcome = resolveKnockoutAdvanceOutcome(teamId, pred.round, results);
+      if (outcome === 'pending') continue;
 
-      if (isInUnplayedRoundMatch(teamId, pred.round, results)) {
-        events.push(
-          createScoringEvent({
-            participantId,
-            type: 'pending',
-            points: 0,
-            label: `Awaiting ${roundConfig?.label ?? pred.round}`,
-            description: getTeamLabel(teamId),
-            prediction: 'Advances',
-            actualResult: 'Knockout stage in progress',
-            teamId,
-            round: pred.round,
-            timestamp,
-          }),
-        );
-        continue;
-      }
-
-      const correct = actualAdvancers.has(teamId);
+      const correct = outcome === 'advanced';
       events.push(
         createScoringEvent({
           participantId,

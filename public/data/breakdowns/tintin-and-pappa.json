@@ -1456,34 +1456,6 @@
       "teamId": "ESP",
       "round": "qf",
       "timestamp": "2026-07-11T12:51:13.330Z"
-    },
-    {
-      "id": "tintin-and-pappa:pending:ENG:111",
-      "participantId": "tintin-and-pappa",
-      "type": "pending",
-      "category": "pending",
-      "points": 0,
-      "label": "Awaiting Quarter-finals",
-      "description": "🏴 England",
-      "prediction": "Advances",
-      "actualResult": "Knockout stage in progress",
-      "teamId": "ENG",
-      "round": "qf",
-      "timestamp": "2026-07-11T12:51:13.330Z"
-    },
-    {
-      "id": "tintin-and-pappa:pending:ARG:112",
-      "participantId": "tintin-and-pappa",
-      "type": "pending",
-      "category": "pending",
-      "points": 0,
-      "label": "Awaiting Quarter-finals",
-      "description": "🇦🇷 Argentina",
-      "prediction": "Advances",
-      "actualResult": "Knockout stage in progress",
-      "teamId": "ARG",
-      "round": "qf",
-      "timestamp": "2026-07-11T12:51:13.330Z"
     }
   ],
   "totalPoints": 240,

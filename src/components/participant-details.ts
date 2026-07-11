@@ -33,10 +33,11 @@ function isGroupMatchEvent(event: ScoringEvent): boolean {
 }
 
 function isGroupWinnerEvent(event: ScoringEvent): boolean {
-  return (
-    event.category === 'group_winner' ||
-    (event.category === 'pending' && event.description.endsWith(' winner'))
-  );
+  return event.category === 'group_winner';
+}
+
+function isDecidedEvent(event: ScoringEvent): boolean {
+  return event.category !== 'pending';
 }
 
 function sumEventPoints(events: ScoringEvent[]): number {
@@ -50,6 +51,8 @@ function buildGroupStageBuckets(
   const buckets = new Map<string, { matches: ScoringEvent[]; winner: ScoringEvent | null }>();
 
   for (const event of events) {
+    if (!isDecidedEvent(event)) continue;
+
     const group = groupLetterFromEvent(event);
     if (!group) continue;
 
@@ -76,17 +79,14 @@ function buildDetailSections(): DetailSection[] {
     {
       title: 'Knockout',
       filter: (e) =>
+        isDecidedEvent(e) &&
         ['round_of_32', 'round_of_16', 'quarter_final', 'semi_final', 'third_place_reach', 'third_place_winner'].includes(
           e.category,
-        ) ||
-        (e.category === 'pending' && Boolean(e.round) && e.round !== 'final'),
+        ),
     },
     {
       title: 'Finalists & Champion',
-      filter: (e) =>
-        e.category === 'finalist' ||
-        e.category === 'champion' ||
-        (e.category === 'pending' && e.round === 'final'),
+      filter: (e) => isDecidedEvent(e) && (e.category === 'finalist' || e.category === 'champion'),
     },
   ];
 }

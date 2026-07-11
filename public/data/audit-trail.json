@@ -2857,7 +2857,7 @@
     "resultsVersion": 89,
     "participantId": "milton",
     "event": {
-      "id": "milton:quarter_final:ESP:111",
+      "id": "milton:quarter_final:ESP:110",
       "participantId": "milton",
       "type": "knockout_qf",
       "category": "quarter_final",
@@ -5608,7 +5608,7 @@
     "resultsVersion": 89,
     "participantId": "wilmer",
     "event": {
-      "id": "wilmer:quarter_final:ESP:111",
+      "id": "wilmer:quarter_final:ESP:110",
       "participantId": "wilmer",
       "type": "knockout_qf",
       "category": "quarter_final",
