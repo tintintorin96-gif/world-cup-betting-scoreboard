@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest';
+import { readFileSync } from 'node:fs';
 import scoringDefaults from '../../config/scoring.defaults.json';
 import tournamentJson from '../../config/tournament.json';
 import registryJson from '../../data/teams.registry.json';
@@ -12,6 +13,7 @@ import {
   deriveBreakdownFromEvents,
   createScoringEvent,
   isGroupStageComplete,
+  calculateFinalScore,
 } from '../../src/engine';
 import type { ScoringConfig } from '../../src/types/scoring';
 import type { TournamentConfig } from '../../src/types/tournament';
@@ -410,5 +412,37 @@ describe('scoring engine', () => {
 
     expect(byTeam.get('ENG')).toBeUndefined();
     expect(byTeam.get('ARG')).toBeUndefined();
+  });
+
+  it('omits undecided knockout picks for every participant in live data', () => {
+    const results = JSON.parse(
+      readFileSync('public/data/results.json', 'utf8'),
+    ) as ResultsBundle;
+    const predictions = JSON.parse(
+      readFileSync('public/data/predictions.json', 'utf8'),
+    ) as PredictionBundle[];
+
+    const unplayedQuarterFinalists = new Set(
+      results.knockout
+        .filter((m) => m.round === 'qf' && !m.winnerId)
+        .flatMap((m) => [m.homeTeamId, m.awayTeamId]),
+    );
+
+    for (const bundle of predictions) {
+      const breakdown = calculateFinalScore(
+        bundle.prediction,
+        results,
+        config,
+        tournament,
+        registry,
+      );
+
+      expect(breakdown.events.every((event) => event.category !== 'pending')).toBe(true);
+
+      for (const event of breakdown.events) {
+        if (event.round !== 'qf' || event.category !== 'quarter_final') continue;
+        expect(unplayedQuarterFinalists.has(event.teamId!)).toBe(false);
+      }
+    }
   });
 });

@@ -67,6 +67,26 @@ function resolveKnockoutAdvanceOutcome(
   return 'eliminated';
 }
 
+function getConfirmedFinalists(results: ResultsBundle): Set<string> | null {
+  const sfMatches = getRoundMatches('sf', results);
+  if (!sfMatches.length || sfMatches.some((m) => !m.winnerId)) {
+    return null;
+  }
+
+  const finalMatches = getRoundMatches('final', results);
+  if (!finalMatches.length) {
+    return null;
+  }
+
+  const finalists = new Set<string>();
+  for (const m of finalMatches) {
+    if (m.homeTeamId) finalists.add(m.homeTeamId);
+    if (m.awayTeamId) finalists.add(m.awayTeamId);
+  }
+
+  return finalists.size > 0 ? finalists : null;
+}
+
 export function calculateKnockoutScore(
   participantId: string,
   predictions: KnockoutPrediction[],
@@ -132,30 +152,25 @@ export function calculateKnockoutScore(
     }
 
     if (pred.round === 'final') {
-      const actualFinalists = new Set<string>();
-      for (const m of results.knockout.filter((k) => k.round === 'final')) {
-        actualFinalists.add(m.homeTeamId);
-        actualFinalists.add(m.awayTeamId);
-      }
+      const actualFinalists = getConfirmedFinalists(results);
+      if (!actualFinalists) continue;
 
       for (const teamId of pred.advancingTeamIds) {
         const correct = actualFinalists.has(teamId);
-        if (actualFinalists.size) {
-          events.push(
-            createScoringEvent({
-              participantId,
-              type: 'finalist',
-              points: correct ? getPoints(config, 'finalist') : 0,
-              label: correct ? 'Correct finalist' : 'Missed finalist',
-              description: getTeamLabel(teamId),
-              prediction: 'Reaches final',
-              actualResult: correct ? 'Finalist' : 'Did not reach final',
-              teamId,
-              round: 'final',
-              timestamp,
-            }),
-          );
-        }
+        events.push(
+          createScoringEvent({
+            participantId,
+            type: 'finalist',
+            points: correct ? getPoints(config, 'finalist') : 0,
+            label: correct ? 'Correct finalist' : 'Missed finalist',
+            description: getTeamLabel(teamId),
+            prediction: 'Reaches final',
+            actualResult: correct ? 'Finalist' : 'Did not reach final',
+            teamId,
+            round: 'final',
+            timestamp,
+          }),
+        );
       }
       continue;
     }

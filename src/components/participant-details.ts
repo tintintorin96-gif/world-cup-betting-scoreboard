@@ -1,5 +1,6 @@
 import { h } from '../utils/dom';
 import { parseMatchKickoff } from '../services/format';
+import { isDecidedScoringEvent } from '../engine/scoring-categories';
 import type { ScoringBreakdown, ScoringEvent } from '../types/scoring';
 
 interface DetailSection {
@@ -36,10 +37,6 @@ function isGroupWinnerEvent(event: ScoringEvent): boolean {
   return event.category === 'group_winner';
 }
 
-function isDecidedEvent(event: ScoringEvent): boolean {
-  return event.category !== 'pending';
-}
-
 function sumEventPoints(events: ScoringEvent[]): number {
   return events.reduce((sum, e) => sum + (e.category === 'pending' ? 0 : e.points), 0);
 }
@@ -51,7 +48,7 @@ function buildGroupStageBuckets(
   const buckets = new Map<string, { matches: ScoringEvent[]; winner: ScoringEvent | null }>();
 
   for (const event of events) {
-    if (!isDecidedEvent(event)) continue;
+    if (!isDecidedScoringEvent(event)) continue;
 
     const group = groupLetterFromEvent(event);
     if (!group) continue;
@@ -79,14 +76,14 @@ function buildDetailSections(): DetailSection[] {
     {
       title: 'Knockout',
       filter: (e) =>
-        isDecidedEvent(e) &&
+        isDecidedScoringEvent(e) &&
         ['round_of_32', 'round_of_16', 'quarter_final', 'semi_final', 'third_place_reach', 'third_place_winner'].includes(
           e.category,
         ),
     },
     {
       title: 'Finalists & Champion',
-      filter: (e) => isDecidedEvent(e) && (e.category === 'finalist' || e.category === 'champion'),
+      filter: (e) => isDecidedScoringEvent(e) && (e.category === 'finalist' || e.category === 'champion'),
     },
   ];
 }

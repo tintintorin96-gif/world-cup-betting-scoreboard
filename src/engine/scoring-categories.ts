@@ -1,4 +1,4 @@
-import type { ScoringCategory, ScoringEventType } from '../types/scoring';
+import type { ScoringCategory, ScoringEvent, ScoringEventType } from '../types/scoring';
 
 export interface ScoringSection {
   id: string;
@@ -74,4 +74,8 @@ const GROUP_CATEGORIES = new Set<ScoringCategory>([
 
 export function isGroupCategory(category: ScoringCategory): boolean {
   return GROUP_CATEGORIES.has(category);
+}
+
+export function isDecidedScoringEvent(event: ScoringEvent): boolean {
+  return event.category !== 'pending';
 }

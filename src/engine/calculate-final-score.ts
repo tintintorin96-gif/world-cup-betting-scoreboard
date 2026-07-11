@@ -10,6 +10,11 @@ import { calculateMatchScore } from './calculate-match-score';
 import { computeGroupStanding, isGroupStageComplete } from './compute-group-standings';
 import { resetEventCounter } from './create-scoring-event';
 import { deriveBreakdownFromEvents } from './derive-breakdown';
+import { isDecidedScoringEvent } from './scoring-categories';
+
+function keepDecidedEvent(event: ScoringEvent): boolean {
+  return isDecidedScoringEvent(event);
+}
 
 export function calculateFinalScore(
   prediction: Prediction,
@@ -30,17 +35,18 @@ export function calculateFinalScore(
     const result = results.matches.find((m) => m.matchId === gm.matchId);
     if (!matchRef || !result) continue;
 
-    events.push(
-      calculateMatchScore(
-        participantId,
-        gm,
-        result,
-        config,
-        getLabel(matchRef.homeTeamId!),
-        getLabel(matchRef.awayTeamId!),
-        timestamp,
-      ),
+    const matchEvent = calculateMatchScore(
+      participantId,
+      gm,
+      result,
+      config,
+      getLabel(matchRef.homeTeamId!),
+      getLabel(matchRef.awayTeamId!),
+      timestamp,
     );
+    if (keepDecidedEvent(matchEvent)) {
+      events.push(matchEvent);
+    }
   }
 
   for (const gw of prediction.groupWinners) {
@@ -48,18 +54,19 @@ export function calculateFinalScore(
     const standing = groupComplete
       ? computeGroupStanding(gw.group, tournament, results, registry)
       : null;
-    events.push(
-      calculateGroupWinnerScore(
-        participantId,
-        gw,
-        standing,
-        groupComplete,
-        config,
-        getLabel(gw.winnerId),
-        getLabel,
-        timestamp,
-      ),
+    const groupWinnerEvent = calculateGroupWinnerScore(
+      participantId,
+      gw,
+      standing,
+      groupComplete,
+      config,
+      getLabel(gw.winnerId),
+      getLabel,
+      timestamp,
     );
+    if (keepDecidedEvent(groupWinnerEvent)) {
+      events.push(groupWinnerEvent);
+    }
   }
 
   events.push(
@@ -74,11 +81,8 @@ export function calculateFinalScore(
     ),
   );
 
-  const pending = events.filter((e) => e.category === 'pending');
-  const scored = events.filter((e) => e.category !== 'pending');
-
   return {
-    ...deriveBreakdownFromEvents(participantId, scored),
-    events: [...scored, ...pending],
+    ...deriveBreakdownFromEvents(participantId, events),
+    events,
   };
 }

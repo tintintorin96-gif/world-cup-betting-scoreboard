@@ -49,7 +49,7 @@ export async function renderParticipantPage(main: HTMLElement, data: AppData, pa
         h('div', { className: 'inspector-panel glass-panel' },
           h('h3', { className: 'panel-title' }, `Why ${derived.totalPoints} points?`),
           h('p', { className: 'panel-desc' }, 'Grouped scoring statement — every transaction that builds the total.'),
-          scoringInspector(breakdown, { showPending: true }),
+          scoringInspector(breakdown, { showPending: false }),
         ),
         h('div', { className: 'inspector-panel glass-panel' },
           h('h3', { className: 'panel-title' }, 'Chronological audit trail'),
