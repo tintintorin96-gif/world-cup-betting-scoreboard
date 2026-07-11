@@ -15,7 +15,7 @@ export function sortGroupMatchEventsByKickoff(
   return [...events].sort((a, b) => {
     const aTime = a.matchId ? (matchKickoffs.get(a.matchId) ?? 0) : 0;
     const bTime = b.matchId ? (matchKickoffs.get(b.matchId) ?? 0) : 0;
-    return bTime - aTime;
+    return aTime - bTime;
   });
 }
 
